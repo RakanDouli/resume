@@ -2,17 +2,17 @@
   "basicInfo": {
     "name": "Rakan Douli",
     "location": "Utrecht, Netherlands",
-    "phone": "0636084426",
+    "phone": "+31636084426",
+    "whatsApp": "+31636084426",
     "email": "rakandouli@gmail.com",
     "dateOfBirth": "22-04-1987",
     "linkedin": "https://www.linkedin.com/in/rakandouli/",
     "drivingLicense": "Available",
-    "drivingLicenseType": "Standard", 
-    "photoUrl":"./Screenshot 2024-11-07 at 20.11.34.png",
-    "title": "Full Stack Developer",
-    "summary": "Full Stack Developer with expertise in headless architecture, API development, and performance optimization.",
-   
-   "additionalLinks": [
+    "drivingLicenseType": "Standard",
+    "photoUrl": "./Screenshot 2024-11-07 at 20.11.34.png",
+    "title": "Web Developer",
+    "summary": "Specializing in Next.js, React, and Node.js, with a background in business development and tech. Experienced in building internal tools, optimizing user experience, and enhancing performance for applications at companies like Fiber Nederland, Mprise, and Direct Impact. Skilled in developing API-driven components, SEO, and A/B testing. Known for adaptability and collaboration, honed through international work experience.",
+    "additionalLinks": [
       {
         "label": "GitHub",
         "url": "https://github.com/rakandouli"
@@ -23,15 +23,16 @@
       }
     ]
   },
- "experience": [
+  "experience": [
     {
-      "role": "Full Stack Developer",
-      "company": "Fiber Nederland",
-      "location": "Almere Stad",
+      "title": "Full Stack Developer",
+      "organization": "Fiber Nederland",
+      "location": "Almere, The Netherlands",
       "duration": {
         "start": "January 2024",
         "end": "Present"
       },
+      "type": "",
       "details": [
         "Developed and maintained Vue.js and Laravel applications for internal tools.",
         "Troubleshot bugs and implemented features to enhance application functionality.",
@@ -39,26 +40,28 @@
       ]
     },
     {
-      "role": "Full Stack Developer",
-      "company": "Mprise",
-      "location": "",
+      "title": "Full Stack Developer",
+      "organization": "Mprise",
+      "location": "Vennendaal, The Netherlands",
       "duration": {
         "start": "August 2022",
         "end": "September 2023"
       },
+      "type": "",
       "details": [
         "Developed new features and resolved bugs in multiple web applications using React, Node.js, and GraphQL, significantly improving app functionality and user experience.",
         "Conducted load testing on the database gateway to optimize app performance, leading to faster data retrieval and improved resource allocation."
       ]
     },
     {
-      "role": "Full Stack Developer",
-      "company": "Direct Impact",
-      "location": "",
+      "title": "Full Stack Developer",
+      "organization": "Direct Impact",
+      "location": "Utrecht, The Netherlands",
       "duration": {
         "start": "October 2021",
         "end": "June 2022"
       },
+      "type": "",
       "details": [
         "Built and styled components with React/Next.js to improve website functionality and user experience in a headless CMS environment.",
         "Created and managed Contentful CMS components and used GraphQL to enhance data management and retrieval speed.",
@@ -67,13 +70,14 @@
       ]
     },
     {
-      "role": "Freelance Web Developer",
-      "company": "808-Studio",
-      "location": "",
+      "title": "Freelance Web Developer",
+      "organization": "808-Studio",
+      "location": "Utrecht, The Netherlands",
       "duration": {
         "start": "December 2020",
         "end": "Present"
       },
+      "type": "",
       "details": [
         "Developed custom WordPress themes using LESS and Vanilla JavaScript/jQuery for enhanced front-end functionality.",
         "Increased site visibility through SEO improvements, leading to better search rankings and organic traffic.",
@@ -81,50 +85,54 @@
       ]
     },
     {
-      "role": "Sales Prompter",
-      "company": "Zara",
-      "location": "Utrecht",
+      "title": "Sales Prompter",
+      "organization": "Zara",
+      "location": "Utrecht, The Netherlands",
       "duration": {
         "start": "January 2017",
         "end": "January 2018"
       },
+      "type": "",
       "details": [
         "Provided exceptional customer service and utilized persuasive communication skills to drive sales and promote products."
       ]
     },
     {
-      "role": "Graphic Designer & Translator",
-      "company": "Gökkuşağı",
+      "title": "Graphic Designer & Translator",
+      "organization": "Gökkuşağı",
       "location": "Istanbul, Turkey",
       "duration": {
         "start": "January 2015",
         "end": "July 2015"
       },
+      "type": "",
       "details": [
         "Designed visual materials such as posters, flyers, and brochures.",
         "Created an Arabic-language Facebook page, managing translations and content for increased engagement."
       ]
     },
     {
-      "role": "Logistics Employee",
-      "company": "Target Med Int.",
+      "title": "Logistics Employee",
+      "organization": "Target Med Int.",
       "location": "Jordan",
       "duration": {
         "start": "May 2014",
         "end": "October 2014"
       },
+      "type": "",
       "details": [
         "Oversaw logistics and managed exports to Iraq, ensuring efficient and timely deliveries."
       ]
     },
     {
-      "role": "Account Manager",
-      "company": "United Mining Industries",
+      "title": "Account Manager",
+      "organization": "United Mining Industries",
       "location": "Jordan",
       "duration": {
         "start": "January 2013",
         "end": "May 2014"
       },
+      "type": "",
       "details": [
         "Managed over 50 customer accounts, addressing payment and invoicing issues and maintaining positive client relations.",
         "Used Sage accounting software to streamline inventory management, boosting team productivity by 50%.",
@@ -132,13 +140,14 @@
       ]
     },
     {
-      "role": "Sales Promoter",
-      "company": "TOSHIBA",
+      "title": "Sales Promoter",
+      "organization": "TOSHIBA",
       "location": "Amman, Jordan",
       "duration": {
         "start": "January 2012",
         "end": "December 2012"
       },
+      "type": "",
       "details": [
         "Managed the Toshiba television section, providing product expertise to increase sales.",
         "Recognized as the Best TV Sales Promoter for outstanding sales performance."
@@ -147,45 +156,48 @@
   ],
   "education": [
     {
-      "program": "Full Stack JS Developer Course",
-      "institution": "Codaisseur",
+      "title": "Full Stack JS Developer Course",
+      "organization": "Codaisseur",
+      "location": "Amsterdam, Netherlands",
       "duration": {
         "start": "April 2021",
         "end": "August 2021"
       },
-      "degree": "Certification",  
-      "year": "2021" 
+      "type": "Certificate",
+      "details": []
     },
     {
-      "program": "Language Course",
-      "institution": "Babel Language Academy",
+      "title": "Netherlands Language Course",
+      "organization": "Babel Language Academy",
+      "location": "Utrecht, Netherlands",
       "duration": {
         "start": "February 2020",
         "end": "November 2020"
       },
-      "degree": "Certificate",  
-      "year": "2020" 
+      "type": "Certificate",
+      "details": []
     },
     {
-      "program": "Bachelor of Business Administration",
-      "institution": "Arab International University",
+      "title": "Bachelor of Business Administration",
+      "organization": "Arab International University",
+      "location": "Damascus, Syria",
       "duration": {
         "start": "January 2007",
         "end": "January 2011"
       },
-      "degree": "Bachelor's",  
-      "year": "2011" 
+      "type": "Bachelor's",
+      "details": []
     },
     {
-      "program": "Business Administration",
-      "institution": "Syrian Enterprise and Business Center",
-      "location": "Damascus",
+      "title": "Business Administration",
+      "organization": "Syrian Enterprise and Business Center",
+      "location": "Damascus, Syria",
       "duration": {
         "start": "January 2007",
         "end": "January 2008"
       },
-      "degree": "Diploma",  
-      "year": "2008"  
+      "type": "Diploma",
+      "details": []
     }
   ],
   "skills": {
@@ -204,7 +216,7 @@
       "API Development",
       "Google Optimize",
       "Data Management",
-      "Testing / Troubleshot",
+      "Testing / Troubleshooting",
       "WordPress",
       "Vercel",
       "Azure DB",
@@ -213,8 +225,8 @@
       "SQL",
       "Digital Ocean",
       "Contentful (CMS)",
-      "Builder.io (CMS)", 
-      "(Strapi CMS)"
+      "Builder.io (CMS)",
+      "Strapi (CMS)"
     ],
     "other": [
       "Teaching",
@@ -229,7 +241,8 @@
     {
       "language": "Arabic",
       "level": "Native"
-    }, {
+    },
+    {
       "language": "English",
       "level": "Advanced"
     },
@@ -243,5 +256,3 @@
     }
   ]
 }
-
-

@@ -1,0 +1,65 @@
+
+// tailwind variables
+:root {
+    --primary: #639FBB;
+    --secondary: rgb(226, 155, 114);
+    --third: rgb(52, 30, 66);
+    --dark: #000;
+    --light: #fff;
+    --light-gray:  rgb(238, 237, 232);
+    --body-bg:#F7F6F2;
+    --transparent: #00000000;
+    --modal-bg: rgba(0, 0, 0, 0.4);
+    --top-nav-h: 90px;
+    --success-bg: rgb(196, 239, 232);
+    --success-text: rgb(55, 162, 147);
+    --error-bg: rgb(251, 219, 223);       
+    --error-text: rgb(243, 71, 78);  
+    /* Screen sizes */
+    --screen-sm: 480px;
+    --screen-md: 768px;
+    --screen-lg: 976px;
+    --screen-xl: 1441px;
+    
+    /* Spacing and gap */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+
+    // nav height
+    --nav-height:90px
+}
+// // sccs variable 
+$primary: #639FBB;
+$secondary: rgb(226, 155, 114);
+$third: rgb(52, 30, 66);
+$dark: #000;
+$light: #fff;
+$body-bg:#F7F6F2;
+$light-gray: rgba(235, 237, 238, 1);
+$transparent: #00000000;
+$modal-bg: rgba(0, 0, 0, 0.4);
+$top-nav-h: 90px;
+$success-bg: rgb(196, 239, 232);
+$success-text: rgb(55, 162, 147);
+$error-bg: rgb(251, 219, 223);       
+$error-text: rgb(243, 71, 78);  
+/* Screen sizes */
+$screen-sm: 480px;
+$screen-md: 768px;
+$screen-lg: 976px;
+$screen-xl: 1441px;
+
+/* Spacing and gap */
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-2xl: 48px;
+
+//  nav height 
+$nav-height:90px

@@ -5,6 +5,7 @@ export interface BasicInfo {
   name: string;
   location: string;
   phone: string;
+  whatsApp: string;
   email: string;
   dateOfBirth: string;
   linkedin: string;
@@ -12,7 +13,7 @@ export interface BasicInfo {
   drivingLicenseType?: string;
   title: string;
   summary: string;
-  additionalLinks?: Links[]; // using Links[] for consistency
+  additionalLinks?: Links[];
 }
 
 export interface Links {
@@ -25,40 +26,54 @@ export interface Duration {
   end: string;
 }
 
-export interface Experience {
-  role: string;
-  company: string;
+// Shared interface for both Education and Experience items
+export interface SectionItem {
+  title: string;
+  subtitle?: string;
   location?: string;
   duration: Duration;
-  details: string[];
+  details?: string[];
+  type?: string;
 }
 
-export interface Education {
-  program: string;
-  institution: string;
-  duration: Duration;
-  location?: string;
+// Updated Experience interface
+export interface Experience extends SectionItem {
+  organization: string; // New field to match JSON structure
+}
+
+// Updated Education interface
+export interface Education extends SectionItem {
+  organization: string;
   degree?: string;
-  year?: string;
 }
 
 export interface Skills {
   technical: string[];
   other: string[];
 }
-// Language: Beginner, Intermediate, Advanced, Fluent, Native
+
+export enum LanguageLevel {
+  Beginner = 1, // 1 star
+  Intermediate = 2, // 2 stars
+  Advanced = 3, // 3 stars
+  Fluent = 4, // 4 stars
+  Native = 5, // 5 stars
+}
+
+// Language interface with level as the enum
 export interface Language {
   language: string;
-  level: string;
+  level: LanguageLevel; // Numeric value with associated text
+}
+
+export interface ResumeImage {
+  photoUrl: string;
+  name: string;
 }
 
 export interface ResumeData {
   basicInfo: BasicInfo;
-  ResumeImage?: {
-    photoUrl: string;
-    name: string;
-  };
-
+  ResumeImage?: ResumeImage;
   experience: Experience[];
   education: Education[];
   skills: Skills;

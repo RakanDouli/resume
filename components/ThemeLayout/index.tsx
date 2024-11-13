@@ -1,4 +1,5 @@
 // ThemeLayout.tsx
+"use client";
 import { FC } from "react";
 import { ResumeData } from "@/types/resume";
 
@@ -16,20 +17,53 @@ interface ResumeProps {
 
 const ThemeLayout: FC<ResumeProps> = ({ data }) => {
   return (
-    <div className="container mx-auto p-6 sm:p-8 space-y-10">
-      <ResumeImage
-        imageUrl={data.basicInfo.photoUrl}
-        name={data.basicInfo.name}
-      />
-      <BasicInfoSection data={data.basicInfo} />
-      <ExperienceSection experiences={data.experience} />
-      <SkillsSection skills={data.skills} />
-      <EducationSection education={data.education} />
-      <LanguagesSection languages={data.languages} />
-      {data.basicInfo.additionalLinks && (
-        <LinksSection links={data.basicInfo.additionalLinks} />
-      )}
-    </div>
+    <section className="container">
+      <div className="bg-light rounded-lg shadow-lg flex flex-col gap-lg sm:pt-xl pt-md pb-2xl sm:px-xl px-md m-sm">
+        <ResumeImage
+          imageUrl={data.basicInfo.photoUrl}
+          name={data.basicInfo.name}
+        />
+        <BasicInfoSection data={data.basicInfo} />
+        <ExperienceSection
+          experiences={data.experience}
+          styles={{
+            underline: true,
+            border: false,
+            borderRadius: false,
+            shadow: false,
+          }}
+        />
+        <SkillsSection
+          styles={{
+            border: true,
+            borderRadius: true,
+            shadow: false,
+          }}
+          skills={data.skills}
+        />
+        <EducationSection
+          education={data.education}
+          styles={{
+            underline: true,
+            border: false,
+            borderRadius: false,
+            shadow: false,
+          }}
+        />
+        <LanguagesSection
+          styles={{
+            rate: true,
+            border: true,
+            borderRadius: true,
+            shadow: false,
+          }}
+          languages={data.languages}
+        />
+        {data.basicInfo.additionalLinks && (
+          <LinksSection links={data.basicInfo.additionalLinks} />
+        )}
+      </div>
+    </section>
   );
 };
 

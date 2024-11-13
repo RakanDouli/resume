@@ -1,8 +1,9 @@
 "use client"; // Add this line at the top of your file
-
+import { FaFileDownload } from "react-icons/fa";
 import { useRef } from "react";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
+import { Subtitle } from "./Text";
 interface PDFDownloadButtonProps {
   resumeData: string;
 }
@@ -26,11 +27,16 @@ const PDFDownloadButton: React.FC<PDFDownloadButtonProps> = ({
   };
 
   return (
-    <div>
-      <button onClick={handleDownload}>Download PDF</button>
+    <div className="flex flex-col gap-sm items-center ">
       <div ref={resumeRef}>
-        <h1>{resumeData}&apos;s Resume</h1>
+        <Subtitle>{resumeData}&apos;s Resume</Subtitle>
       </div>
+      <button
+        className="flex gap-sm border border-text-dark px-md py-sm rounded-lg shadow-lg hover:bg-dark hover:text-light transition-all"
+        onClick={handleDownload}
+      >
+        <FaFileDownload /> Download PDF
+      </button>
     </div>
   );
 };

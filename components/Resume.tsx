@@ -11,7 +11,7 @@ interface ResumeProps {
 
 const Resume: FC<ResumeProps> = ({ data }) => {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-800 py-20 sm:py-10 text-black dark:text-white">
+    <div className="min-h-screen sm:pt-2xl sm:pb-2xl pb-lg pt-md">
       {/* Theme Layout */}
       <ThemeLayout data={data} />
 
