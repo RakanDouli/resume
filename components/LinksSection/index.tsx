@@ -21,7 +21,7 @@ const LinksSection: FC<LinksSectionProps> = ({ links }) => {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline transition-all"
+              className="hover:text-primary transition-all  ease-in-out duration-300"
             >
               {link.label}
             </a>

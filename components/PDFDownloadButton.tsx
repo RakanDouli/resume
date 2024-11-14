@@ -32,7 +32,7 @@ const PDFDownloadButton: React.FC<PDFDownloadButtonProps> = ({
         <Subtitle>{resumeData}&apos;s Resume</Subtitle>
       </div>
       <button
-        className="flex gap-sm border border-text-dark px-md py-sm rounded-lg shadow-lg hover:bg-dark hover:text-light transition-all"
+        className="flex gap-sm border border-text-dark px-md py-sm rounded-lg shadow-lg hover:bg-dark hover:text-light  ease-in-out duration-300 transition-all"
         onClick={handleDownload}
       >
         <FaFileDownload /> Download PDF
