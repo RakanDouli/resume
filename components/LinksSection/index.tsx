@@ -2,6 +2,7 @@
 import { FC } from "react";
 import { Links } from "@/types/resume";
 import { FiLink } from "react-icons/fi";
+import { SectionTitle } from "../Text";
 interface LinksSectionProps {
   links: Links[];
 }
@@ -9,11 +10,11 @@ interface LinksSectionProps {
 const LinksSection: FC<LinksSectionProps> = ({ links }) => {
   return (
     <section>
-      <h2 className="text-2xl font-semibold flex items-center gap-4 text-gray-800 dark:text-white">
+      <SectionTitle className="flex items-center gap-sm ">
         <FiLink />
         Links
-      </h2>
-      <ul className="mt-4 flex items-center gap-8">
+      </SectionTitle>
+      <ul className="mt-sm flex items-center gap-md">
         {links.map((link, index) => (
           <li key={index}>
             <a

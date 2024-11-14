@@ -2,7 +2,7 @@
 import { FC } from "react";
 import { Skills } from "@/types/resume";
 import { FaTools } from "react-icons/fa";
-import { SectionTitle, Title } from "../Text";
+import { Paragraph, SectionTitle, Title } from "../Text";
 
 interface SkillsSectionProps {
   skills: Skills;
@@ -30,14 +30,14 @@ const SkillsSection: FC<SkillsSectionProps> = ({ skills, styles }) => {
       <div className="flex flex-wrap gap-sm">
         {skills.technical.map((skill, idx) => (
           <span key={idx} className={itemClasses}>
-            {skill}
+            <Paragraph>{skill}</Paragraph>
           </span>
         ))}
       </div>
       <div className="flex flex-wrap gap-sm">
         {skills.other.map((skill, idx) => (
           <span key={idx} className={itemClasses}>
-            {skill}
+            <Paragraph>{skill}</Paragraph>
           </span>
         ))}
       </div>
