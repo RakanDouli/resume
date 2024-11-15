@@ -52,18 +52,10 @@ export interface Skills {
   other: string[];
 }
 
-export enum LanguageLevel {
-  Beginner = 1, // 1 star
-  Intermediate = 2, // 2 stars
-  Advanced = 3, // 3 stars
-  Fluent = 4, // 4 stars
-  Native = 5, // 5 stars
-}
-
 // Language interface with level as the enum
 export interface Language {
   language: string;
-  level: LanguageLevel; // Numeric value with associated text
+  level: string; // Numeric value with associated text
 }
 
 export interface ResumeImage {

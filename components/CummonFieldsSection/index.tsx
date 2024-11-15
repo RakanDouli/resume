@@ -1,7 +1,7 @@
 "use client";
 import { FC, ReactNode } from "react";
 import { Title, Subtitle, Paragraph, SectionTitle } from "@/components/Text";
-
+import { MdKeyboardArrowRight } from "react-icons/md";
 interface SectionItem {
   title: string;
   subtitle?: string;
@@ -71,10 +71,11 @@ const CummonFieldsSection: FC<SectionProps> = ({
               </Paragraph>
             )}
             {item.details && (
-              <ul className="list-disc ml-6 mt-2 text-gray-700 dark:text-gray-300">
+              <ul className="list-none mt-2 text-gray-700 dark:text-gray-300">
                 {item.details.map((detail, idx) => (
-                  <li key={idx}>
-                    <Paragraph>{detail}</Paragraph>
+                  <li className=" flex gap-xs items-start" key={idx}>
+                    <MdKeyboardArrowRight className="my-1" />
+                    <Paragraph> {detail}</Paragraph>
                   </li>
                 ))}
               </ul>

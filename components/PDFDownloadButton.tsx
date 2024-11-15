@@ -1,6 +1,7 @@
 import { FaFileDownload } from "react-icons/fa";
-import html2pdf from "html2pdf.js";
+import { jsPDF } from "jspdf";
 import { Subtitle } from "./Text";
+import html2canvas from "html2canvas";
 
 interface PDFDownloadButtonProps {
   resumeTemplateRef: React.RefObject<HTMLDivElement>;
@@ -16,35 +17,40 @@ const PDFDownloadButton: React.FC<PDFDownloadButtonProps> = ({
       // Get the current height of the resume
       const resumeHeight = resumeTemplateRef.current.offsetHeight;
 
-      // Calculate extra height as 4% of the original height
+      // Calculate extra height (4% of the original height)
       const extraPadding = resumeHeight * 0.259;
-      console.log(extraPadding);
+
       // Total height for the PDF
       const totalHeight = resumeHeight + extraPadding;
-      console.log("totalHeight", totalHeight);
-      // Configure PDF options
+
+      // Use custom dimensions for width and height (e.g., A4 size is 595.28 x 841.89 px)
+      const customWidth = 976; // Custom width
+      const customHeight = totalHeight; // Calculated height
+
+      // Create a new jsPDF instance with custom dimensions
+      const pdf = new jsPDF("p", "px", [customWidth, customHeight]);
+
+      // Use html2canvas to render the HTML content as an image
       const options = {
-        margin: [0, 0, 0, 0], // Remove extra margin
-        filename: `${fileName}.pdf`,
-        image: { type: "png", quality: 1 },
-        html2canvas: {
-          scale: 2, // Higher quality rendering
-          useCORS: true, // Handle CORS for external images
-        },
-        jsPDF: {
-          unit: "px",
-          format: [976, totalHeight], // Add the calculated padding
-          orientation: "portrait",
-        },
+        scale: 2, // Higher scale for better quality
+        useCORS: true, // To allow external resources like images and fonts
       };
 
-      // Generate and save the PDF
-      html2pdf().from(resumeTemplateRef.current).set(options).save();
+      // Render the content of the resume as an image
+      html2canvas(resumeTemplateRef.current, options).then((canvas) => {
+        const imgData = canvas.toDataURL("image/png");
+
+        // Add the image to the PDF
+        pdf.addImage(imgData, "PNG", 10, 10, customWidth - 20, customHeight);
+
+        // Save the generated PDF
+        pdf.save(`${fileName}.pdf`);
+      });
     }
   };
 
   return (
-    <div className="flex flex-col gap-sm items-center ">
+    <div className="flex flex-col gap-sm items-center">
       <div>
         <Subtitle>{fileName}&apos;s Resume</Subtitle>
       </div>

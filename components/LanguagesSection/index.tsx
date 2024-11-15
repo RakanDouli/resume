@@ -4,6 +4,7 @@ import { Language } from "@/types/resume";
 import { Paragraph, SectionTitle, Subtitle } from "../Text";
 import { GrLanguage } from "react-icons/gr";
 import { GoStarFill } from "react-icons/go";
+
 interface LanguagesSectionProps {
   languages: Language[];
   styles: {
@@ -30,15 +31,18 @@ const LanguagesSection: FC<LanguagesSectionProps> = ({ languages, styles }) => {
     styles?.shadow ? "shadow-lg" : "",
     "px-md py-sm flex items-center gap-sm w-max",
   ].join(" ");
+
   return (
-    <section className="languages-section flex flex-col gap-md ">
-      <SectionTitle className="flex items-center gap-sm ">
+    <section className="languages-section flex flex-col gap-md">
+      <SectionTitle className="flex items-center gap-sm">
         <GrLanguage />
         Languages
       </SectionTitle>
-      <ul className="list-none flex flex items-center gap-sm flex-wrap">
+      <ul className="list-none flex items-center gap-sm flex-wrap">
         {languages.map((lang) => {
-          const level = levelMap[lang.level] || 0;
+          // Map the level string to a number, default to 0 if not found
+          const level = levelMap[lang.level] ?? 0;
+
           return (
             <li key={lang.language} className={itemClasses}>
               <span className="mb-xs">

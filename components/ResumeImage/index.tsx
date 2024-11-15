@@ -13,7 +13,7 @@ interface HeaderSectionProps {
   };
 }
 
-const HeaderSection: FC<HeaderSectionProps> = ({ name, imageUrl, styles }) => {
+const HeaderSection: FC<HeaderSectionProps> = ({ name, styles }) => {
   // console.log(imageUrl);
   const itemClasses = [
     styles?.border ? "border border-dark p-1" : "",
