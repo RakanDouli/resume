@@ -32,7 +32,7 @@ const PDFDownloadButton: React.FC<PDFDownloadButtonProps> = ({
 
       // Use html2canvas to render the HTML content as an image
       const options = {
-        scale: 2, // Higher scale for better quality
+        scale: 4, // Higher scale for better quality
         useCORS: true, // To allow external resources like images and fonts
       };
 
