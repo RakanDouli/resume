@@ -2,6 +2,7 @@ import { FaFileDownload } from "react-icons/fa";
 import { jsPDF } from "jspdf";
 import { Subtitle } from "./Text";
 import html2canvas from "html2canvas";
+import { useState } from "react";
 
 interface PDFDownloadButtonProps {
   resumeTemplateRef: React.RefObject<HTMLDivElement>;
@@ -12,8 +13,12 @@ const PDFDownloadButton: React.FC<PDFDownloadButtonProps> = ({
   resumeTemplateRef,
   fileName,
 }) => {
+  const [loading, setLoading] = useState(false); // State to manage the loading spinner
+
   const handleDownload = () => {
     if (resumeTemplateRef.current) {
+      setLoading(true); // Show the loading spinner
+
       // Get the current height of the resume
       const resumeHeight = resumeTemplateRef.current.offsetHeight;
 
@@ -32,7 +37,7 @@ const PDFDownloadButton: React.FC<PDFDownloadButtonProps> = ({
 
       // Use html2canvas to render the HTML content as an image
       const options = {
-        scale: 4, // Higher scale for better quality
+        scale: 3, // Higher scale for better quality
         useCORS: true, // To allow external resources like images and fonts
       };
 
@@ -45,6 +50,8 @@ const PDFDownloadButton: React.FC<PDFDownloadButtonProps> = ({
 
         // Save the generated PDF
         pdf.save(`${fileName}.pdf`);
+
+        setLoading(false); // Hide the loading spinner after PDF is generated
       });
     }
   };
@@ -58,6 +65,11 @@ const PDFDownloadButton: React.FC<PDFDownloadButtonProps> = ({
         className="flex gap-sm border border-text-dark px-md py-sm rounded-lg shadow-lg hover:bg-dark hover:text-light ease-in-out duration-300 transition-all"
         onClick={handleDownload}
       >
+        {loading && (
+          <span className="flex justify-center items-center ">
+            <div className="w-md h-md border-4 border-t-4 border-third border-solid rounded-full animate-spin border-t-secondary"></div>
+          </span>
+        )}
         <FaFileDownload /> Download PDF
       </button>
     </div>
