@@ -31,17 +31,19 @@ const LanguagesSection: FC<LanguagesSectionProps> = ({ languages, styles }) => {
     "px-md py-sm flex items-center gap-sm w-max",
   ].join(" ");
   return (
-    <section className="languages-section flex flex-col gap-sm ">
+    <section className="languages-section flex flex-col gap-md ">
       <SectionTitle className="flex items-center gap-sm ">
         <GrLanguage />
         Languages
       </SectionTitle>
-      <ul className="list-none flex items-center gap-sm flex-wrap">
+      <ul className="list-none flex flex items-center gap-sm flex-wrap">
         {languages.map((lang) => {
           const level = levelMap[lang.level] || 0;
           return (
             <li key={lang.language} className={itemClasses}>
-              <Subtitle>{lang.language}</Subtitle>
+              <span className="mb-xs">
+                <Subtitle>{lang.language}</Subtitle>
+              </span>
 
               {styles.rate ? (
                 <div className="flex items-center gap-xs">

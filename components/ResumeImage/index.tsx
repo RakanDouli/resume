@@ -16,19 +16,18 @@ interface HeaderSectionProps {
 const HeaderSection: FC<HeaderSectionProps> = ({ name, imageUrl, styles }) => {
   // console.log(imageUrl);
   const itemClasses = [
-    styles?.border ? "border border-dark" : "",
+    styles?.border ? "border border-dark p-1" : "",
     styles?.borderRadius ? "rounded-lg" : "",
     styles?.circle ? "rounded-full" : "",
     styles?.shadow ? "shadow-lg" : "",
-    " p-1 object-cover",
   ].join(" ");
   return (
-    <div className="flex-shrink-0 flex md:justify-start justify-center ">
+    <div className="flex-shrink-0 relative aspect-square flex md:justify-start justify-center">
       <Image
-        src={"/Screenshot 2024-11-07 at 20.11.34.png"}
+        src={"/profile.png"}
         alt={`${name} image`}
-        width={300}
-        height={300}
+        fill
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         className={itemClasses}
         priority
       />

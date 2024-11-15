@@ -1,38 +1,55 @@
-"use client"; // Add this line at the top of your file
 import { FaFileDownload } from "react-icons/fa";
-import { useRef } from "react";
-import jsPDF from "jspdf";
-import html2canvas from "html2canvas";
+import html2pdf from "html2pdf.js";
 import { Subtitle } from "./Text";
+
 interface PDFDownloadButtonProps {
-  resumeData: string;
+  resumeTemplateRef: React.RefObject<HTMLDivElement>;
+  fileName: string;
 }
 
 const PDFDownloadButton: React.FC<PDFDownloadButtonProps> = ({
-  resumeData,
+  resumeTemplateRef,
+  fileName,
 }) => {
-  const resumeRef = useRef<HTMLDivElement>(null);
-
   const handleDownload = () => {
-    if (resumeRef.current) {
-      html2canvas(resumeRef.current).then((canvas) => {
-        const pdf = new jsPDF();
+    if (resumeTemplateRef.current) {
+      // Get the current height of the resume
+      const resumeHeight = resumeTemplateRef.current.offsetHeight;
 
-        const imgData = canvas.toDataURL("image/jpeg");
-        pdf.addImage(imgData, "JPEG", 0, 0, canvas.width, canvas.height);
+      // Calculate extra height as 4% of the original height
+      const extraPadding = resumeHeight * 0.259;
+      console.log(extraPadding);
+      // Total height for the PDF
+      const totalHeight = resumeHeight + extraPadding;
+      console.log("totalHeight", totalHeight);
+      // Configure PDF options
+      const options = {
+        margin: [0, 0, 0, 0], // Remove extra margin
+        filename: `${fileName}.pdf`,
+        image: { type: "png", quality: 1 },
+        html2canvas: {
+          scale: 2, // Higher quality rendering
+          useCORS: true, // Handle CORS for external images
+        },
+        jsPDF: {
+          unit: "px",
+          format: [976, totalHeight], // Add the calculated padding
+          orientation: "portrait",
+        },
+      };
 
-        pdf.save(`${resumeData}-Resume.pdf`);
-      });
+      // Generate and save the PDF
+      html2pdf().from(resumeTemplateRef.current).set(options).save();
     }
   };
 
   return (
     <div className="flex flex-col gap-sm items-center ">
-      <div ref={resumeRef}>
-        <Subtitle>{resumeData}&apos;s Resume</Subtitle>
+      <div>
+        <Subtitle>{fileName}&apos;s Resume</Subtitle>
       </div>
       <button
-        className="flex gap-sm border border-text-dark px-md py-sm rounded-lg shadow-lg hover:bg-dark hover:text-light  ease-in-out duration-300 transition-all"
+        className="flex gap-sm border border-text-dark px-md py-sm rounded-lg shadow-lg hover:bg-dark hover:text-light ease-in-out duration-300 transition-all"
         onClick={handleDownload}
       >
         <FaFileDownload /> Download PDF

@@ -1,5 +1,5 @@
 "use client";
-import { FC, useState, useEffect, ComponentType } from "react";
+import { FC, useState, useEffect, ComponentType, RefObject } from "react";
 import Image from "next/image";
 import { ResumeData } from "@/types/resume";
 import { RiArrowDownWideLine, RiArrowUpWideLine } from "react-icons/ri";
@@ -7,6 +7,7 @@ import { Title } from "../Text";
 
 interface ResumeProps {
   data: ResumeData;
+  resumeTemplateRef?: RefObject<HTMLDivElement>;
 }
 
 const themeNames = ["Basic", "Classic", "Modern"];
@@ -19,7 +20,7 @@ const loadThemeComponent = (
   );
 };
 
-const ThemeLayout: FC<ResumeProps> = ({ data }) => {
+const ThemeLayout: FC<ResumeProps> = ({ data, resumeTemplateRef }) => {
   const [selectedTheme, setSelectedTheme] = useState<string>("Basic");
   const [ThemeComponent, setThemeComponent] =
     useState<ComponentType<ResumeProps> | null>(null);
@@ -75,6 +76,7 @@ const ThemeLayout: FC<ResumeProps> = ({ data }) => {
                   className={`w-24 h-24 rounded border-2 border-lightgray p-xs ${
                     selectedTheme === themeName ? "border-2 border-primary" : ""
                   }`}
+                  priority
                 />
                 <p className="text-center mt-2 capitalize">{themeName}</p>
               </div>
@@ -83,7 +85,10 @@ const ThemeLayout: FC<ResumeProps> = ({ data }) => {
         </div>
       </div>
 
-      <div className="bg-light rounded-md shadow-lg overflow-hidden">
+      <div
+        ref={resumeTemplateRef}
+        className="Resume-template bg-light rounded-md shadow-lg overflow-hidden"
+      >
         {loading ? (
           <div className="h-[80vh] w-full flex justify-center items-center">
             <div className="flex justify-center items-center h-40">

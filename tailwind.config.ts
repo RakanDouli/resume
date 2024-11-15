@@ -54,16 +54,6 @@ module.exports = {
           "clamp-2xl": ["clamp(36px, 5vw, 64px)", "64px"], // Large headers, hero sections
         },
       },
-      animation: {
-        pulse: "pulse 1.5s ease-in-out infinite",
-      },
-      keyframes: {
-        pulse: {
-          "0%": { backgroundColor: "#e0e0e0" },
-          "50%": { backgroundColor: "#f5f5f5" },
-          "100%": { backgroundColor: "#e0e0e0" },
-        },
-      },
     },
   },
   plugins: [],

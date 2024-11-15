@@ -16,7 +16,6 @@ const BasicInfoSection: FC<BasicInfoProps> = ({ data }) => (
       <ImLocation />
       {data.location}
     </Paragraph>
-
     <Paragraph className="flex gap-sm items-center hover:text-primary transition-all  ease-in-out duration-300">
       <ImPhone />
       <a target="_blank" href={`tel:${data.phone}`}>
@@ -32,9 +31,6 @@ const BasicInfoSection: FC<BasicInfoProps> = ({ data }) => (
         {data.whatsApp}
       </a>
     </Paragraph>
-
-    {/* Email link */}
-
     <Paragraph className="flex gap-sm items-center hover:text-primary transition-all  ease-in-out duration-300">
       <ImMail3 />
       <a target="_blank" href={`mailto:${data.email}`}>

@@ -1,6 +1,6 @@
-@import "~tailwindcss/base";
-@import "~tailwindcss/components";
-@import "~tailwindcss/utilities";
+@use "~tailwindcss/base" as tailwind-base;
+@use "~tailwindcss/components" as tailwind-components;
+@use "~tailwindcss/utilities" as tailwind-utilities;
 
-@import './variables';
-@import './base';
+@use './variables' as vars;
+@use './base' as custom-base;

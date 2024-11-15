@@ -14,16 +14,17 @@ const LinksSection: FC<LinksSectionProps> = ({ links }) => {
         <FiLink />
         Links
       </SectionTitle>
-      <ul className="mt-sm flex items-center gap-md">
+      <ul className="mt-sm flex flex-col gap-sm">
         {links.map((link, index) => (
-          <li key={index}>
+          <li key={index} className="flex flex-col gap-sm">
+            {link.label} :
             <a
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary transition-all  ease-in-out duration-300"
             >
-              {link.label}
+              {link.url}
             </a>
           </li>
         ))}

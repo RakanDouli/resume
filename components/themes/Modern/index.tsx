@@ -29,6 +29,7 @@ const Modern: FC<ResumeProps> = ({ data }) => {
               circle: true,
             }}
           />
+
           <BasicInfoSection data={data.basicInfo} />
           <SkillsSection
             styles={{

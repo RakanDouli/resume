@@ -8,7 +8,7 @@ interface SectionTitleProps {
 
 const SectionTitle: React.FC<SectionTitleProps> = ({ children, className }) => {
   return (
-    <h1 className={`text-clamp-2xl font-bold pb-xs leading-snug ${className}`}>
+    <h1 className={`text-clamp-2xl font-bold leading-snug ${className}`}>
       {children}
     </h1>
   );
@@ -22,7 +22,7 @@ interface TitleProps {
 
 const Title: React.FC<TitleProps> = ({ children, className }) => {
   return (
-    <h2 className={`text-clamp-xl font-bold pb-xs leading-snug ${className}`}>
+    <h2 className={`text-clamp-xl font-bold leading-snug ${className}`}>
       {children}
     </h2>
   );
@@ -36,9 +36,7 @@ interface SubtitleProps {
 
 const Subtitle: React.FC<SubtitleProps> = ({ children, className }) => {
   return (
-    <h3
-      className={`text-clamp-md font-semibold pb-xs leading-normal ${className}`}
-    >
+    <h3 className={`text-clamp-md font-semibold leading-normal ${className}`}>
       {children}
     </h3>
   );
@@ -52,7 +50,7 @@ interface ParagraphProps {
 
 const Paragraph: React.FC<ParagraphProps> = ({ children, className }) => {
   return (
-    <p className={`text-clamp-sm font-normal pb-xs leading-snug ${className}`}>
+    <p className={`text-clamp-sm font-normal leading-snug ${className}`}>
       {children}
     </p>
   );

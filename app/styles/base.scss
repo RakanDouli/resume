@@ -1,8 +1,9 @@
 
-@import "./variables.scss";
+@use "./variables.scss" as vars;
 
 * {
   box-sizing: border-box;
+
   padding: 0;
   margin: 0;
   &:before,
@@ -13,6 +14,8 @@
   }
 }
 html {
+  padding: 0;
+  margin: 0;
   line-height: 1;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -40,30 +43,28 @@ body {
   padding: 0;
   margin: 0;
   line-height: inherit;
-  background-color: $body-bg;
+  background-color: vars.$body-bg;
   margin:0 auto;
 }
-
-
 
 .container {
 
   margin: 0 auto;
   width: 100%;
   overflow: hidden;
-  @media only screen and (min-width: $screen-sm) {
+  @media only screen and (min-width: vars.$screen-sm) {
     max-width: 540px;
   }
 
-  @media only screen and (min-width: $screen-md) {
+  @media only screen and (min-width: vars.$screen-md) {
     max-width: 720px;
   }
 
-  @media only screen and (min-width: $screen-lg) {
+  @media only screen and (min-width: vars.$screen-lg) {
     max-width:  976px ;
   }
 
-  @media only screen and (min-width: $screen-xl) {
+  @media only screen and (min-width: vars.$screen-xl) {
     max-width:1140px;
   }
 }
@@ -71,7 +72,7 @@ body {
 
 .error-message{
   font-style: italic;
-  color: var($error-text);
+  color: var(--error-text);
   border-radius: var(--spacing-sm);
   width: 100%;
   display: block;
@@ -80,7 +81,7 @@ body {
 }
 .success-message{
   font-style: italic;
-  color: var($success-text);
+  color: var(--success-text);
   border-radius: var(--spacing-sm);
   width: 100%;
   display: block;

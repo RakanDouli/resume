@@ -2,7 +2,7 @@
 import { FC } from "react";
 import { Skills } from "@/types/resume";
 import { FaTools } from "react-icons/fa";
-import { Paragraph, SectionTitle, Title } from "../Text";
+import { Paragraph, SectionTitle } from "../Text";
 
 interface SkillsSectionProps {
   skills: Skills;
@@ -21,7 +21,7 @@ const SkillsSection: FC<SkillsSectionProps> = ({ skills, styles }) => {
     "px-md py-sm",
   ].join(" ");
   return (
-    <section className=" flex flex-col gap-sm">
+    <section className=" flex flex-col gap-md">
       <SectionTitle className="flex items-center gap-sm ">
         <FaTools />
         Skills
@@ -29,14 +29,26 @@ const SkillsSection: FC<SkillsSectionProps> = ({ skills, styles }) => {
 
       <div className="flex flex-wrap gap-sm">
         {skills.technical.map((skill, idx) => (
-          <span key={idx} className={itemClasses}>
+          <span
+            key={idx}
+            className={itemClasses}
+            style={{
+              boxShadow: styles?.shadow ? "0 4px 6px rgba(0, 0, 0, 0.1)" : "",
+            }}
+          >
             <Paragraph>{skill}</Paragraph>
           </span>
         ))}
       </div>
       <div className="flex flex-wrap gap-sm">
         {skills.other.map((skill, idx) => (
-          <span key={idx} className={itemClasses}>
+          <span
+            key={idx}
+            className={itemClasses}
+            style={{
+              boxShadow: styles?.shadow ? "0 4px 6px rgba(0, 0, 0, 0.1)" : "",
+            }}
+          >
             <Paragraph>{skill}</Paragraph>
           </span>
         ))}

@@ -1,6 +1,5 @@
 "use client";
-
-import { FC } from "react";
+import { FC, useRef } from "react";
 import { ResumeData } from "@/types/resume";
 import PDFDownloadButton from "./PDFDownloadButton";
 import ThemeLayout from "@/components/ThemeLayout";
@@ -10,14 +9,17 @@ interface ResumeProps {
 }
 
 const Resume: FC<ResumeProps> = ({ data }) => {
+  // Reference for the specific Resume-template section
+  const resumeTemplateRef = useRef<HTMLDivElement>(null);
+
   return (
     <div className="min-h-screen sm:pt-2xl sm:pb-2xl pb-lg pt-md">
-      {/* Theme Layout */}
-      <ThemeLayout data={data} />
-
-      {/* PDF Download Button */}
+      <ThemeLayout data={data} resumeTemplateRef={resumeTemplateRef} />
       <div className="text-center mt-8">
-        <PDFDownloadButton resumeData={data.basicInfo.name} />
+        <PDFDownloadButton
+          resumeTemplateRef={resumeTemplateRef}
+          fileName={`${data.basicInfo.name}`}
+        />
       </div>
     </div>
   );
