@@ -41,7 +41,7 @@ const PDFDownloadButton: React.FC<PDFDownloadButtonProps> = ({
         const imgData = canvas.toDataURL("image/png");
 
         // Add the image to the PDF
-        pdf.addImage(imgData, "PNG", 10, 10, customWidth - 20, customHeight);
+        pdf.addImage(imgData, "PNG", 0, 0, customWidth, customHeight);
 
         // Save the generated PDF
         pdf.save(`${fileName}.pdf`);
