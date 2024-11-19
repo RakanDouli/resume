@@ -57,7 +57,7 @@ const PDFDownloadButton: React.FC<PDFDownloadButtonProps> = ({
   };
 
   return (
-    <div className="flex flex-col gap-sm items-center">
+    <div className="hidden lg:flex flex-col gap-sm items-center ">
       <div>
         <Subtitle>{fileName}&apos;s Resume</Subtitle>
       </div>

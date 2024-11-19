@@ -33,18 +33,18 @@ const Modern: FC<ResumeProps> = ({ data }) => {
           <BasicInfoSection data={data.basicInfo} />
           <SkillsSection
             styles={{
-              border: false,
+              border: true,
               borderRadius: true,
-              shadow: true,
+              shadow: false,
             }}
             skills={data.skills}
           />
           <LanguagesSection
             styles={{
               rate: true,
-              border: false,
+              border: true,
               borderRadius: true,
-              shadow: true,
+              shadow: false,
             }}
             languages={data.languages}
           />
@@ -58,18 +58,18 @@ const Modern: FC<ResumeProps> = ({ data }) => {
             experiences={data.experience}
             styles={{
               underline: false,
-              border: false,
+              border: true,
               borderRadius: true,
-              shadow: true,
+              shadow: false,
             }}
           />
           <EducationSection
             education={data.education}
             styles={{
               underline: false,
-              border: false,
+              border: true,
               borderRadius: true,
-              shadow: true,
+              shadow: false,
             }}
           />
         </div>

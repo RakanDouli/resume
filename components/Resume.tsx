@@ -13,7 +13,7 @@ const Resume: FC<ResumeProps> = ({ data }) => {
   const resumeTemplateRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="min-h-screen sm:pt-2xl sm:pb-2xl pb-lg pt-md">
+    <div className="min-h-screen sm:pt-2xl sm:pb-2xl pb-lg pt-md md:mx-0 mx-md">
       <ThemeLayout data={data} resumeTemplateRef={resumeTemplateRef} />
       <div className="text-center mt-8">
         <PDFDownloadButton

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ResumeData } from "@/types/resume";
 import { RiArrowDownWideLine, RiArrowUpWideLine } from "react-icons/ri";
 import { Title } from "../Text";
+import Mobile from "@/components/themes/Mobile";
 
 interface ResumeProps {
   data: ResumeData;
@@ -26,11 +27,14 @@ const ThemeLayout: FC<ResumeProps> = ({ data, resumeTemplateRef }) => {
     useState<ComponentType<ResumeProps> | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [open, setOpen] = useState<boolean>(true);
+
   useEffect(() => {
     setLoading(true);
+
     loadThemeComponent(selectedTheme)
       .then((LoadedComponent) => {
         setThemeComponent(() => LoadedComponent);
+
         setLoading(false);
       })
       .catch((error) => {
@@ -41,7 +45,7 @@ const ThemeLayout: FC<ResumeProps> = ({ data, resumeTemplateRef }) => {
 
   return (
     <section className="container">
-      <div className="theme-switcher overflow-hidden relative flex flex-col mb-md shadow-lg w-full bg-light rounded-lg">
+      <div className="theme-switcher overflow-hidden relative hidden lg:flex flex-col mb-md shadow-lg w-full bg-light rounded-lg">
         <span
           className="flex hover:bg-primary hover:text-light ease-in-out duration-300 transition-all gap-sm p-sm items-center justify-center cursor-pointer"
           onClick={() => {
@@ -50,7 +54,6 @@ const ThemeLayout: FC<ResumeProps> = ({ data, resumeTemplateRef }) => {
         >
           <Title className="text-center">Select Theme</Title>
           <span className="text-xl">
-            {" "}
             {open ? <RiArrowUpWideLine /> : <RiArrowDownWideLine />}
           </span>
         </span>
@@ -84,7 +87,6 @@ const ThemeLayout: FC<ResumeProps> = ({ data, resumeTemplateRef }) => {
           </span>
         </div>
       </div>
-
       <div
         ref={resumeTemplateRef}
         className="Resume-template bg-light rounded-md shadow-lg overflow-hidden"
@@ -96,7 +98,16 @@ const ThemeLayout: FC<ResumeProps> = ({ data, resumeTemplateRef }) => {
             </div>
           </div>
         ) : (
-          ThemeComponent && <ThemeComponent data={data} />
+          ThemeComponent && (
+            <div>
+              <span className="hidden lg:block">
+                <ThemeComponent data={data} />
+              </span>
+              <span className="lg:hidden block">
+                <Mobile data={data} />
+              </span>
+            </div>
+          )
         )}
       </div>
     </section>

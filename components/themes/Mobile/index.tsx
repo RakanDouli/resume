@@ -18,9 +18,9 @@ const Basic: FC<ResumeProps> = ({ data }) => {
   return (
     <div>
       {" "}
-      <div className="basic_theme flex flex-col gap-lg pt-xl pb-2xl px-xl ">
-        <div className="flex items-center flex-row gap-lg ">
-          <span className="w-[33%]">
+      <div className="Mobile_theme flex flex-col gap-lg pt-xl pb-2xl sm:px-xl px-md  ">
+        <div className="flex items-center flex-col md:flex-row gap-lg ">
+          <span className="md:w-[33%] w-full">
             <ResumeImage
               imageUrl={data.basicInfo.photoUrl}
               name={data.basicInfo.name}
@@ -33,7 +33,7 @@ const Basic: FC<ResumeProps> = ({ data }) => {
             />
           </span>
 
-          <div className="flex flex-col gap-sm w-[67%]">
+          <div className="flex flex-col gap-sm md:w-[67%] w-full">
             <BasicInfoSection data={data.basicInfo} />
             <ProfileText data={data.basicInfo} />
           </div>
