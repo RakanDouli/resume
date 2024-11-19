@@ -34,9 +34,9 @@
       },
       "type": "",
       "details": [
-        "Developed and maintained Vue.js and Laravel applications for internal tools.",
-        "Troubleshot bugs and implemented features to enhance application functionality.",
-        "Improved user experience by optimizing the shop app, resulting in a more streamlined user interface and experience."
+        "Developed and maintained internal management applications using Vue.js and Laravel in a headless setup to ensure flexibility and decoupled architecture.",
+        "Implemented new features and resolved bugs for internal tools, enhancing user experience and improving internal processes.",
+        "Enhanced the functionality of the shop app, optimizing it for better user experience through API-driven updates and decoupled front and backend components."
       ]
     },
     {
@@ -49,8 +49,9 @@
       },
       "type": "",
       "details": [
-        "Developed new features and resolved bugs in multiple web applications using React, Node.js, and GraphQL, significantly improving app functionality and user experience.",
-        "Conducted load testing on the database gateway to optimize app performance, leading to faster data retrieval and improved resource allocation."
+        "Developed new features and fixed bugs for multiple web applications in a headless environment, using React, Node.js, and GraphQL for API-driven content management.",
+        "Implemented load tests on the database gateway with JavaScript to optimize performance, resulting in faster data retrieval and resource efficiency.",
+        "Focused on improving the decoupled data flow, reducing load times by 30% and enhancing the scalability of front-end components."
       ]
     },
     {
@@ -63,10 +64,10 @@
       },
       "type": "",
       "details": [
-        "Built and styled components with React/Next.js to improve website functionality and user experience in a headless CMS environment.",
-        "Created and managed Contentful CMS components and used GraphQL to enhance data management and retrieval speed.",
-        "Performed web and A/B testing using Google Optimize and Sitespect, increasing conversion rates and overall website performance.",
-        "Designed HTML email templates in Mandrillapp, resulting in improved customer engagement and satisfaction."
+        "Built and styled API-driven, reusable components in a headless architecture using React/Next.js, enhancing scalability and flexibility.",
+        "Managed content integration using Contentful CMS and GraphQL for clients like Cookware-Co, Spelt, and Van Nes + Plaisier, optimizing frontend data delivery and performance.",
+        "Conducted A/B testing for Etos, Burger King (BK), and Cookware-Co using Google Optimize and -Sitespect, achieving significant engagement and conversion improvements.",
+        "Designed HTML email templates for Vodafone Netherlands with Mandrillapp, boosting customer engagement and communication effectiveness."
       ]
     },
     {
