@@ -1,0 +1,256 @@
+{
+  "basicInfo": {
+    "fieldTitle": "Basic Info",
+    "name": "Rakan Douli",
+    "location": "Utrecht, Netherlands",
+    "phone": "+31636084426",
+    "whatsApp": "+31636084426",
+    "email": "rakandouli@gmail.com",
+    "dateOfBirth": "22-04-1987",
+    "drivingLicense": "Available",
+    "drivingLicenseType": "Standard",
+    "photoUrl": "./Screenshot 2024-11-07 at 20.11.34.png",
+    "title": "Web Developer",
+    "summary": "Specializing in Next.js, React, and Node.js with a foundation in business development. Experienced in building tools, optimizing user experience, and improving application performance at Fiber Nederland, Mprise, and Direct Impact. Skilled in API-driven development, SEO, and A/B testing. Known for adaptability and teamwork from international work experience.",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/rakandouli/"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/rakandouli/"
+      }
+    ]
+  },
+  "experiences": {
+    "fieldTitle": "Experience",
+    "items": [
+      {
+        "title": "Full Stack Developer",
+        "organization": "Fiber Nederland",
+        "location": "Almere, The Netherlands",
+        "duration": {
+          "start": "January 2024",
+          "end": "Present"
+        },
+        "details": [
+          "Developed and maintained internal management applications using Vue.js and Laravel in a headless setup to ensure flexibility and decoupled architecture.",
+          "Implemented new features and resolved bugs for internal tools, enhancing user experience and improving internal processes.",
+          "Enhanced the functionality of the shop app, optimizing it for better user experience through API-driven updates and decoupled front and backend components."
+        ]
+      },
+      {
+        "title": "Full Stack Developer",
+        "organization": "Mprise",
+        "location": "Veenendaal, The Netherlands",
+        "duration": {
+          "start": "August 2022",
+          "end": "September 2023"
+        },
+        "details": [
+          "Developed new features and fixed bugs for multiple web applications in a headless environment, using React, Node.js, and GraphQL for API-driven content management.",
+          "Implemented load tests on the database gateway with JavaScript to optimize performance, resulting in faster data retrieval and resource efficiency.",
+          "Focused on improving the decoupled data flow, reducing load times by 30% and enhancing the scalability of front-end components."
+        ]
+      },
+      {
+        "title": "Full Stack Developer",
+        "organization": "Direct Impact",
+        "location": "Utrecht, The Netherlands",
+        "duration": {
+          "start": "October 2021",
+          "end": "June 2022"
+        },
+        "details": [
+          "Built and styled API-driven, reusable components in a headless architecture using React/Next.js, enhancing scalability and flexibility.",
+          "Managed content integration using Contentful CMS and GraphQL for clients like Cookware-Co, Spelt, and Van Nes + Plaisier, optimizing frontend data delivery and performance.",
+          "Conducted A/B testing for Etos, Burger King (BK), and Cookware-Co using Google Optimize and Sitespect, achieving significant engagement and conversion improvements.",
+          "Designed HTML email templates for Vodafone Netherlands with Mandrillapp, boosting customer engagement and communication effectiveness."
+        ]
+      },
+      {
+        "title": "Freelance Web Developer",
+        "organization": "808-Studio",
+        "location": "Utrecht, The Netherlands",
+        "duration": {
+          "start": "December 2020",
+          "end": "Present"
+        },
+        "details": [
+          "Developed custom WordPress themes using LESS and Vanilla JavaScript/jQuery for enhanced front-end functionality.",
+          "Increased site visibility through SEO improvements, leading to better search rankings and organic traffic.",
+          "Improved overall website performance, contributing to a seamless user experience."
+        ]
+      },
+      {
+        "title": "Sales Prompter",
+        "organization": "Zara",
+        "location": "Utrecht, The Netherlands",
+        "duration": {
+          "start": "January 2017",
+          "end": "January 2018"
+        },
+        "details": [
+          "Provided exceptional customer service and utilized persuasive communication skills to drive sales and promote products."
+        ]
+      },
+      {
+        "title": "Graphic Designer & Translator",
+        "organization": "Gökkuşağı",
+        "location": "Istanbul, Turkey",
+        "duration": {
+          "start": "January 2015",
+          "end": "July 2015"
+        },
+        "details": [
+          "Designed visual materials such as posters, flyers, and brochures.",
+          "Created an Arabic-language Facebook page, managing translations and content for increased engagement."
+        ]
+      },
+      {
+        "title": "Logistics Employee",
+        "organization": "Target Med Int.",
+        "location": "Jordan",
+        "duration": {
+          "start": "May 2014",
+          "end": "October 2014"
+        },
+        "details": [
+          "Oversaw logistics and managed exports to Iraq, ensuring efficient and timely deliveries."
+        ]
+      },
+      {
+        "title": "Account Manager",
+        "organization": "United Mining Industries",
+        "location": "Jordan",
+        "duration": {
+          "start": "January 2013",
+          "end": "May 2014"
+        },
+        "details": [
+          "Managed over 50 customer accounts, addressing payment and invoicing issues and maintaining positive client relations.",
+          "Used Sage accounting software to streamline inventory management, boosting team productivity by 50%.",
+          "Created monthly sales reports for regional offices, improving insights into sales performance."
+        ]
+      },
+      {
+        "title": "Sales Promoter",
+        "organization": "TOSHIBA",
+        "location": "Amman, Jordan",
+        "duration": {
+          "start": "January 2012",
+          "end": "December 2012"
+        },
+        "details": [
+          "Managed the Toshiba television section, providing product expertise to increase sales.",
+          "Recognized as the Best TV Sales Promoter for outstanding sales performance."
+        ]
+      }
+    ]
+  },
+  "education": {
+    "fieldTitle": "Education",
+    "items": [
+      {
+        "title": "Full Stack JS Developer Course",
+        "organization": "Codaisseur",
+        "location": "Amsterdam, Netherlands",
+        "duration": {
+          "start": "April 2021",
+          "end": "August 2021"
+        },
+        "type": "Certificate",
+        "details": []
+      },
+      {
+        "title": "Netherlands Language Course",
+        "organization": "Babel Language Academy",
+        "location": "Utrecht, Netherlands",
+        "duration": {
+          "start": "February 2020",
+          "end": "November 2020"
+        },
+        "type": "Certificate",
+        "details": []
+      },
+      {
+        "title": "Bachelor of Business Administration",
+        "organization": "Arab International University",
+        "location": "Damascus, Syria",
+        "duration": {
+          "start": "January 2007",
+          "end": "January 2011"
+        },
+        "type": "Bachelor's",
+        "details": []
+      },
+      {
+        "title": "Business Administration",
+        "organization": "Syrian Enterprise and Business Center",
+        "location": "Damascus, Syria",
+        "duration": {
+          "start": "January 2007",
+          "end": "January 2008"
+        },
+        "type": "Diploma",
+        "details": []
+      }
+    ]
+  },
+  "skills": {
+    "fieldTitle": "Skills",
+    "technical": [
+      "HTML",
+      "JavaScript",
+      "React.js",
+      "Next.js",
+      "Vue.js",
+      "GraphQL",
+      "Headless CMS",
+      "Laravel",
+      "Node.js",
+      "CSS / LESS / SCSS",
+      "tailwind",
+      "API Development",
+      "Google Optimize",
+      "Data Management",
+      "Testing / Troubleshooting",
+      "WordPress",
+      "Vercel",
+      "Azure DB",
+      "Firebase DB",
+      "Supabase DB",
+      "SQL",
+      "Digital Ocean",
+      "Contentful (CMS)",
+      "Builder.io (CMS)",
+      "Strapi (CMS)"
+    ],
+    "other": [
+      "Teaching",
+      "User Experience",
+      "Sales",
+      "Management",
+      "Painting",
+      "Cooking"
+    ]
+  },
+  "languages": {
+    "fieldTitle": "Languages",
+    "list": [
+      {
+        "language": "Arabic",
+        "level": "Native"
+      },
+      {
+        "language": "English",
+        "level": "Advanced"
+      },
+      {
+        "language": "Dutch",
+        "level": "Intermediate"
+      }
+    ]
+  }
+}

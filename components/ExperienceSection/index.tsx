@@ -4,7 +4,7 @@ import { Experience } from "@/types/resume";
 import CummonFieldsSection from "@/components/CummonFieldsSection";
 
 interface ExperienceSectionProps {
-  experiences: Experience[];
+  experiences: Experience; // Updated to expect a single Experience object
   styles?: {
     underline?: boolean;
     border?: boolean;
@@ -16,19 +16,22 @@ interface ExperienceSectionProps {
 const ExperienceSection: FC<ExperienceSectionProps> = ({
   experiences,
   styles,
-}) => (
-  <CummonFieldsSection
-    title="Experience"
-    icon={<FaBriefcase />}
-    items={experiences.map((exp) => ({
-      title: exp.title,
-      subtitle: exp.organization,
-      duration: exp.duration,
-      location: exp.location,
-      details: exp.details,
-    }))}
-    styles={styles}
-  />
-);
+}) => {
+  console.log(experiences);
+  return (
+    <CummonFieldsSection
+      title={experiences?.fieldTitle}
+      icon={<FaBriefcase />}
+      items={experiences?.items.map((exp) => ({
+        title: exp.title,
+        subtitle: exp.subtitle,
+        duration: exp.duration,
+        location: exp.location,
+        details: exp.details,
+      }))}
+      styles={styles}
+    />
+  );
+};
 
 export default ExperienceSection;

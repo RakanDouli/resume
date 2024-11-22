@@ -1,12 +1,12 @@
 "use client";
 import { FC } from "react";
-import { Language } from "@/types/resume";
+import { Languages } from "@/types/resume"; // Import updated type
 import { Paragraph, SectionTitle, Subtitle } from "../Text";
 import { GrLanguage } from "react-icons/gr";
 import { GoStarFill } from "react-icons/go";
 
 interface LanguagesSectionProps {
-  languages: Language[];
+  languages: Languages; // Updated type
   styles: {
     rate?: boolean;
     border?: boolean;
@@ -15,7 +15,7 @@ interface LanguagesSectionProps {
   };
 }
 
-// Mapping the language level strings to numerical values (adjust as necessary)
+// Mapping the language level strings to numerical values
 const levelMap: { [key: string]: number } = {
   Native: 5,
   Advanced: 4,
@@ -36,12 +36,11 @@ const LanguagesSection: FC<LanguagesSectionProps> = ({ languages, styles }) => {
     <section className="languages-section flex flex-col gap-md">
       <SectionTitle className="flex items-center gap-sm">
         <GrLanguage />
-        Languages
+        {languages.fieldTitle}
       </SectionTitle>
       <ul className="list-none flex items-center gap-sm flex-wrap">
-        {languages.map((lang) => {
-          // Map the level string to a number, default to 0 if not found
-          const level = levelMap[lang.level] ?? 0;
+        {languages.list.map((lang) => {
+          const level = levelMap[lang.level] ?? 0; // Map level string to number
 
           return (
             <li key={lang.language} className={itemClasses}>

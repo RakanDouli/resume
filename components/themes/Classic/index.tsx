@@ -55,7 +55,7 @@ const Classic: FC<ResumeProps> = ({ data }) => {
         </div>
         <div className="flex flex-col gap-lg w-[63%] sm:px-xl px-md ">
           <ExperienceSection
-            experiences={data.experience}
+            experiences={data.experiences}
             styles={{
               underline: true,
               border: false,

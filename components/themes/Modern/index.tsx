@@ -55,7 +55,7 @@ const Modern: FC<ResumeProps> = ({ data }) => {
         <div className="flex flex-col gap-md w-[63%] sm:pt-xl pt-md pb-2xl sm:px-xl px-md ">
           <ProfileText data={data.basicInfo} />
           <ExperienceSection
-            experiences={data.experience}
+            experiences={data.experiences}
             styles={{
               underline: false,
               border: true,

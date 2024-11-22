@@ -1,0 +1,256 @@
+{
+    "basicInfo": {
+        "fieldTitle": "Basisinformatie",
+        "name": "Rakan Douli",
+        "location": "Utrecht, Nederland",
+        "phone": "+31636084426",
+        "whatsApp": "+31636084426",
+        "email": "rakandouli@gmail.com",
+        "dateOfBirth": "22-04-1987",
+        "drivingLicense": "Beschikbaar",
+        "drivingLicenseType": "Standaard",
+        "photoUrl": "./Screenshot 2024-11-07 at 20.11.34.png",
+        "title": "Webontwikkelaar",
+        "summary": "Gespecialiseerd in Next.js, React en Node.js met een achtergrond in bedrijfsontwikkeling. Ervaren in het bouwen van tools, het optimaliseren van gebruikerservaringen en het verbeteren van applicatieprestaties bij Fiber Nederland, Mprise en Direct Impact. Vaardig in API-gestuurde ontwikkeling, SEO en A/B-testen. Bekend om aanpassingsvermogen en teamwork vanuit internationale werkervaring.",
+        "links": [
+            {
+                "label": "GitHub",
+                "url": "https://github.com/rakandouli/"
+            },
+            {
+                "label": "LinkedIn",
+                "url": "https://www.linkedin.com/in/rakandouli/"
+            }
+        ]
+    },
+    "experiences": {
+        "fieldTitle": "Ervaring",
+        "items": [
+            {
+                "title": "Full Stack Ontwikkelaar",
+                "organization": "Fiber Nederland",
+                "location": "Almere, Nederland",
+                "duration": {
+                    "start": "Januari 2024",
+                    "end": "Heden"
+                },
+                "details": [
+                    "Ontwikkelde en onderhield interne managementapplicaties met Vue.js en Laravel in een headless setup om flexibiliteit en gedecoupeerde architectuur te waarborgen.",
+                    "Implementeerde nieuwe functies en loste bugs op voor interne tools, waardoor de gebruikerservaring werd verbeterd en interne processen efficiënter werden.",
+                    "Versterkte de functionaliteit van de shop-app, optimaliseerde deze voor een betere gebruikerservaring door middel van API-gestuurde updates en gedecoupeerde front- en back-endcomponenten."
+                ]
+            },
+            {
+                "title": "Full Stack Ontwikkelaar",
+                "organization": "Mprise",
+                "location": "Veenendaal, Nederland",
+                "duration": {
+                    "start": "Augustus 2022",
+                    "end": "September 2023"
+                },
+                "details": [
+                    "Ontwikkelde nieuwe functies en loste bugs op voor meerdere webapplicaties in een headless omgeving, gebruikmakend van React, Node.js en GraphQL voor API-gestuurde contentbeheer.",
+                    "Implementeerde loadtests op de databasegateway met JavaScript om de prestaties te optimaliseren, wat resulteerde in snellere gegevensopvraging en efficiënt gebruik van middelen.",
+                    "Richtte zich op het verbeteren van de gedecoupeerde gegevensstroom, waardoor de laadtijden met 30% werden verminderd en de schaalbaarheid van front-endcomponenten werd verbeterd."
+                ]
+            },
+            {
+                "title": "Full Stack Ontwikkelaar",
+                "organization": "Direct Impact",
+                "location": "Utrecht, Nederland",
+                "duration": {
+                    "start": "Oktober 2021",
+                    "end": "Juni 2022"
+                },
+                "details": [
+                    "Bouwde en styled API-gedreven, herbruikbare componenten in een headless architectuur met React/Next.js, waardoor de schaalbaarheid en flexibiliteit werden vergroot.",
+                    "Beheerde de contentintegratie met Contentful CMS en GraphQL voor klanten zoals Cookware-Co, Spelt, en Van Nes + Plaisier, en optimaliseerde de frontend gegevenslevering en prestaties.",
+                    "Voerde A/B-testen uit voor Etos, Burger King (BK), en Cookware-Co met Google Optimize en Sitespect, wat resulteerde in aanzienlijke verbeteringen in betrokkenheid en conversies.",
+                    "Ontwierp HTML e-mailtemplates voor Vodafone Nederland met Mandrillapp, wat de klantbetrokkenheid en communicatie-effectiviteit verhoogde."
+                ]
+            },
+            {
+                "title": "Freelance Webontwikkelaar",
+                "organization": "808-Studio",
+                "location": "Utrecht, Nederland",
+                "duration": {
+                    "start": "December 2020",
+                    "end": "Heden"
+                },
+                "details": [
+                    "Ontwikkelde op maat gemaakte WordPress-thema's met LESS en Vanilla JavaScript/jQuery voor verbeterde front-endfunctionaliteit.",
+                    "Verhoogde de zichtbaarheid van websites door SEO-verbeteringen, wat leidde tot betere zoekresultaten en organisch verkeer.",
+                    "Verbeterde de algehele websiteprestaties, wat bijdroeg aan een naadloze gebruikerservaring."
+                ]
+            },
+            {
+                "title": "Verkoop Promotor",
+                "organization": "Zara",
+                "location": "Utrecht, Nederland",
+                "duration": {
+                    "start": "Januari 2017",
+                    "end": "Januari 2018"
+                },
+                "details": [
+                    "Bood uitzonderlijke klantenservice en gebruikte overtuigende communicatievaardigheden om de verkoop te stimuleren en producten te promoten."
+                ]
+            },
+            {
+                "title": "Grafisch Ontwerper & Vertaler",
+                "organization": "Gökkuşağı",
+                "location": "Istanbul, Turkije",
+                "duration": {
+                    "start": "Januari 2015",
+                    "end": "Juli 2015"
+                },
+                "details": [
+                    "Ontwierp visuele materialen zoals posters, flyers en brochures.",
+                    "Creëerde een Arabisch-taalige Facebook-pagina, beheerde vertalingen en content voor verhoogde betrokkenheid."
+                ]
+            },
+            {
+                "title": "Logistiek Medewerker",
+                "organization": "Target Med Int.",
+                "location": "Jordanië",
+                "duration": {
+                    "start": "Mei 2014",
+                    "end": "Oktober 2014"
+                },
+                "details": [
+                    "Beheerde logistiek en export naar Irak, zorgde voor efficiënte en tijdige leveringen."
+                ]
+            },
+            {
+                "title": "Accountmanager",
+                "organization": "United Mining Industries",
+                "location": "Jordanië",
+                "duration": {
+                    "start": "Januari 2013",
+                    "end": "Mei 2014"
+                },
+                "details": [
+                    "Beheerde meer dan 50 klantaccounts, loste betalings- en factureringsproblemen op en onderhoudde positieve klantrelaties.",
+                    "Gebruikte Sage accountingsoftware om voorraadbeheer te stroomlijnen, wat de productiviteit van het team met 50% verhoogde.",
+                    "Stelde maandelijkse verkooprapporten op voor regionale kantoren, wat de inzichten in de verkoopprestaties verbeterde."
+                ]
+            },
+            {
+                "title": "Verkoop Promotor",
+                "organization": "TOSHIBA",
+                "location": "Amman, Jordanië",
+                "duration": {
+                    "start": "Januari 2012",
+                    "end": "December 2012"
+                },
+                "details": [
+                    "Beheerde de Toshiba televisieafdeling, bood productkennis om de verkoop te verhogen.",
+                    "Werd erkend als de Beste TV Verkoop Promotor voor uitstekende verkoopprestaties."
+                ]
+            }
+        ]
+    },
+    "education": {
+        "fieldTitle": "Opleiding",
+        "items": [
+            {
+                "title": "Full Stack JS Ontwikkelaar Cursus",
+                "organization": "Codaisseur",
+                "location": "Amsterdam, Nederland",
+                "duration": {
+                    "start": "April 2021",
+                    "end": "Augustus 2021"
+                },
+                "type": "Certificaat",
+                "details": []
+            },
+            {
+                "title": "Nederlands Taalcursus",
+                "organization": "Babel Language Academy",
+                "location": "Utrecht, Nederland",
+                "duration": {
+                    "start": "Februari 2020",
+                    "end": "November 2020"
+                },
+                "type": "Certificaat",
+                "details": []
+            },
+            {
+                "title": "Bachelor in Bedrijfskunde",
+                "organization": "Arab International University",
+                "location": "Damascus, Syrië",
+                "duration": {
+                    "start": "Januari 2007",
+                    "end": "Januari 2011"
+                },
+                "type": "Bachelordiploma",
+                "details": []
+            },
+            {
+                "title": "Bedrijfskunde",
+                "organization": "Syrian Enterprise and Business Center",
+                "location": "Damascus, Syrië",
+                "duration": {
+                    "start": "Januari 2007",
+                    "end": "Januari 2008"
+                },
+                "type": "Diploma",
+                "details": []
+            }
+        ]
+    },
+    "skills": {
+        "fieldTitle": "Vaardigheden",
+        "technical": [
+            "HTML",
+            "JavaScript",
+            "React.js",
+            "Next.js",
+            "Vue.js",
+            "GraphQL",
+            "Headless CMS",
+            "Laravel",
+            "Node.js",
+            "CSS / LESS / SCSS",
+            "Tailwind",
+            "API Ontwikkeling",
+            "Google Optimize",
+            "Gegevensbeheer",
+            "Testen / Problemen oplossen",
+            "WordPress",
+            "Vercel",
+            "Azure DB",
+            "Firebase DB",
+            "Supabase DB",
+            "SQL",
+            "Digital Ocean",
+            "Contentful (CMS)",
+            "Builder.io (CMS)",
+            "Strapi (CMS)"
+        ],
+        "other": [
+            "Onderwijs",
+            "Gebruikerservaring",
+            "Verkoop",
+            "Management",
+            "Schilderen",
+            "Koken"
+        ]
+    },
+    "languages": {
+        "fieldTitle": "Talen",
+        "list": [
+            {
+                "language": "Arabisch",
+                "level": "Native"
+            },
+            {
+                "language": "Engels",
+                "level": "Advanced"
+            },
+            {
+                "language": "Nederlands",
+                "level": "Intermediate"
+            }
+        ]
+    }
+}

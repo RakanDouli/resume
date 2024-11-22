@@ -4,7 +4,7 @@ import { Education } from "@/types/resume";
 import CummonFieldsSection from "@/components/CummonFieldsSection";
 
 interface EducationSectionProps {
-  education: Education[];
+  education: Education;
   styles?: {
     underline?: boolean;
     border?: boolean;
@@ -15,14 +15,14 @@ interface EducationSectionProps {
 
 const EducationSection: FC<EducationSectionProps> = ({ education, styles }) => (
   <CummonFieldsSection
-    title="Education"
+    title={education?.fieldTitle}
     icon={<FaGraduationCap />}
-    items={education.map((edu) => ({
+    items={education?.items.map((edu) => ({
       title: edu.title,
-      subtitle: edu.organization,
+      subtitle: edu.subtitle,
       duration: edu.duration,
       location: edu.location,
-      details: edu.degree ? [edu.degree] : undefined,
+      details: edu.details,
     }))}
     styles={styles}
   />

@@ -1,6 +1,5 @@
-// "@/types/resume.ts"
-
 export interface BasicInfo {
+  fieldTitle: string;
   photoUrl: string;
   name: string;
   location: string;
@@ -8,7 +7,6 @@ export interface BasicInfo {
   whatsApp: string;
   email: string;
   dateOfBirth: string;
-  linkedin: string;
   drivingLicense: string;
   drivingLicenseType?: string;
   title: string;
@@ -26,7 +24,6 @@ export interface Duration {
   end: string;
 }
 
-// Shared interface for both Education and Experience items
 export interface SectionItem {
   title: string;
   subtitle?: string;
@@ -36,26 +33,32 @@ export interface SectionItem {
   type?: string;
 }
 
-// Updated Experience interface
-export interface Experience extends SectionItem {
-  organization: string; // New field to match JSON structure
+// Experience type updated to include the "items" array structure
+export interface Experience {
+  fieldTitle: string;
+  items: SectionItem[]; // `items` is now an array of SectionItem
 }
 
-// Updated Education interface
-export interface Education extends SectionItem {
-  organization: string;
-  degree?: string;
+// Education interface updated similarly
+export interface Education {
+  fieldTitle: string;
+  items: SectionItem[]; // `items` is now an array of SectionItem
 }
 
 export interface Skills {
+  fieldTitle: string;
   technical: string[];
   other: string[];
 }
 
-// Language interface with level as the enum
 export interface Language {
   language: string;
-  level: string; // Numeric value with associated text
+  level: string;
+}
+
+export interface Languages {
+  fieldTitle: string;
+  list: Language[];
 }
 
 export interface ResumeImage {
@@ -66,8 +69,8 @@ export interface ResumeImage {
 export interface ResumeData {
   basicInfo: BasicInfo;
   ResumeImage?: ResumeImage;
-  experience: Experience[];
-  education: Education[];
+  experiences: Experience; // `experience` is now an object with a `fieldTitle` and `items` array
+  education: Education; // Similar to experience
   skills: Skills;
-  languages: Language[];
+  languages: Languages;
 }

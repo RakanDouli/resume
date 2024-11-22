@@ -40,7 +40,7 @@ const Basic: FC<ResumeProps> = ({ data }) => {
         </div>
 
         <ExperienceSection
-          experiences={data.experience}
+          experiences={data.experiences}
           styles={{
             underline: true,
             border: false,
