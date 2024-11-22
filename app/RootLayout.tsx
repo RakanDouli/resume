@@ -27,6 +27,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang={language}>
       <body
+        suppressHydrationWarning={true}
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <LanguageContext.Provider value={{ language, setLanguage }}>

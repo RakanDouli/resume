@@ -29,7 +29,7 @@ const CummonFieldsSection: FC<SectionProps> = ({
     styles?.borderRadius ? "rounded-lg" : "",
     styles?.shadow ? "shadow-lg" : "",
   ].join(" ");
-  console.log("items", items);
+
   return (
     <section
       className={`flex flex-col ${

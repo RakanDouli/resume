@@ -1,20 +1,47 @@
-// Resume.tsx (or the file where you define the Resume component)
-
 import { FC, useRef } from "react";
-import { ResumeData } from "@/types/resume"; // Make sure the types are imported correctly
+import { ResumeData } from "@/types/resume"; // Ensure types are imported correctly
 import PDFDownloadButton from "./PDFDownloadButton";
 import ThemeLayout from "@/components/ThemeLayout";
 
+// Update the type of setLanguage to accept "en" or "nl"
 interface ResumeProps {
-  data: ResumeData; // Define the type for the 'data' prop
+  data: ResumeData;
+  language: string;
+  setLanguage: (language: "en" | "nl") => void; // Specify the valid language types
 }
 
-const Resume: FC<ResumeProps> = ({ data }) => {
+const Resume: FC<ResumeProps> = ({ data, setLanguage, language }) => {
   const resumeTemplateRef = useRef<HTMLDivElement>(null);
 
   return (
     <div className="min-h-screen flex flex-col gap-md">
+      {/* Language Switch Buttons */}
+
+      <div className="container flex justify-end mb-4">
+        <div className="rounded-lg shadow-lg bg-light overflow-hidden">
+          <button
+            className={`px-md py-sm ${
+              language === "en" ? "bg-primary text-light" : "text-dark"
+            } transition`}
+            onClick={() => setLanguage("en")}
+          >
+            EN
+          </button>
+          <button
+            className={`px-md py-sm ${
+              language === "nl" ? "bg-primary text-light" : "text-dark"
+            } transition`}
+            onClick={() => setLanguage("nl")}
+          >
+            NL
+          </button>
+        </div>
+      </div>
+
+      {/* Theme Layout */}
       <ThemeLayout data={data} resumeTemplateRef={resumeTemplateRef} />
+
+      {/* PDF Download Button */}
       <div className="text-center mt-8">
         <PDFDownloadButton
           resumeTemplateRef={resumeTemplateRef}

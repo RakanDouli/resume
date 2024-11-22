@@ -17,7 +17,6 @@ const ExperienceSection: FC<ExperienceSectionProps> = ({
   experiences,
   styles,
 }) => {
-  console.log(experiences);
   return (
     <CummonFieldsSection
       title={experiences?.fieldTitle}
