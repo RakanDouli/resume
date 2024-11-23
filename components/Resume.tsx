@@ -17,7 +17,7 @@ const Resume: FC<ResumeProps> = ({ data, setLanguage, language }) => {
     <div className="min-h-screen flex flex-col gap-md">
       {/* Language Switch Buttons */}
 
-      <div className="container flex justify-end mb-4">
+      <div className="container flex justify-end mb-sm">
         <div className="rounded-lg shadow-lg bg-light overflow-hidden">
           <button
             className={`px-md py-sm ${
@@ -42,7 +42,7 @@ const Resume: FC<ResumeProps> = ({ data, setLanguage, language }) => {
       <ThemeLayout data={data} resumeTemplateRef={resumeTemplateRef} />
 
       {/* PDF Download Button */}
-      <div className="text-center mt-8">
+      <div className="text-center my-lg">
         <PDFDownloadButton
           resumeTemplateRef={resumeTemplateRef}
           fileName={`${data.basicInfo.name}`}

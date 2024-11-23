@@ -19,7 +19,7 @@ export default function Home() {
   const resumeData = language === "en" ? enData : nlData;
 
   return (
-    <div className="min-h-screen sm:pb-2xl pb-lg pt-md md:mx-0 mx-md flex flex-col gap-sm">
+    <div className="min-h-screen sm:pb-2xl pb-xl pt-md md:mx-0 mx-md flex flex-col gap-sm">
       <main>
         <Resume
           data={resumeData}
