@@ -48,6 +48,9 @@ const Modern: FC<ResumeProps> = ({ data }) => {
             }}
             languages={data.languages}
           />
+          {data.basicInfo.links && (
+            <LinksSection links={data.basicInfo.links} />
+          )}
         </div>
         <div className="flex flex-col gap-md w-[63%] sm:pt-xl pt-md pb-2xl sm:px-xl px-md ">
           <ProfileText data={data.basicInfo} />
@@ -69,9 +72,6 @@ const Modern: FC<ResumeProps> = ({ data }) => {
               shadow: false,
             }}
           />
-          {data.basicInfo.links && (
-            <LinksSection links={data.basicInfo.links} />
-          )}
         </div>
       </div>
     </>
