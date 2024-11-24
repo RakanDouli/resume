@@ -36,17 +36,17 @@ const PDFDownloadButton: React.FC<PDFDownloadButtonProps> = ({
       const heightInInches = pxToIn(customHeight);
 
       const options = {
-        margin: [0, 0], // No margin to match your dimensions
+        margin: [0, 0, 0, 0] as [number, number, number, number], // No margin
         filename: `${fileName}.pdf`,
-        image: { type: "jpeg", quality: 2 }, // For images in your HTML
+        image: { type: "jpeg", quality: 2 }, // High-quality images
         html2canvas: { scale: 2, useCORS: true }, // High-quality canvas rendering
         jsPDF: {
           unit: "in", // Units in inches
-          format: [widthInInches, heightInInches], // Custom dimensions in inches
+          format: [widthInInches, heightInInches] as unknown as string, // Fix type conflict
           orientation: "portrait", // Orientation
         },
       };
-
+      console.log(resumeTemplateRef.current?.outerHTML);
       // Use html2pdf to render and save the PDF
       const generatePDF = () => {
         return new Promise<void>((resolve) => {
