@@ -49,9 +49,6 @@ const Classic: FC<ResumeProps> = ({ data }) => {
             }}
             languages={data.languages}
           />
-          {data.basicInfo.links && (
-            <LinksSection links={data.basicInfo.links} />
-          )}
         </div>
         <div className="flex flex-col gap-lg w-[63%] sm:px-xl px-md ">
           <ExperienceSection
@@ -72,6 +69,9 @@ const Classic: FC<ResumeProps> = ({ data }) => {
               shadow: false,
             }}
           />
+          {data.basicInfo.links && (
+            <LinksSection links={data.basicInfo.links} />
+          )}
         </div>
       </div>
     </>

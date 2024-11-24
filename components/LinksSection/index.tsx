@@ -2,7 +2,7 @@
 import { FC } from "react";
 import { Links } from "@/types/resume";
 import { FiLink } from "react-icons/fi";
-import { SectionTitle } from "../Text";
+import { SectionTitle, TinyText } from "../Text";
 interface LinksSectionProps {
   links: Links[];
 }
@@ -24,7 +24,7 @@ const LinksSection: FC<LinksSectionProps> = ({ links }) => {
               rel="noopener noreferrer"
               className="hover:text-primary transition-all  ease-in-out duration-300"
             >
-              {link.url}
+              <TinyText>{link.url}</TinyText>
             </a>
           </li>
         ))}

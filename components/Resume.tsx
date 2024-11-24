@@ -14,7 +14,7 @@ const Resume: FC<ResumeProps> = ({ data, setLanguage, language }) => {
   const resumeTemplateRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="min-h-screen flex flex-col gap-md">
+    <div className="min-h-screen flex flex-col gap-md md:mx-0 mx-md">
       {/* Language Switch Buttons */}
 
       <div className="container flex justify-end mb-sm">
@@ -44,8 +44,8 @@ const Resume: FC<ResumeProps> = ({ data, setLanguage, language }) => {
       {/* PDF Download Button */}
       <div className="text-center my-lg">
         <PDFDownloadButton
-          resumeTemplateRef={resumeTemplateRef}
           fileName={`${data.basicInfo.name}`}
+          resumeTemplateRef={resumeTemplateRef}
         />
       </div>
     </div>

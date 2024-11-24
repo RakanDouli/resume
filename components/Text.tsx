@@ -14,13 +14,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ children, className }) => {
   );
 };
 
-// Title component
-interface TitleProps {
-  children: ReactNode;
-  className?: string;
-}
-
-const Title: React.FC<TitleProps> = ({ children, className }) => {
+const Title: React.FC<SectionTitleProps> = ({ children, className }) => {
   return (
     <h2 className={`text-clamp-xl font-bold leading-snug ${className}`}>
       {children}
@@ -28,13 +22,7 @@ const Title: React.FC<TitleProps> = ({ children, className }) => {
   );
 };
 
-// Subtitle component
-interface SubtitleProps {
-  children: ReactNode;
-  className?: string;
-}
-
-const Subtitle: React.FC<SubtitleProps> = ({ children, className }) => {
+const Subtitle: React.FC<SectionTitleProps> = ({ children, className }) => {
   return (
     <h3 className={`text-clamp-md font-semibold leading-normal ${className}`}>
       {children}
@@ -42,13 +30,7 @@ const Subtitle: React.FC<SubtitleProps> = ({ children, className }) => {
   );
 };
 
-// Paragraph component
-interface ParagraphProps {
-  children: ReactNode;
-  className?: string;
-}
-
-const Paragraph: React.FC<ParagraphProps> = ({ children, className }) => {
+const Paragraph: React.FC<SectionTitleProps> = ({ children, className }) => {
   return (
     <p className={`text-clamp-sm font-normal leading-snug ${className}`}>
       {children}
@@ -56,5 +38,13 @@ const Paragraph: React.FC<ParagraphProps> = ({ children, className }) => {
   );
 };
 
+const TinyText: React.FC<SectionTitleProps> = ({ children, className }) => {
+  return (
+    <p className={`text-clamp-xs font-normal leading-snug ${className}`}>
+      {children}
+    </p>
+  );
+};
+
 // Export all components from one file
-export { SectionTitle, Title, Subtitle, Paragraph };
+export { SectionTitle, Title, Subtitle, Paragraph, TinyText };

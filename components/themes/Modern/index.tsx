@@ -18,7 +18,7 @@ const Modern: FC<ResumeProps> = ({ data }) => {
     <>
       {" "}
       <div className="modern_theme flex">
-        <div className="flex flex-col gap-md w-[37%] bg-lightgray sm:pt-xl pt-md pb-2xl sm:px-xl px-md">
+        <div className="flex flex-col gap-md w-[37%] bg-lightgray sm:pt-xl pt-md pb-2xl  px-lg">
           <ResumeImage
             imageUrl={data.basicInfo.photoUrl}
             name={data.basicInfo.name}
@@ -48,9 +48,6 @@ const Modern: FC<ResumeProps> = ({ data }) => {
             }}
             languages={data.languages}
           />
-          {data.basicInfo.links && (
-            <LinksSection links={data.basicInfo.links} />
-          )}
         </div>
         <div className="flex flex-col gap-md w-[63%] sm:pt-xl pt-md pb-2xl sm:px-xl px-md ">
           <ProfileText data={data.basicInfo} />
@@ -72,6 +69,9 @@ const Modern: FC<ResumeProps> = ({ data }) => {
               shadow: false,
             }}
           />
+          {data.basicInfo.links && (
+            <LinksSection links={data.basicInfo.links} />
+          )}
         </div>
       </div>
     </>

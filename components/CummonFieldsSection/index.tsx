@@ -1,8 +1,8 @@
 "use client";
 import { FC, ReactNode } from "react";
 import { Title, Subtitle, Paragraph, SectionTitle } from "@/components/Text";
-import { MdKeyboardArrowRight } from "react-icons/md";
 import { SectionItem } from "@/types/resume";
+import { GoDotFill } from "react-icons/go";
 
 interface SectionProps {
   title: string;
@@ -24,7 +24,7 @@ const CummonFieldsSection: FC<SectionProps> = ({
 }) => {
   // Build dynamic classes based on styles
   const itemClasses = [
-    "py-md sm:px-lg px-xs",
+    "py-sm sm:px-md px-xs",
     styles?.border ? "border border-text-dark" : "",
     styles?.borderRadius ? "rounded-lg" : "",
     styles?.shadow ? "shadow-lg" : "",
@@ -33,7 +33,7 @@ const CummonFieldsSection: FC<SectionProps> = ({
   return (
     <section
       className={`flex flex-col ${
-        styles?.border || styles?.shadow ? "gap-4" : ""
+        styles?.border || styles?.shadow ? "gap-sm" : ""
       }`}
     >
       {/* Section Title */}
@@ -80,7 +80,7 @@ const CummonFieldsSection: FC<SectionProps> = ({
               <ul className="list-none mt-2 text-gray-700 dark:text-gray-300">
                 {item.details.map((detail, idx) => (
                   <li className="flex gap-xs items-start" key={idx}>
-                    <MdKeyboardArrowRight className="my-1" />
+                    <GoDotFill className="my-1" />
                     <Paragraph>{detail}</Paragraph>
                   </li>
                 ))}
