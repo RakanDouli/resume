@@ -74,9 +74,7 @@ const Basic: FC<ResumeProps> = ({ data }) => {
           }}
           languages={data.languages}
         />
-        {data.basicInfo.additionalLinks && (
-          <LinksSection links={data.basicInfo.additionalLinks} />
-        )}
+        {data.basicInfo.links && <LinksSection links={data.basicInfo.links} />}
       </div>
     </div>
   );

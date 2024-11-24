@@ -1,8 +1,7 @@
 import { FaFileDownload } from "react-icons/fa";
-import { jsPDF } from "jspdf";
 import { Subtitle } from "./Text";
-import html2canvas from "html2canvas";
 import { useState } from "react";
+import html2pdf from "html2pdf.js";
 
 interface PDFDownloadButtonProps {
   resumeTemplateRef: React.RefObject<HTMLDivElement>;
@@ -13,7 +12,7 @@ const PDFDownloadButton: React.FC<PDFDownloadButtonProps> = ({
   resumeTemplateRef,
   fileName,
 }) => {
-  const [loading, setLoading] = useState(false); // State to manage the loading spinner
+  const [loading, setLoading] = useState(false);
 
   const handleDownload = () => {
     if (resumeTemplateRef.current) {
@@ -23,41 +22,52 @@ const PDFDownloadButton: React.FC<PDFDownloadButtonProps> = ({
       const resumeHeight = resumeTemplateRef.current.offsetHeight;
 
       // Calculate extra height (4% of the original height)
-      const extraPadding = resumeHeight * 0.259;
+      const extraPadding = resumeHeight * 0.32;
 
       // Total height for the PDF
-      const totalHeight = resumeHeight + extraPadding;
+      const customHeight = resumeHeight + extraPadding;
 
-      // Use custom dimensions for width and height (e.g., A4 size is 595.28 x 841.89 px)
-      const customWidth = 976; // Custom width
-      const customHeight = totalHeight; // Calculated height
+      // Custom width (fixed value)
+      const customWidth = 976; // In pixels
 
-      // Create a new jsPDF instance with custom dimensions
-      const pdf = new jsPDF("p", "px", [customWidth, customHeight]);
+      // Convert custom dimensions to inches (for jsPDF)
+      const pxToIn = (px: number) => px / 96; // Assuming 96 DPI
+      const widthInInches = pxToIn(customWidth);
+      const heightInInches = pxToIn(customHeight);
 
-      // Use html2canvas to render the HTML content as an image
       const options = {
-        scale: 3, // Higher scale for better quality
-        useCORS: true, // To allow external resources like images and fonts
+        margin: [0, 0], // No margin to match your dimensions
+        filename: `${fileName}.pdf`,
+        image: { type: "jpeg", quality: 2 }, // For images in your HTML
+        html2canvas: { scale: 2, useCORS: true }, // High-quality canvas rendering
+        jsPDF: {
+          unit: "in", // Units in inches
+          format: [widthInInches, heightInInches], // Custom dimensions in inches
+          orientation: "portrait", // Orientation
+        },
       };
 
-      // Render the content of the resume as an image
-      html2canvas(resumeTemplateRef.current, options).then((canvas) => {
-        const imgData = canvas.toDataURL("image/png");
+      // Use html2pdf to render and save the PDF
+      const generatePDF = () => {
+        return new Promise<void>((resolve) => {
+          html2pdf().from(resumeTemplateRef.current!).set(options).save();
+          resolve();
+        });
+      };
 
-        // Add the image to the PDF
-        pdf.addImage(imgData, "PNG", 0, 0, customWidth, customHeight);
-
-        // Save the generated PDF
-        pdf.save(`${fileName}.pdf`);
-
-        setLoading(false); // Hide the loading spinner after PDF is generated
-      });
+      generatePDF()
+        .then(() => {
+          console.log("PDF generated successfully");
+        })
+        .catch((err) => {
+          console.error("Error generating PDF:", err);
+        })
+        .finally(() => setLoading(false)); // Hide the loading spinner
     }
   };
 
   return (
-    <div className="hidden lg:flex flex-col gap-sm items-center ">
+    <div className="hidden lg:flex flex-col gap-sm items-center">
       <div>
         <Subtitle>{fileName}&apos;s Resume</Subtitle>
       </div>
@@ -66,7 +76,7 @@ const PDFDownloadButton: React.FC<PDFDownloadButtonProps> = ({
         onClick={handleDownload}
       >
         {loading && (
-          <span className="flex justify-center items-center ">
+          <span className="flex justify-center items-center">
             <div className="w-md h-md border-4 border-t-4 border-third border-solid rounded-full animate-spin border-t-secondary"></div>
           </span>
         )}

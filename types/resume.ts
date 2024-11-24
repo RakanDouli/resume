@@ -11,7 +11,7 @@ export interface BasicInfo {
   drivingLicenseType?: string;
   title: string;
   summary: string;
-  additionalLinks?: Links[];
+  links?: Links[];
 }
 
 export interface Links {
