@@ -78,9 +78,11 @@
           "end": "Present"
         },
         "details": [
-          "Developed custom WordPress themes using LESS and Vanilla JavaScript/jQuery for enhanced front-end functionality.",
-          "Increased site visibility through SEO improvements, leading to better search rankings and organic traffic.",
-          "Improved overall website performance, contributing to a seamless user experience."
+          "Built and deployed freelance projects including a full-stack NFT generator (React + Flask), with GIF/image processing and Firebase Auth integration.",
+          "Implemented admin dashboards for asset management and user role control, using DigitalOcean Spaces and App Platform for deployment and storage.",
+          "Developed custom WordPress themes using LESS and Vanilla JavaScript/jQuery for responsive, interactive front-end experiences.",
+          "Improved website performance and user experience through optimization techniques including image handling, lazy loading, and script minimization.",
+          "Enhanced search engine visibility through on-page SEO, structured data, and performance tuning, resulting in increased organic traffic."
         ]
       },
       {
