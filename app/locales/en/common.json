@@ -155,6 +155,17 @@
     "fieldTitle": "Education",
     "items": [
       {
+        "title": "Cloud & Data Management Training Program – ITMG / ESF",
+        "organization": "ITMG (ESF-funded Program)",
+        "location": "Utrecht, Netherlands",
+        "duration": {
+          "start": "May 2025",
+          "end": "October 2025"
+        },
+        "type": "Certificate",
+        "details": []
+      },
+      {
         "title": "Full Stack JS Developer Course",
         "organization": "Codaisseur",
         "location": "Amsterdam, Netherlands",
