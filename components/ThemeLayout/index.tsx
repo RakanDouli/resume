@@ -81,7 +81,7 @@ const ThemeLayout: FC<ResumeProps> = ({ data, resumeTemplateRef }) => {
                   }`}
                   priority
                 />
-                <p className="text-center mt-2 capitalize">{themeName}</p>
+                <p className="text-center mt-2 capitalize"> {themeName}</p>
               </div>
             ))}
           </span>
