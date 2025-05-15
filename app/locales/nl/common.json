@@ -27,6 +27,24 @@
         "fieldTitle": "Ervaring",
         "items": [
             {
+                "title": "Freelance Webontwikkelaar",
+                "organization": "808-Studio",
+                "location": "Utrecht, Nederland",
+                "duration": {
+                    "start": "December 2020",
+                    "end": "Heden"
+                },
+                "details": [
+                    "Werkzaam aan een full-stack stemplatform met Vue.js (frontend) en NestJS (backend), geïntegreerd met Supabase Auth en PostgreSQL.",
+                    "Geïmplementeerde Google- en Facebook-login via Supabase OAuth en veilige JWT-gebaseerde toegangscontrole opgezet.",
+                    "Opgezet en ontwikkeld freelanceprojecten zoals een full-stack NFT-generator (React + Flask) met ondersteuning voor GIF-/afbeeldingsverwerking en Firebase-authenticatie.",
+                    "Ontwikkelde beheerdersdashboards voor het beheren van content en gebruikersrollen, gehost via DigitalOcean Spaces en App Platform.",
+                    "Op maat gemaakte WordPress-thema's ontwikkeld met LESS en Vanilla JavaScript/jQuery voor responsieve en interactieve front-end ervaring.",
+                    "Websiteprestaties en gebruikerservaring verbeterd via optimalisatietechnieken zoals beeldcompressie, lazy loading en scriptminimalisatie.",
+                    "Zoekmachinezichtbaarheid verhoogd door on-page SEO, gestructureerde data en performance tuning, wat leidde tot meer organisch verkeer."
+                ]
+            },
+            {
                 "title": "Full Stack Ontwikkelaar",
                 "organization": "Fiber Nederland",
                 "location": "Almere, Nederland",
@@ -67,22 +85,6 @@
                     "Beheerde de contentintegratie met Contentful CMS en GraphQL voor klanten zoals Cookware-Co, Spelt, en Van Nes + Plaisier, en optimaliseerde de frontend gegevenslevering en prestaties.",
                     "Voerde A/B-testen uit voor Etos, Burger King (BK), en Cookware-Co met Google Optimize en Sitespect, wat resulteerde in aanzienlijke verbeteringen in betrokkenheid en conversies.",
                     "Ontwierp HTML e-mailtemplates voor Vodafone Nederland met Mandrillapp, wat de klantbetrokkenheid en communicatie-effectiviteit verhoogde."
-                ]
-            },
-            {
-                "title": "Freelance Webontwikkelaar",
-                "organization": "808-Studio",
-                "location": "Utrecht, Nederland",
-                "duration": {
-                    "start": "December 2020",
-                    "end": "Heden"
-                },
-                "details": [
-                    "Gerealiseerde freelance projecten zoals een full-stack NFT-generator (React + Flask) met ondersteuning voor GIF-/afbeeldingsverwerking en Firebase-authenticatie.",
-                    "Opgezet beheerdersdashboards voor beheer van afbeeldingen en gebruikersrollen, gehost via DigitalOcean Spaces en App Platform.",
-                    "Ontwikkelde op maat gemaakte WordPress-thema's met LESS en Vanilla JavaScript/jQuery voor responsieve en interactieve front-end functionaliteit.",
-                    "Verbeterde websiteprestaties en gebruikerservaring door optimalisatietechnieken zoals beeldcompressie, lazy loading en scriptminimalisatie.",
-                    "Verhoogde zichtbaarheid in zoekmachines via on-page SEO, gestructureerde data en performance tuning, wat leidde tot meer organisch verkeer."
                 ]
             },
             {

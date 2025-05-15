@@ -27,6 +27,24 @@
     "fieldTitle": "Experience",
     "items": [
       {
+        "title": "Freelance Web Developer",
+        "organization": "808-Studio",
+        "location": "Utrecht, The Netherlands",
+        "duration": {
+          "start": "December 2020",
+          "end": "Present"
+        },
+        "details": [
+          "Co-developing a full-stack voting platform using Vue.js (frontend) and NestJS (backend), integrated with Supabase Auth and PostgreSQL.",
+          "Implemented Google and Facebook login via Supabase OAuth and managed secure JWT-based access control.",
+          "Built and deployed freelance projects including a full-stack NFT generator (React + Flask), with GIF/image processing and Firebase Auth integration.",
+          "Implemented admin dashboards for asset management and user role control, using DigitalOcean Spaces and App Platform for deployment and storage.",
+          "Developed custom WordPress themes using LESS and Vanilla JavaScript/jQuery for responsive, interactive front-end experiences.",
+          "Improved website performance and user experience through optimization techniques including image handling, lazy loading, and script minimization.",
+          "Enhanced search engine visibility through on-page SEO, structured data, and performance tuning, resulting in increased organic traffic."
+        ]
+      },
+      {
         "title": "Full Stack Developer",
         "organization": "Fiber Nederland",
         "location": "Almere, The Netherlands",
@@ -67,22 +85,6 @@
           "Managed content integration using Contentful CMS and GraphQL for clients like Cookware-Co, Spelt, and Van Nes + Plaisier, optimizing frontend data delivery and performance.",
           "Conducted A/B testing for Etos, Burger King (BK), and Cookware-Co using Google Optimize and Sitespect, achieving significant engagement and conversion improvements.",
           "Designed HTML email templates for Vodafone Netherlands with Mandrillapp, boosting customer engagement and communication effectiveness."
-        ]
-      },
-      {
-        "title": "Freelance Web Developer",
-        "organization": "808-Studio",
-        "location": "Utrecht, The Netherlands",
-        "duration": {
-          "start": "December 2020",
-          "end": "Present"
-        },
-        "details": [
-          "Built and deployed freelance projects including a full-stack NFT generator (React + Flask), with GIF/image processing and Firebase Auth integration.",
-          "Implemented admin dashboards for asset management and user role control, using DigitalOcean Spaces and App Platform for deployment and storage.",
-          "Developed custom WordPress themes using LESS and Vanilla JavaScript/jQuery for responsive, interactive front-end experiences.",
-          "Improved website performance and user experience through optimization techniques including image handling, lazy loading, and script minimization.",
-          "Enhanced search engine visibility through on-page SEO, structured data, and performance tuning, resulting in increased organic traffic."
         ]
       },
       {
