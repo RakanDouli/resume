@@ -53,7 +53,7 @@ const CummonFieldsSection: FC<SectionProps> = ({
           <div className={itemClasses}>
             {/* Title of the item */}
             <Title className="text-gray-800 dark:text-white">
-              {item.title}
+              {item.title} {item.organization ? `- ${item.organization}` : null}
             </Title>
 
             {/* Optional Subtitle */}

@@ -17,12 +17,14 @@ const ExperienceSection: FC<ExperienceSectionProps> = ({
   experiences,
   styles,
 }) => {
+  console.log(experiences);
   return (
     <CummonFieldsSection
       title={experiences?.fieldTitle}
       icon={<FaBriefcase />}
       items={experiences?.items.map((exp) => ({
         title: exp.title,
+        organization: exp.organization,
         subtitle: exp.subtitle,
         duration: exp.duration,
         location: exp.location,

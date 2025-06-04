@@ -27,6 +27,7 @@ export interface Duration {
 export interface SectionItem {
   title: string;
   subtitle?: string;
+  organization?: string;
   location?: string;
   duration: Duration;
   details?: string[];
