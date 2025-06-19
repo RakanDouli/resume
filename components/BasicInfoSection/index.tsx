@@ -23,6 +23,12 @@ const BasicInfoSection: FC<BasicInfoProps> = ({ data }) => (
       </a>
     </Paragraph>
     <Paragraph className="flex gap-sm items-center hover:text-primary transition-all  ease-in-out duration-300">
+      <ImPhone />
+      <a target="_blank" href={`tel:${data.phone}`}>
+        {data.phone2}{" "}
+      </a>
+    </Paragraph>
+    <Paragraph className="flex gap-sm items-center hover:text-primary transition-all  ease-in-out duration-300">
       <ImWhatsapp />
       <a
         target="_blank"

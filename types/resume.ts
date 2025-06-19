@@ -4,6 +4,7 @@ export interface BasicInfo {
   name: string;
   location: string;
   phone: string;
+  phone2: string;
   whatsApp: string;
   email: string;
   dateOfBirth: string;
