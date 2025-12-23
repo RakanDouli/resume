@@ -17,7 +17,6 @@ const nextConfig: NextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, "app/styles")],
   },
-  localePath: path.resolve("./public/locales"), // Path to your locales folder
 };
 
 export default nextConfig;
