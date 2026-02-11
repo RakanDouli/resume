@@ -10,8 +10,8 @@
         "drivingLicense": "Beschikbaar",
         "drivingLicenseType": "Standaard",
         "photoUrl": "./Screenshot 2024-11-07 at 20.11.34.png",
-        "title": "Webontwikkelaar",
-        "summary": "Gespecialiseerd in Next.js, React en Node.js met een achtergrond in bedrijfsontwikkeling. Ervaren in het bouwen van tools, het optimaliseren van gebruikerservaringen en het verbeteren van applicatieprestaties bij Fiber Nederland, Mprise en Direct Impact. Vaardig in API-gestuurde ontwikkeling, SEO en A/B-testen. Bekend om aanpassingsvermogen en teamwork vanuit internationale werkervaring.",
+        "title": "Full-Stack Ontwikkelaar",
+        "summary": "Full-Stack Ontwikkelaar gespecialiseerd in Next.js, React en NestJS met expertise in het bouwen van productieklare marketplace-platformen. Recent de architectuur ontworpen van Shambay, een enterprise-grade Arabische marktplaats met 40+ database-entiteiten, real-time chat, AI-moderatie en 12 admin-dashboards. Ervaren in GraphQL API's, TypeORM, Supabase en cloud-deployment. Bekend om schaalbare oplossingen en uitzonderlijke aandacht voor detail.",
         "links": [
             {
                 "label": "GitHub",
@@ -27,7 +27,25 @@
         "fieldTitle": "Ervaring",
         "items": [
             {
-                "title": "Freelance Webontwikkelaar",
+                "title": "Full-Stack Ontwikkelaar",
+                "organization": "Shambay Marketplace",
+                "location": "Utrecht, Nederland",
+                "duration": {
+                    "start": "Augustus 2025",
+                    "end": "Heden"
+                },
+                "details": [
+                    "Architectuur ontworpen en gebouwd van Shambay (shambay.com), een enterprise-grade Arabische marktplaats met Next.js, NestJS en GraphQL, met 40+ database-entiteiten en 155+ migraties.",
+                    "12 admin-dashboards ontwikkeld met real-time zoeken, RBAC-permissies, bulk-operaties en uitgebreide moderatietools inclusief AI-contentanalyse.",
+                    "Real-time chatsysteem geïmplementeerd met Supabase Realtime, inclusief berichtstatus-indicatoren, typ-indicatoren en ongelezen-meldingen.",
+                    "Professioneel advertentiesysteem gebouwd met multi-package campagnes, impressie-tracking, geautomatiseerde betalingsstromen en prioriteit-gebaseerde advertentierotatie.",
+                    "Uitgebreid RBAC-permissiesysteem geïmplementeerd met rolgebaseerde toegangscontrole voor alle admin-functies en gebruikersfunctionaliteit.",
+                    "Abonnementsfactureringssysteem ontworpen met gelaagde plannen, transactietracking, valutaconversie en geautomatiseerde e-mailmeldingen.",
+                    "Multi-omgeving infrastructuur gedeployed met Docker op Hetzner (backend) en Vercel (frontends), met aparte staging- en productiedatabases op Supabase."
+                ]
+            },
+            {
+                "title": "Freelance Full-Stack Ontwikkelaar",
                 "organization": "808 Studio",
                 "location": "Utrecht, Nederland",
                 "duration": {
@@ -35,13 +53,11 @@
                     "end": "Heden"
                 },
                 "details": [
-                    "Werkzaam aan een full-stack stemplatform met Vue.js (frontend) en NestJS (backend), geïntegreerd met Supabase Auth en PostgreSQL.",
-                    "Geïmplementeerde Google- en Facebook-login via Supabase OAuth en veilige JWT-gebaseerde toegangscontrole opgezet.",
-                    "Opgezet en ontwikkeld freelanceprojecten zoals een full-stack NFT-generator (React + Flask) met ondersteuning voor GIF-/afbeeldingsverwerking en Firebase-authenticatie.",
-                    "Ontwikkelde beheerdersdashboards voor het beheren van content en gebruikersrollen, gehost via DigitalOcean Spaces en App Platform.",
-                    "Op maat gemaakte WordPress-thema's ontwikkeld met LESS en Vanilla JavaScript/jQuery voor responsieve en interactieve front-end ervaring.",
-                    "Websiteprestaties en gebruikerservaring verbeterd via optimalisatietechnieken zoals beeldcompressie, lazy loading en scriptminimalisatie.",
-                    "Zoekmachinezichtbaarheid verhoogd door on-page SEO, gestructureerde data en performance tuning, wat leidde tot meer organisch verkeer."
+                    "Full-stack stemplatform mede-ontwikkeld met Vue.js en NestJS, geïntegreerd met Supabase Auth en PostgreSQL.",
+                    "Full-stack NFT-generator gebouwd (React + Flask) met GIF-/afbeeldingsverwerking en Firebase-authenticatie.",
+                    "Aangepaste WordPress-thema's ontwikkeld met LESS en JavaScript voor responsieve klantenwebsites.",
+                    "Websiteprestaties verbeterd door beeldcompressie, lazy loading en scriptoptimalisatie.",
+                    "SEO-zichtbaarheid verhoogd door on-page optimalisatie, gestructureerde data en performance tuning."
                 ]
             },
             {
@@ -216,31 +232,29 @@
     "skills": {
         "fieldTitle": "Vaardigheden",
         "technical": [
-            "HTML",
-            "JavaScript",
+            "TypeScript",
             "React.js",
             "Next.js",
             "Vue.js",
-            "GraphQL",
-            "Headless CMS",
-            "Laravel",
+            "NestJS",
             "Node.js",
-            "CSS / LESS / SCSS",
-            "Tailwind",
-            "API Ontwikkeling",
-            "Google Optimize",
-            "Gegevensbeheer",
-            "Testen / Problemen oplossen",
-            "WordPress",
+            "GraphQL / Apollo",
+            "PostgreSQL / TypeORM",
+            "Supabase (Auth / Realtime / Storage)",
+            "REST APIs",
+            "Docker",
+            "Zustand / State Management",
+            "Tailwind CSS",
+            "SCSS",
             "Vercel",
-            "Azure DB",
-            "Firebase DB",
-            "Supabase DB",
-            "SQL",
-            "Digital Ocean",
-            "Contentful (CMS)",
-            "Builder.io (CMS)",
-            "Strapi (CMS)"
+            "Redis",
+            "Cloudflare R2",
+            "Firebase",
+            "Laravel",
+            "Headless CMS",
+            "WordPress",
+            "Git / GitHub",
+            "A/B Testen"
         ],
         "other": [
             "Onderwijs",

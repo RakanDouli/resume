@@ -10,8 +10,8 @@
     "drivingLicense": "Available",
     "drivingLicenseType": "Standard",
     "photoUrl": "./Screenshot 2024-11-07 at 20.11.34.png",
-    "title": "Web Developer",
-    "summary": "Specializing in Next.js, React, and Node.js with a foundation in business development. Experienced in building tools, optimizing user experience, and improving application performance at Fiber Nederland, Mprise, and Direct Impact. Skilled in API-driven development, SEO, and A/B testing. Known for adaptability and teamwork from international work experience.",
+    "title": "Full-Stack Developer",
+    "summary": "Full-Stack Developer specializing in Next.js, React, and NestJS with expertise in building production-ready marketplace platforms. Recently architected Shambay, an enterprise-grade Arabic marketplace with 40+ database entities, real-time chat, AI moderation, and 12 admin dashboards. Experienced in GraphQL APIs, TypeORM, Supabase, and cloud deployment. Known for delivering scalable solutions and exceptional attention to detail.",
     "links": [
       {
         "label": "GitHub",
@@ -27,7 +27,25 @@
     "fieldTitle": "Experience",
     "items": [
       {
-        "title": "Freelance Web Developer",
+        "title": "Full-Stack Developer",
+        "organization": "Shambay Marketplace",
+        "location": "Utrecht, The Netherlands",
+        "duration": {
+          "start": "August 2025",
+          "end": "Present"
+        },
+        "details": [
+          "Architected and built Shambay (shambay.com), an enterprise-grade Arabic marketplace platform with Next.js, NestJS, and GraphQL, featuring 40+ database entities and 155+ migrations.",
+          "Developed 12 admin dashboards with real-time search, RBAC permissions, bulk operations, and comprehensive moderation tools including AI content analysis.",
+          "Implemented real-time chat system using Supabase Realtime with message status indicators, typing indicators, and unread count notifications.",
+          "Built professional advertising system with multi-package campaigns, impression tracking, automated payment flows, and priority-based ad rotation.",
+          "Implemented comprehensive RBAC permission system with role-based access control across all admin features and user-facing functionality.",
+          "Designed subscription billing system with tiered plans, transaction tracking, currency conversion, and automated email notifications.",
+          "Deployed multi-environment infrastructure with Docker on Hetzner (backend) and Vercel (frontends), with separate staging and production databases on Supabase."
+        ]
+      },
+      {
+        "title": "Freelance Full-Stack Developer",
         "organization": "808 Studio",
         "location": "Utrecht, The Netherlands",
         "duration": {
@@ -35,13 +53,11 @@
           "end": "Present"
         },
         "details": [
-          "Co-developing a full-stack voting platform using Vue.js (frontend) and NestJS (backend), integrated with Supabase Auth and PostgreSQL.",
-          "Implemented Google and Facebook login via Supabase OAuth and managed secure JWT-based access control.",
-          "Built and deployed freelance projects including a full-stack NFT generator (React + Flask), with GIF/image processing and Firebase Auth integration.",
-          "Implemented admin dashboards for asset management and user role control, using DigitalOcean Spaces and App Platform for deployment and storage.",
-          "Developed custom WordPress themes using LESS and Vanilla JavaScript/jQuery for responsive, interactive front-end experiences.",
-          "Improved website performance and user experience through optimization techniques including image handling, lazy loading, and script minimization.",
-          "Enhanced search engine visibility through on-page SEO, structured data, and performance tuning, resulting in increased organic traffic."
+          "Co-developed a full-stack voting platform using Vue.js and NestJS, integrated with Supabase Auth and PostgreSQL.",
+          "Built a full-stack NFT generator (React + Flask) with GIF/image processing and Firebase Auth integration.",
+          "Developed custom WordPress themes with LESS and JavaScript for responsive client websites.",
+          "Improved website performance through image compression, lazy loading, and script optimization.",
+          "Enhanced SEO visibility through on-page optimization, structured data, and performance tuning."
         ]
       },
       {
@@ -216,31 +232,30 @@
   "skills": {
     "fieldTitle": "Skills",
     "technical": [
-      "HTML",
-      "JavaScript",
+      "TypeScript",
       "React.js",
       "Next.js",
+      "Zustand / State Management",
       "Vue.js",
-      "GraphQL",
-      "Headless CMS",
-      "Laravel",
+      "NestJS",
       "Node.js",
-      "CSS / LESS / SCSS",
-      "tailwind",
-      "API Development",
-      "Google Optimize",
-      "Data Management",
-      "Testing / Troubleshooting",
-      "WordPress",
+      "GraphQL / Apollo",
+      "PostgreSQL / TypeORM",
+      "Supabase (Auth / Realtime / Storage)",
+      "REST APIs",
+      "Docker",
+      "Zustand",
+      "Tailwind CSS",
+      "SCSS",
       "Vercel",
-      "Azure DB",
-      "Firebase DB",
-      "Supabase DB",
-      "SQL",
-      "Digital Ocean",
-      "Contentful (CMS)",
-      "Builder.io (CMS)",
-      "Strapi (CMS)"
+      "Redis",
+      "Cloudflare R2",
+      "Firebase",
+      "Laravel",
+      "Headless CMS",
+      "WordPress",
+      "Git / GitHub",
+      "A/B Testing"
     ],
     "other": [
       "Teaching",
