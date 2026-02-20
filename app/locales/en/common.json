@@ -10,8 +10,8 @@
     "drivingLicense": "Available",
     "drivingLicenseType": "Standard",
     "photoUrl": "./Screenshot 2024-11-07 at 20.11.34.png",
-    "title": "Full-Stack Developer",
-    "summary": "Full-Stack Developer specializing in Next.js, React, and NestJS with expertise in building production-ready marketplace platforms. Recently architected Shambay, an enterprise-grade Arabic marketplace with 40+ database entities, real-time chat, AI moderation, and 12 admin dashboards. Experienced in GraphQL APIs, TypeORM, Supabase, and cloud deployment. Known for delivering scalable solutions and exceptional attention to detail.",
+    "title": "Technical Project Lead / Business Operations Specialist",
+    "summary": "Versatile professional with a Bachelor of Business Administration and over 10 years of international experience bridging the gap between business strategy and technical execution. Expert in architecting complex digital platforms, managing high-value accounts, and leading project workstreams from concept to launch. Proven track record in Sales (Toshiba Best Sales Award) and technical systems design. Multilingual (Arabic, English, Dutch) and highly adept at managing stakeholders in international environments.",
     "links": [
       {
         "label": "GitHub",
@@ -27,7 +27,7 @@
     "fieldTitle": "Experience",
     "items": [
       {
-        "title": "Full-Stack Developer",
+        "title": "Technical Project Lead",
         "organization": "Shambay Marketplace",
         "location": "Utrecht, The Netherlands",
         "duration": {
@@ -35,17 +35,15 @@
           "end": "Present"
         },
         "details": [
-          "Architected and built Shambay (shambay.com), an enterprise-grade Arabic marketplace platform with Next.js, NestJS, and GraphQL, featuring 40+ database entities and 155+ migrations.",
-          "Developed 12 admin dashboards with real-time search, RBAC permissions, bulk operations, and comprehensive moderation tools including AI content analysis.",
-          "Implemented real-time chat system using Supabase Realtime with message status indicators, typing indicators, and unread count notifications.",
-          "Built professional advertising system with multi-package campaigns, impression tracking, automated payment flows, and priority-based ad rotation.",
-          "Implemented comprehensive RBAC permission system with role-based access control across all admin features and user-facing functionality.",
-          "Designed subscription billing system with tiered plans, transaction tracking, currency conversion, and automated email notifications.",
-          "Deployed multi-environment infrastructure with Docker on Hetzner (backend) and Vercel (frontends), with separate staging and production databases on Supabase."
+          "Architected and led the development of an enterprise-grade Arabic marketplace platform, managing a complex structure of 40+ database entities.",
+          "Directed the creation of 12 custom admin dashboards with advanced RBAC permissions and AI-driven moderation tools.",
+          "Designed and implemented complex business logic for professional advertising systems and subscription billing flows.",
+          "Coordinated multi-environment infrastructure strategy using Docker, Hetzner, and Vercel to ensure 24/7 platform availability.",
+          "Managed end-to-end technical requirements, from initial database design to real-time communication systems."
         ]
       },
       {
-        "title": "Freelance Full-Stack Developer",
+        "title": "Project Solutions Consultant",
         "organization": "808 Studio",
         "location": "Utrecht, The Netherlands",
         "duration": {
@@ -53,15 +51,13 @@
           "end": "Present"
         },
         "details": [
-          "Co-developed a full-stack voting platform using Vue.js and NestJS, integrated with Supabase Auth and PostgreSQL.",
-          "Built a full-stack NFT generator (React + Flask) with GIF/image processing and Firebase Auth integration.",
-          "Developed custom WordPress themes with LESS and JavaScript for responsive client websites.",
-          "Improved website performance through image compression, lazy loading, and script optimization.",
-          "Enhanced SEO visibility through on-page optimization, structured data, and performance tuning."
+          "Consulted with diverse clients to translate business requirements into functional digital platforms and voting systems.",
+          "Managed end-to-end project delivery, including requirements gathering, performance optimization, and digital strategy.",
+          "Developed custom client-facing solutions with a focus on high user engagement and SEO performance."
         ]
       },
       {
-        "title": "Full Stack Developer",
+        "title": "Technical Specialist",
         "organization": "Fiber Nederland",
         "location": "Almere, The Netherlands",
         "duration": {
@@ -69,13 +65,13 @@
           "end": "August 2024"
         },
         "details": [
-          "Developed and maintained internal management applications using Vue.js and Laravel in a headless setup to ensure flexibility and decoupled architecture.",
-          "Implemented new features and resolved bugs for internal tools, enhancing user experience and improving internal processes.",
-          "Enhanced the functionality of the shop app, optimizing it for better user experience through API-driven updates and decoupled front and backend components."
+          "Optimized internal management applications to streamline business operations and improve cross-departmental data flow.",
+          "Managed the implementation of new features for internal tools, enhancing user experience and operational efficiency.",
+          "Resolved critical system bugs and improved the functionality of decoupled commerce components."
         ]
       },
       {
-        "title": "Full Stack Developer",
+        "title": "Systems Developer",
         "organization": "Mprise",
         "location": "Veenendaal, The Netherlands",
         "duration": {
@@ -83,13 +79,13 @@
           "end": "September 2023"
         },
         "details": [
-          "Developed new features and fixed bugs for multiple web applications in a headless environment, using React, Node.js, and GraphQL for API-driven content management.",
-          "Implemented load tests on the database gateway with JavaScript to optimize performance, resulting in faster data retrieval and resource efficiency.",
-          "Focused on improving the decoupled data flow, reducing load times by 30% and enhancing the scalability of front-end components."
+          "Engineered high-performance data gateway solutions, resulting in a 30% reduction in system load times.",
+          "Led performance analysis and load testing to optimize resource efficiency for multiple web applications.",
+          "Collaborated on improving decoupled data flows to enhance system scalability for enterprise clients."
         ]
       },
       {
-        "title": "Full Stack Developer",
+        "title": "Digital Solutions Specialist",
         "organization": "Direct Impact",
         "location": "Utrecht, The Netherlands",
         "duration": {
@@ -97,14 +93,13 @@
           "end": "June 2022"
         },
         "details": [
-          "Built and styled API-driven, reusable components in a headless architecture using React/Next.js, enhancing scalability and flexibility.",
-          "Managed content integration using Contentful CMS and GraphQL for clients like Cookware-Co, Spelt, and Van Nes + Plaisier, optimizing frontend data delivery and performance.",
-          "Conducted A/B testing for Etos, Burger King (BK), and Cookware-Co using Google Optimize and Sitespect, achieving significant engagement and conversion improvements.",
-          "Designed HTML email templates for Vodafone Netherlands with Mandrillapp, boosting customer engagement and communication effectiveness."
+          "Managed content integration and digital performance for high-profile clients including Burger King and Vodafone.",
+          "Led A/B testing initiatives to drive significant improvements in customer engagement and conversion rates.",
+          "Designed and optimized digital communication templates to enhance customer communication effectiveness."
         ]
       },
       {
-        "title": "Sales Prompter",
+        "title": "Sales Specialist",
         "organization": "Zara",
         "location": "Utrecht, The Netherlands",
         "duration": {
@@ -112,7 +107,7 @@
           "end": "January 2018"
         },
         "details": [
-          "Provided exceptional customer service and utilized persuasive communication skills to drive sales and promote products."
+          "Exceeded sales targets through persuasive communication and high-quality customer service in a fast-paced environment."
         ]
       },
       {
@@ -124,12 +119,12 @@
           "end": "July 2015"
         },
         "details": [
-          "Designed visual materials such as posters, flyers, and brochures.",
-          "Created an Arabic-language Facebook page, managing translations and content for increased engagement."
+          "Produced high-impact visual marketing materials and managed international social media presence.",
+          "Provided professional translation services to bridge communication gaps for international clients."
         ]
       },
       {
-        "title": "Logistics Employee",
+        "title": "Logistics Coordinator",
         "organization": "Target Med Int.",
         "location": "Jordan",
         "duration": {
@@ -137,7 +132,7 @@
           "end": "October 2014"
         },
         "details": [
-          "Oversaw logistics and managed exports to Iraq, ensuring efficient and timely deliveries."
+          "Oversaw logistics operations and export management, ensuring timely delivery and supply chain efficiency."
         ]
       },
       {
@@ -149,13 +144,13 @@
           "end": "May 2014"
         },
         "details": [
-          "Managed over 50 customer accounts, addressing payment and invoicing issues and maintaining positive client relations.",
-          "Used Sage accounting software to streamline inventory management, boosting team productivity by 50%.",
-          "Created monthly sales reports for regional offices, improving insights into sales performance."
+          "Managed a portfolio of 50+ key accounts, resolving invoicing and payment issues while maintaining strong client relations.",
+          "Optimized inventory management using specialized software, increasing departmental productivity by 50%.",
+          "Produced comprehensive monthly sales and analytical reports for regional management."
         ]
       },
       {
-        "title": "Sales Promoter",
+        "title": "Business Representative (Sales)",
         "organization": "TOSHIBA",
         "location": "Amman, Jordan",
         "duration": {
@@ -163,8 +158,8 @@
           "end": "December 2012"
         },
         "details": [
-          "Managed the Toshiba television section, providing product expertise to increase sales.",
-          "Recognized as the Best TV Sales Promoter for outstanding sales performance."
+          "Managed division inventory and sales strategy, leading to recognition as the region's 'Best Sales Promoter'.",
+          "Provided expert product knowledge to drive business growth and customer satisfaction."
         ]
       }
     ]
@@ -232,38 +227,26 @@
   "skills": {
     "fieldTitle": "Skills",
     "technical": [
-      "TypeScript",
-      "React.js",
-      "Next.js",
-      "Zustand / State Management",
-      "Vue.js",
-      "NestJS",
-      "Node.js",
-      "GraphQL / Apollo",
-      "PostgreSQL / TypeORM",
-      "Supabase (Auth / Realtime / Storage)",
-      "REST APIs",
-      "Docker",
-      "Zustand",
-      "Tailwind CSS",
-      "SCSS",
-      "Vercel",
-      "Redis",
-      "Cloudflare R2",
-      "Firebase",
-      "Laravel",
-      "Headless CMS",
-      "WordPress",
-      "Git / GitHub",
-      "A/B Testing"
+      "Project Coordination",
+      "Business Operations",
+      "Stakeholder Management",
+      "Account Management",
+      "Data Analysis",
+      "Process Optimization",
+      "Cloud & Data Management",
+      "Digital Architecture",
+      "Next.js / NestJS",
+      "GraphQL",
+      "PostgreSQL",
+      "CRM Systems"
     ],
     "other": [
-      "Teaching",
-      "User Experience",
-      "Sales",
-      "Management",
-      "Painting",
-      "Cooking"
+      "Problem Solving",
+      "Multicultural Communication",
+      "Adaptability",
+      "Sales Strategy",
+      "Leadership",
+      "Attention to Detail"
     ]
   },
   "languages": {

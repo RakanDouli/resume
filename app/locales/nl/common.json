@@ -10,8 +10,8 @@
         "drivingLicense": "Beschikbaar",
         "drivingLicenseType": "Standaard",
         "photoUrl": "./Screenshot 2024-11-07 at 20.11.34.png",
-        "title": "Full-Stack Ontwikkelaar",
-        "summary": "Full-Stack Ontwikkelaar gespecialiseerd in Next.js, React en NestJS met expertise in het bouwen van productieklare marketplace-platformen. Recent de architectuur ontworpen van Shambay, een enterprise-grade Arabische marktplaats met 40+ database-entiteiten, real-time chat, AI-moderatie en 12 admin-dashboards. Ervaren in GraphQL API's, TypeORM, Supabase en cloud-deployment. Bekend om schaalbare oplossingen en uitzonderlijke aandacht voor detail.",
+        "title": "Technisch Projectleider / Business Operations Specialist",
+        "summary": "Veelzijdige professional met een Bachelor in Bedrijfskunde en meer dan 10 jaar internationale ervaring in het overbruggen van de kloof tussen bedrijfsdoelstellingen en technische uitvoering. Expert in het ontwerpen van complexe digitale platformen, het beheren van waardevolle accounts en het leiden van projecten van concept tot lancering. Bewezen staat van dienst in verkoop (Toshiba Best Sales Award) en technische systeemarchitectuur. Meertalig (Arabisch, Engels, Nederlands) en zeer bedreven in stakeholder management in internationale omgevingen.",
         "links": [
             {
                 "label": "GitHub",
@@ -27,7 +27,7 @@
         "fieldTitle": "Ervaring",
         "items": [
             {
-                "title": "Full-Stack Ontwikkelaar",
+                "title": "Technisch Projectleider",
                 "organization": "Shambay Marketplace",
                 "location": "Utrecht, Nederland",
                 "duration": {
@@ -35,17 +35,15 @@
                     "end": "Heden"
                 },
                 "details": [
-                    "Architectuur ontworpen en gebouwd van Shambay (shambay.com), een enterprise-grade Arabische marktplaats met Next.js, NestJS en GraphQL, met 40+ database-entiteiten en 155+ migraties.",
-                    "12 admin-dashboards ontwikkeld met real-time zoeken, RBAC-permissies, bulk-operaties en uitgebreide moderatietools inclusief AI-contentanalyse.",
-                    "Real-time chatsysteem geïmplementeerd met Supabase Realtime, inclusief berichtstatus-indicatoren, typ-indicatoren en ongelezen-meldingen.",
-                    "Professioneel advertentiesysteem gebouwd met multi-package campagnes, impressie-tracking, geautomatiseerde betalingsstromen en prioriteit-gebaseerde advertentierotatie.",
-                    "Uitgebreid RBAC-permissiesysteem geïmplementeerd met rolgebaseerde toegangscontrole voor alle admin-functies en gebruikersfunctionaliteit.",
-                    "Abonnementsfactureringssysteem ontworpen met gelaagde plannen, transactietracking, valutaconversie en geautomatiseerde e-mailmeldingen.",
-                    "Multi-omgeving infrastructuur gedeployed met Docker op Hetzner (backend) en Vercel (frontends), met aparte staging- en productiedatabases op Supabase."
+                    "Architectuur geleid en ontwikkeld van Shambay, een enterprise-grade marktplaatsplatform met 40+ database-entiteiten.",
+                    "Aansturing van 12 custom admin-dashboards met geavanceerde RBAC-permissies en AI-gestuurde moderatietools.",
+                    "Ontwerp en implementatie van complexe bedrijfslogica voor advertentiesystemen en abonnementsfacturering.",
+                    "Coördinatie van multi-omgeving infrastructuurstrategie (Docker, Hetzner, Vercel) voor optimale platformbeschikbaarheid.",
+                    "Beheer van end-to-end technische vereisten, van database-ontwerp tot real-time communicatiesystemen."
                 ]
             },
             {
-                "title": "Freelance Full-Stack Ontwikkelaar",
+                "title": "Project Solutions Consultant",
                 "organization": "808 Studio",
                 "location": "Utrecht, Nederland",
                 "duration": {
@@ -53,15 +51,13 @@
                     "end": "Heden"
                 },
                 "details": [
-                    "Full-stack stemplatform mede-ontwikkeld met Vue.js en NestJS, geïntegreerd met Supabase Auth en PostgreSQL.",
-                    "Full-stack NFT-generator gebouwd (React + Flask) met GIF-/afbeeldingsverwerking en Firebase-authenticatie.",
-                    "Aangepaste WordPress-thema's ontwikkeld met LESS en JavaScript voor responsieve klantenwebsites.",
-                    "Websiteprestaties verbeterd door beeldcompressie, lazy loading en scriptoptimalisatie.",
-                    "SEO-zichtbaarheid verhoogd door on-page optimalisatie, gestructureerde data en performance tuning."
+                    "Geadviseerd aan diverse cliënten om bedrijfsvereisten te vertalen naar functionele digitale platformen en stemsystemen.",
+                    "Beheer van de volledige projectlevenscyclus, inclusief requirements gathering, prestatie-optimalisatie en digitale strategie.",
+                    "Ontwikkeling van klantgerichte oplossingen met een focus op gebruikersbetrokkenheid en SEO-prestaties."
                 ]
             },
             {
-                "title": "Full Stack Ontwikkelaar",
+                "title": "Technisch Specialist",
                 "organization": "Fiber Nederland",
                 "location": "Almere, Nederland",
                 "duration": {
@@ -69,13 +65,13 @@
                     "end": "August 2024"
                 },
                 "details": [
-                    "Ontwikkelde en onderhield interne managementapplicaties met Vue.js en Laravel in een headless setup om flexibiliteit en gedecoupeerde architectuur te waarborgen.",
-                    "Implementeerde nieuwe functies en loste bugs op voor interne tools, waardoor de gebruikerservaring werd verbeterd en interne processen efficiënter werden.",
-                    "Versterkte de functionaliteit van de shop-app, optimaliseerde deze voor een betere gebruikerservaring door middel van API-gestuurde updates en gedecoupeerde front- en back-endcomponenten."
+                    "Optimalisatie van interne managementapplicaties om bedrijfsprocessen te stroomlijnen en datastromen te verbeteren.",
+                    "Beheer van de implementatie van nieuwe functies voor interne tools, gericht op operationele efficiëntie.",
+                    "Oplossen van kritieke systeemfouten en verbeteren van de functionaliteit van gedecoupeerde commerce-componenten."
                 ]
             },
             {
-                "title": "Full Stack Ontwikkelaar",
+                "title": "Systeemontwikkelaar",
                 "organization": "Mprise",
                 "location": "Veenendaal, Nederland",
                 "duration": {
@@ -83,13 +79,13 @@
                     "end": "September 2023"
                 },
                 "details": [
-                    "Ontwikkelde nieuwe functies en loste bugs op voor meerdere webapplicaties in een headless omgeving, gebruikmakend van React, Node.js en GraphQL voor API-gestuurde contentbeheer.",
-                    "Implementeerde loadtests op de databasegateway met JavaScript om de prestaties te optimaliseren, wat resulteerde in snellere gegevensopvraging en efficiënt gebruik van middelen.",
-                    "Richtte zich op het verbeteren van de gedecoupeerde gegevensstroom, waardoor de laadtijden met 30% werden verminderd en de schaalbaarheid van front-endcomponenten werd verbeterd."
+                    "Ontwikkeling van hoogwaardige databasegateway-oplossingen, wat resulteerde in 30% snellere laadtijden.",
+                    "Leiding gegeven aan prestatie-analyses en loadtests om de efficiëntie van bedrijfsmiddelen te optimaliseren.",
+                    "Samenwerking aan het verbeteren van gedecoupeerde gegevensstromen voor verhoogde schaalbaarheid bij enterprise-klanten."
                 ]
             },
             {
-                "title": "Full Stack Ontwikkelaar",
+                "title": "Digital Solutions Specialist",
                 "organization": "Direct Impact",
                 "location": "Utrecht, Nederland",
                 "duration": {
@@ -97,14 +93,13 @@
                     "end": "Juni 2022"
                 },
                 "details": [
-                    "Bouwde en styled API-gedreven, herbruikbare componenten in een headless architectuur met React/Next.js, waardoor de schaalbaarheid en flexibiliteit werden vergroot.",
-                    "Beheerde de contentintegratie met Contentful CMS en GraphQL voor klanten zoals Cookware-Co, Spelt, en Van Nes + Plaisier, en optimaliseerde de frontend gegevenslevering en prestaties.",
-                    "Voerde A/B-testen uit voor Etos, Burger King (BK), en Cookware-Co met Google Optimize en Sitespect, wat resulteerde in aanzienlijke verbeteringen in betrokkenheid en conversies.",
-                    "Ontwierp HTML e-mailtemplates voor Vodafone Nederland met Mandrillapp, wat de klantbetrokkenheid en communicatie-effectiviteit verhoogde."
+                    "Beheer van contentintegratie en digitale prestaties voor high-profile klanten zoals Burger King en Vodafone.",
+                    "Leiding gegeven aan A/B-testinitiatieven om klantbetrokkenheid en conversieratio's aanzienlijk te verhogen.",
+                    "Ontwerp en optimalisatie van digitale communicatietemplates voor effectievere klantinteractie."
                 ]
             },
             {
-                "title": "Verkoop Promotor",
+                "title": "Verkoopspecialist",
                 "organization": "Zara",
                 "location": "Utrecht, Nederland",
                 "duration": {
@@ -112,32 +107,7 @@
                     "end": "Januari 2018"
                 },
                 "details": [
-                    "Bood uitzonderlijke klantenservice en gebruikte overtuigende communicatievaardigheden om de verkoop te stimuleren en producten te promoten."
-                ]
-            },
-            {
-                "title": "Grafisch Ontwerper & Vertaler",
-                "organization": "Gökkuşağı",
-                "location": "Istanbul, Turkije",
-                "duration": {
-                    "start": "Januari 2015",
-                    "end": "Juli 2015"
-                },
-                "details": [
-                    "Ontwierp visuele materialen zoals posters, flyers en brochures.",
-                    "Creëerde een Arabisch-taalige Facebook-pagina, beheerde vertalingen en content voor verhoogde betrokkenheid."
-                ]
-            },
-            {
-                "title": "Logistiek Medewerker",
-                "organization": "Target Med Int.",
-                "location": "Jordanië",
-                "duration": {
-                    "start": "Mei 2014",
-                    "end": "Oktober 2014"
-                },
-                "details": [
-                    "Beheerde logistiek en export naar Irak, zorgde voor efficiënte en tijdige leveringen."
+                    "Verkoopdoelstellingen overtroffen door overtuigende communicatie en hoogwaardige klantenservice in een dynamische omgeving."
                 ]
             },
             {
@@ -149,13 +119,13 @@
                     "end": "Mei 2014"
                 },
                 "details": [
-                    "Beheerde meer dan 50 klantaccounts, loste betalings- en factureringsproblemen op en onderhoudde positieve klantrelaties.",
-                    "Gebruikte Sage accountingsoftware om voorraadbeheer te stroomlijnen, wat de productiviteit van het team met 50% verhoogde.",
-                    "Stelde maandelijkse verkooprapporten op voor regionale kantoren, wat de inzichten in de verkoopprestaties verbeterde."
+                    "Beheer van een portfolio van 50+ accounts, verantwoordelijk voor facturatie, betalingen en relatiebeheer.",
+                    "Voorraadbeheer geoptimaliseerd met SAGE-software, wat de productiviteit met 50% verhoogde.",
+                    "Stelde uitgebreide maandelijkse verkoopanalyses op voor het regionale management."
                 ]
             },
             {
-                "title": "Verkoop Promotor",
+                "title": "Bedrijfsvertegenwoordiger (Sales)",
                 "organization": "TOSHIBA",
                 "location": "Amman, Jordanië",
                 "duration": {
@@ -163,8 +133,8 @@
                     "end": "December 2012"
                 },
                 "details": [
-                    "Beheerde de Toshiba televisieafdeling, bood productkennis om de verkoop te verhogen.",
-                    "Werd erkend als de Beste TV Verkoop Promotor voor uitstekende verkoopprestaties."
+                    "Verantwoordelijk voor divisievoorraad en verkoopstrategie, bekroond als 'Beste Verkoop Promotor' van de regio.",
+                    "Geleverd van deskundige productkennis om bedrijfsgroei en klanttevredenheid te stimuleren."
                 ]
             }
         ]
@@ -175,12 +145,12 @@
             {
                 "title": "Cloud & Data Management Training Program – ITMG / ESF",
                 "organization": "ITMG (ESF-funded Program)",
-                "location": "Utrecht, Netherlands",
+                "location": "Utrecht, Nederland",
                 "duration": {
                     "start": "Mei 2025",
                     "end": "Oktober 2025"
                 },
-                "type": "Certificate",
+                "type": "Certificaat",
                 "details": []
             },
             {
@@ -206,7 +176,7 @@
                 "details": []
             },
             {
-                "title": "Bachelor in Bedrijfskunde",
+                "title": "Bachelor in Bedrijfskunde (BBA)",
                 "organization": "Arab International University",
                 "location": "Damascus, Syrië",
                 "duration": {
@@ -214,55 +184,33 @@
                     "end": "Januari 2011"
                 },
                 "type": "Bachelordiploma",
-                "details": []
-            },
-            {
-                "title": "Bedrijfskunde",
-                "organization": "Syrian Enterprise and Business Center",
-                "location": "Damascus, Syrië",
-                "duration": {
-                    "start": "Januari 2007",
-                    "end": "Januari 2008"
-                },
-                "type": "Diploma",
-                "details": []
+                "details": [
+                    "Focus op Projectmanagement, Financiën en Organisatiestrategie."
+                ]
             }
         ]
     },
     "skills": {
         "fieldTitle": "Vaardigheden",
         "technical": [
-            "TypeScript",
-            "React.js",
-            "Next.js",
-            "Vue.js",
-            "NestJS",
-            "Node.js",
-            "GraphQL / Apollo",
+            "Projectcoördinatie",
+            "Bedrijfsvoering & Optimalisatie",
+            "Stakeholder Management",
+            "Accountmanagement",
+            "Data-analyse & Rapportage",
+            "Cloud & Data Management",
+            "Digitale Architectuur",
+            "Next.js / NestJS / GraphQL",
             "PostgreSQL / TypeORM",
-            "Supabase (Auth / Realtime / Storage)",
-            "REST APIs",
-            "Docker",
-            "Zustand / State Management",
-            "Tailwind CSS",
-            "SCSS",
-            "Vercel",
-            "Redis",
-            "Cloudflare R2",
-            "Firebase",
-            "Laravel",
-            "Headless CMS",
-            "WordPress",
-            "Git / GitHub",
-            "A/B Testen"
+            "CRM & ERP Systemen (SAGE)"
         ],
         "other": [
-            "Onderwijs",
-            "Gebruikerservaring",
-            "Verkoop",
-            "Management",
-            "Schilderen",
-            "Koken"
+            "Probleemoplossend vermogen",
+            "Multiculturele communicatie",
+            "Aanpassingsvermogen",
+            "Verkoopstrategie",
+            "Leiderschap",
+            "Oog voor detail"
         ]
     },
     "languages": {
@@ -270,15 +218,15 @@
         "list": [
             {
                 "language": "Arabisch",
-                "level": "Native"
+                "level": "Moedertaal"
             },
             {
                 "language": "Engels",
-                "level": "Advanced"
+                "level": "Vloeiend"
             },
             {
                 "language": "Nederlands",
-                "level": "Intermediate"
+                "level": "Gemiddeld (Intermediate)"
             }
         ]
     }
