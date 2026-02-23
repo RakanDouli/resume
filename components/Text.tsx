@@ -8,7 +8,7 @@ interface SectionTitleProps {
 
 const SectionTitle: React.FC<SectionTitleProps> = ({ children, className }) => {
   return (
-    <h1 className={`text-clamp-2xl font-bold leading-snug ${className}`}>
+    <h1 className={`text-clamp-2xl font-bold leading-snug text-dark ${className || ""}`}>
       {children}
     </h1>
   );
@@ -16,7 +16,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ children, className }) => {
 
 const Title: React.FC<SectionTitleProps> = ({ children, className }) => {
   return (
-    <h2 className={`text-clamp-xl font-bold leading-snug ${className}`}>
+    <h2 className={`text-clamp-xl font-bold leading-snug text-dark ${className || ""}`}>
       {children}
     </h2>
   );
@@ -24,7 +24,7 @@ const Title: React.FC<SectionTitleProps> = ({ children, className }) => {
 
 const Subtitle: React.FC<SectionTitleProps> = ({ children, className }) => {
   return (
-    <h3 className={`text-clamp-md font-semibold leading-normal ${className}`}>
+    <h3 className={`text-clamp-md font-semibold leading-normal text-dark ${className || ""}`}>
       {children}
     </h3>
   );
@@ -32,7 +32,7 @@ const Subtitle: React.FC<SectionTitleProps> = ({ children, className }) => {
 
 const Paragraph: React.FC<SectionTitleProps> = ({ children, className }) => {
   return (
-    <p className={`text-clamp-sm font-normal leading-snug ${className}`}>
+    <p className={`text-clamp-sm font-normal leading-snug text-dark ${className || ""}`}>
       {children}
     </p>
   );
@@ -40,7 +40,7 @@ const Paragraph: React.FC<SectionTitleProps> = ({ children, className }) => {
 
 const TinyText: React.FC<SectionTitleProps> = ({ children, className }) => {
   return (
-    <p className={`text-clamp-xs font-normal leading-snug ${className}`}>
+    <p className={`text-clamp-xs font-normal leading-snug text-dark ${className || ""}`}>
       {children}
     </p>
   );

@@ -26,43 +26,43 @@ const levelMap: { [key: string]: number } = {
 
 const LanguagesSection: FC<LanguagesSectionProps> = ({ languages, styles }) => {
   const itemClasses = [
-    styles?.border ? "border border-text-dark" : "",
+    styles?.border ? "border border-dark" : "bg-primary/10",
     styles?.borderRadius ? "rounded-lg" : "",
     styles?.shadow ? "shadow-lg" : "",
     "px-md py-sm flex items-center gap-sm w-max",
   ].join(" ");
 
   return (
-    <section className="languages-section flex flex-col gap-md">
-      <SectionTitle className="flex items-center gap-sm">
+    <section className="languages-section flex flex-col gap-sm text-dark">
+      <SectionTitle className="flex items-center gap-sm text-dark">
         <GrLanguage />
         {languages.fieldTitle}
       </SectionTitle>
-      <ul className="list-none flex items-center gap-sm flex-wrap">
+      <ul className="list-none flex items-center gap-xs flex-wrap">
         {languages.list.map((lang) => {
-          const level = levelMap[lang.level] ?? 0; // Map level string to number
+          const level = levelMap[lang.level] ?? 0;
 
           return (
             <li key={lang.language} className={itemClasses}>
-              <span className="mb-xs">
-                <Subtitle>{lang.language}</Subtitle>
+              <span>
+                <Subtitle className="text-dark">{lang.language}</Subtitle>
               </span>
 
               {styles.rate ? (
                 <div className="flex items-center gap-xs">
                   {Array.from({ length: level }).map((_, index) => (
-                    <span key={index} className="text-dark">
+                    <span key={index} className="text-secondary">
                       <GoStarFill />
                     </span>
                   ))}
                   {Array.from({ length: 5 - level }).map((_, index) => (
-                    <span key={index} className="text-lightgray">
+                    <span key={index} className="text-dark/20">
                       <GoStarFill />
                     </span>
                   ))}
                 </div>
               ) : (
-                <Paragraph>( {lang.level} )</Paragraph>
+                <Paragraph className="text-dark/70">({lang.level})</Paragraph>
               )}
             </li>
           );

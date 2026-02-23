@@ -9,12 +9,11 @@ interface BasicInfoProps {
 }
 
 const ProfileText: FC<BasicInfoProps> = ({ data }) => (
-  <div className="basic-info">
-    <SectionTitle className="flex items-center gap-sm ">
-      {" "}
+  <div className="basic-info text-dark">
+    <SectionTitle className="flex items-center gap-sm text-dark">
       <ImProfile /> Profile
     </SectionTitle>
-    <Paragraph>{data.summary}</Paragraph>
+    <Paragraph className="text-dark mt-xs">{data.summary}</Paragraph>
   </div>
 );
 

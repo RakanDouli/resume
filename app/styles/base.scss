@@ -93,3 +93,174 @@ body {
 a{
   text-decoration: underline;
 }
+
+// Modern theme - dark sidebar text colors
+.modern_theme {
+  .bg-dark {
+    h1, h2, h3, h4, h5, h6, p, span, li {
+      color: #ffffff !important;
+    }
+
+    svg {
+      color: #ffffff !important;
+      fill: currentColor;
+    }
+
+    .border {
+      border-color: rgba(255, 255, 255, 0.3) !important;
+    }
+  }
+}
+
+// Classic theme - subtle sidebar background
+.classic_theme {
+  .bg-primary\/5 {
+    background-color: rgba(99, 159, 187, 0.05) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+// PDF Mode - Applied when generating PDF for optimal output
+.pdf-mode {
+  // Readable font sizes for PDF
+  .text-clamp-2xl {
+    font-size: 14px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 6px !important;
+  }
+
+  .text-clamp-xl {
+    font-size: 10px !important;
+    line-height: 1.3 !important;
+  }
+
+  .text-clamp-md {
+    font-size: 9px !important;
+    line-height: 1.4 !important;
+  }
+
+  .text-clamp-sm {
+    font-size: 8px !important;
+    line-height: 1.4 !important;
+  }
+
+  .text-clamp-xs {
+    font-size: 7px !important;
+    line-height: 1.4 !important;
+  }
+
+  // Good spacing
+  .gap-lg {
+    gap: 8px !important;
+  }
+
+  .gap-md {
+    gap: 6px !important;
+  }
+
+  .gap-sm {
+    gap: 4px !important;
+  }
+
+  .gap-xs {
+    gap: 2px !important;
+  }
+
+  .p-lg {
+    padding: 12px !important;
+  }
+
+  .p-md {
+    padding: 8px !important;
+  }
+
+  .pt-sm {
+    padding-top: 4px !important;
+  }
+
+  .mb-xs {
+    margin-bottom: 4px !important;
+  }
+
+  // Section titles with proper spacing below
+  h1, h2 {
+    margin-bottom: 6px !important;
+  }
+
+  // Ensure crisp text rendering
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  // Remove hover effects and transitions for static PDF
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+
+  // Ensure backgrounds render properly
+  .bg-lightgray {
+    background-color: rgb(238, 237, 232) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .bg-light {
+    background-color: #ffffff !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .bg-dark {
+    background-color: #1a1a1a !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .bg-primary\/5 {
+    background-color: rgba(99, 159, 187, 0.08) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  // Ensure borders are visible
+  .border {
+    border-width: 1px !important;
+  }
+
+  .border-r-2 {
+    border-right-width: 1px !important;
+  }
+
+  .border-b-2 {
+    border-bottom-width: 1px !important;
+  }
+
+  .border-l-4 {
+    border-left-width: 2px !important;
+  }
+
+  .border-primary {
+    border-color: #639FBB !important;
+  }
+}
+
+// Print media query for browser print
+@media print {
+  body {
+    background-color: #fff !important;
+  }
+
+  .Resume-template {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
+  .theme-switcher,
+  .hidden.lg\\:flex {
+    display: none !important;
+  }
+}

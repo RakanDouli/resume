@@ -1,6 +1,6 @@
 "use client";
 import { FC, ReactNode } from "react";
-import { Title, Subtitle, Paragraph, SectionTitle } from "@/components/Text";
+import { Title, Paragraph, SectionTitle } from "@/components/Text";
 import { SectionItem } from "@/types/resume";
 import { GoDotFill } from "react-icons/go";
 
@@ -24,63 +24,56 @@ const CummonFieldsSection: FC<SectionProps> = ({
 }) => {
   // Build dynamic classes based on styles
   const itemClasses = [
-    "py-sm sm:px-md px-xs",
-    styles?.border ? "border border-text-dark" : "",
+    "py-xs px-xs",
+    styles?.border ? "border border-dark/30" : "",
     styles?.borderRadius ? "rounded-lg" : "",
     styles?.shadow ? "shadow-lg" : "",
   ].join(" ");
 
   return (
     <section
-      className={`flex flex-col ${
-        styles?.border || styles?.shadow ? "gap-sm" : ""
+      className={`flex flex-col gap-sm ${
+        styles?.border || styles?.shadow ? "gap-xs" : ""
       }`}
     >
       {/* Section Title */}
-      <SectionTitle className="flex items-center gap-sm ">
+      <SectionTitle className="flex items-center gap-sm mb-xs">
         {icon}
         {title}
       </SectionTitle>
 
       {/* Underline if style requested */}
       {styles?.underline && (
-        <hr className="mt-4 border-t border-gray-300 dark:border-gray-600" />
+        <hr className="border-t border-dark/20 mb-xs" />
       )}
 
       {/* Map over items and display content */}
       {items?.map((item, index) => (
-        <div key={index}>
+        <div key={index} className="mb-sm">
           <div className={itemClasses}>
-            {/* Title of the item */}
-            <Title className="text-gray-800 dark:text-white">
-              {item.title} {item.organization ? `- ${item.organization}` : null}
-            </Title>
+            {/* Title and Duration on same line for compactness */}
+            <div className="flex justify-between items-baseline flex-wrap gap-sm">
+              <Title className="text-dark">
+                {item.title}{item.organization ? ` - ${item.organization}` : null}
+              </Title>
+              <Paragraph className="text-dark/70 whitespace-nowrap">
+                {item.duration.start} - {item.duration.end}
+              </Paragraph>
+            </div>
 
-            {/* Optional Subtitle */}
-            {item.subtitle && (
-              <Subtitle className="text-gray-800 dark:text-white">
-                {item.subtitle}
-              </Subtitle>
-            )}
-
-            {/* Display Duration */}
-            <Paragraph className="text-gray-600 dark:text-gray-400">
-              {item.duration.start} - {item.duration.end}
-            </Paragraph>
-
-            {/* Optional Location */}
+            {/* Location */}
             {item.location && (
-              <Paragraph className="text-gray-600 dark:text-gray-400">
+              <Paragraph className="text-dark/70 mt-xs">
                 {item.location}
               </Paragraph>
             )}
 
             {/* Details as list */}
             {item.details && (
-              <ul className="list-none mt-2 text-gray-700 dark:text-gray-300">
+              <ul className="list-none mt-sm text-dark">
                 {item.details.map((detail, idx) => (
-                  <li className="flex gap-xs items-start" key={idx}>
-                    <GoDotFill className="my-1" />
+                  <li className="flex gap-xs items-start mb-xs" key={idx}>
+                    <GoDotFill className="mt-1 flex-shrink-0 text-xs" />
                     <Paragraph>{detail}</Paragraph>
                   </li>
                 ))}
@@ -90,7 +83,7 @@ const CummonFieldsSection: FC<SectionProps> = ({
 
           {/* Underline after each item if style requested */}
           {styles?.underline && (
-            <hr className="border-t border-gray-300 dark:border-gray-600" />
+            <hr className="border-t border-dark/20 mt-sm" />
           )}
         </div>
       ))}
