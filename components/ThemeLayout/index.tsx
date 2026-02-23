@@ -9,6 +9,7 @@ import Mobile from "@/components/themes/Mobile";
 interface ResumeProps {
   data: ResumeData;
   resumeTemplateRef?: RefObject<HTMLDivElement>;
+  onThemeChange?: (theme: string) => void;
 }
 
 const themeNames = ["Basic", "Classic", "Modern"];
@@ -21,7 +22,7 @@ const loadThemeComponent = (
   );
 };
 
-const ThemeLayout: FC<ResumeProps> = ({ data, resumeTemplateRef }) => {
+const ThemeLayout: FC<ResumeProps> = ({ data, resumeTemplateRef, onThemeChange }) => {
   const [selectedTheme, setSelectedTheme] = useState<string>("Basic");
   const [ThemeComponent, setThemeComponent] =
     useState<ComponentType<ResumeProps> | null>(null);
@@ -34,25 +35,25 @@ const ThemeLayout: FC<ResumeProps> = ({ data, resumeTemplateRef }) => {
     loadThemeComponent(selectedTheme)
       .then((LoadedComponent) => {
         setThemeComponent(() => LoadedComponent);
-
+        onThemeChange?.(selectedTheme);
         setLoading(false);
       })
       .catch((error) => {
         console.error("Error loading theme:", error);
         setLoading(false);
       });
-  }, [selectedTheme]);
+  }, [selectedTheme, onThemeChange]);
 
   return (
     <section className="container">
       <div className="theme-switcher overflow-hidden relative hidden lg:flex flex-col mb-md shadow-lg w-full bg-light rounded-lg">
         <span
-          className="flex hover:bg-primary hover:text-light ease-in-out duration-300 transition-all gap-sm p-sm items-center justify-center cursor-pointer"
+          className="group flex hover:bg-primary hover:text-light ease-in-out duration-300 transition-all gap-sm p-sm items-center justify-center cursor-pointer"
           onClick={() => {
             setOpen(!open);
           }}
         >
-          <Title className="text-center">Select Theme</Title>
+          <Title className="text-center group-hover:text-light">Select Theme</Title>
           <span className="text-xl">
             {open ? <RiArrowUpWideLine /> : <RiArrowDownWideLine />}
           </span>

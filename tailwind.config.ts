@@ -3,6 +3,7 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     screens: {
@@ -12,19 +13,41 @@ module.exports = {
       xl: "1441px",
     },
     colors: {
-      primary: "var(--primary)",
-      secondary: "var(--secondary)",
-      third: "var(--third)",
-      dark: "var(--dark)",
-      light: "var(--light)",
-      lightgray: "var(--light-gray)",
-      transparent: "var(--transparent)",
-      modalBg: "var(--modal-bg)",
-      successBg: "var(--success-bg)",
-      successText: "var(--success-text)",
-      errorBg: "var( --error-bg)",
-      errorText: "var( --error-text)",
-      bodyBg: "var( --body-bg)",
+      primary: {
+        DEFAULT: "rgb(28, 111, 193)",
+        5: "rgba(28, 111, 193, 0.05)",
+        10: "rgba(28, 111, 193, 0.1)",
+        20: "rgba(28, 111, 193, 0.2)",
+        30: "rgba(28, 111, 193, 0.3)",
+      },
+      secondary: "rgb(226, 155, 114)",
+      third: "rgb(219, 209, 158)",
+      dark: {
+        DEFAULT: "#1a1a1a",
+        70: "rgba(26, 26, 26, 0.7)",
+        50: "rgba(26, 26, 26, 0.5)",
+        20: "rgba(26, 26, 26, 0.2)",
+      },
+      light: {
+        DEFAULT: "#ffffff",
+        20: "rgba(255, 255, 255, 0.2)",
+        50: "rgba(255, 255, 255, 0.5)",
+      },
+      lightgray: "rgb(238, 237, 232)",
+      transparent: "transparent",
+      modalBg: "rgba(0, 0, 0, 0.4)",
+      successBg: "rgb(196, 239, 232)",
+      successText: "rgb(55, 162, 147)",
+      errorBg: "rgb(251, 219, 223)",
+      errorText: "rgb(243, 71, 78)",
+      bodyBg: "#F7F6F2",
+      gray: {
+        300: "#d1d5db",
+        400: "#9ca3af",
+        600: "#4b5563",
+        700: "#374151",
+        800: "#1f2937",
+      },
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
@@ -44,15 +67,12 @@ module.exports = {
         "90vw": "90vw",
       },
       fontSize: {
-        // Updated font sizes in tailwind.config.js or similar configuration
-        fontSize: {
-          "clamp-xs": ["clamp(12px, 1.8vw, 14px)", "14px"], // Small/error messages
-          "clamp-sm": ["clamp(14px, 2vw, 16px)", "16px"], // Standard body text
-          "clamp-md": ["clamp(16px, 2.5vw, 20px)", "20px"], // Subheadings/secondary text
-          "clamp-lg": ["clamp(20px, 3vw, 32px)", "32px"], // Main headers, larger text
-          "clamp-xl": ["clamp(28px, 4vw, 48px)", "48px"], // Hero text, page titles
-          "clamp-2xl": ["clamp(36px, 5vw, 64px)", "64px"], // Large headers, hero sections
-        },
+        "clamp-xs": ["clamp(10px, 1.5vw, 12px)", { lineHeight: "1.4" }],
+        "clamp-sm": ["clamp(11px, 1.8vw, 13px)", { lineHeight: "1.5" }],
+        "clamp-md": ["clamp(13px, 2vw, 15px)", { lineHeight: "1.4" }],
+        "clamp-lg": ["clamp(16px, 2.5vw, 20px)", { lineHeight: "1.3" }],
+        "clamp-xl": ["clamp(18px, 3vw, 24px)", { lineHeight: "1.2" }],
+        "clamp-2xl": ["clamp(22px, 3.5vw, 28px)", { lineHeight: "1.2" }],
       },
     },
   },

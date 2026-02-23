@@ -16,11 +16,11 @@ interface ResumeProps {
 
 const Basic: FC<ResumeProps> = ({ data }) => {
   return (
-    <div>
-      {" "}
-      <div className="basic_theme flex flex-col gap-lg pt-xl pb-2xl px-xl ">
-        <div className="flex items-center flex-row gap-lg ">
-          <span className="w-[33%]">
+    <div className="basic_theme">
+      <div className="flex flex-col gap-sm p-md">
+        {/* Header Section */}
+        <div className="flex items-start flex-row gap-md pb-sm border-b-2 border-primary">
+          <span className="w-[18%] flex-shrink-0">
             <ResumeImage
               imageUrl={data.basicInfo.photoUrl}
               name={data.basicInfo.name}
@@ -33,12 +33,13 @@ const Basic: FC<ResumeProps> = ({ data }) => {
             />
           </span>
 
-          <div className="flex flex-col gap-sm w-[67%]">
+          <div className="flex flex-col gap-xs w-[82%]">
             <BasicInfoSection data={data.basicInfo} />
             <ProfileText data={data.basicInfo} />
           </div>
         </div>
 
+        {/* Experience Section */}
         <ExperienceSection
           experiences={data.experiences}
           styles={{
@@ -48,33 +49,49 @@ const Basic: FC<ResumeProps> = ({ data }) => {
             shadow: false,
           }}
         />
-        <SkillsSection
-          styles={{
-            border: true,
-            borderRadius: true,
-            shadow: false,
-          }}
-          skills={data.skills}
-        />
-        <EducationSection
-          education={data.education}
-          styles={{
-            underline: true,
-            border: false,
-            borderRadius: false,
-            shadow: false,
-          }}
-        />
-        <LanguagesSection
-          styles={{
-            rate: true,
-            border: true,
-            borderRadius: true,
-            shadow: false,
-          }}
-          languages={data.languages}
-        />
-        {data.basicInfo.links && <LinksSection links={data.basicInfo.links} />}
+
+        {/* Two Column Layout for Skills & Education */}
+        <div className="flex gap-md">
+          <div className="w-[50%]">
+            <SkillsSection
+              styles={{
+                border: false,
+                borderRadius: true,
+                shadow: false,
+              }}
+              skills={data.skills}
+            />
+          </div>
+          <div className="w-[50%]">
+            <EducationSection
+              education={data.education}
+              styles={{
+                underline: true,
+                border: false,
+                borderRadius: false,
+                shadow: false,
+              }}
+            />
+          </div>
+        </div>
+
+        {/* Footer Section */}
+        <div className="flex gap-md pt-sm border-t border-dark/20">
+          <div className="w-[50%]">
+            <LanguagesSection
+              styles={{
+                rate: true,
+                border: false,
+                borderRadius: false,
+                shadow: false,
+              }}
+              languages={data.languages}
+            />
+          </div>
+          <div className="w-[50%]">
+            {data.basicInfo.links && <LinksSection links={data.basicInfo.links} />}
+          </div>
+        </div>
       </div>
     </div>
   );

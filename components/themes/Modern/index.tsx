@@ -15,22 +15,27 @@ interface ResumeProps {
 }
 const Modern: FC<ResumeProps> = ({ data }) => {
   return (
-    <>
-      {" "}
-      <div className="modern_theme flex">
-        <div className="flex flex-col gap-md w-[37%] bg-lightgray sm:pt-xl pt-md pb-2xl  px-lg">
-          <ResumeImage
-            imageUrl={data.basicInfo.photoUrl}
-            name={data.basicInfo.name}
-            styles={{
-              border: false,
-              borderRadius: false,
-              shadow: false,
-              circle: true,
-            }}
-          />
+    <div className="modern_theme flex">
+      {/* Left Sidebar */}
+      <div className="flex flex-col gap-sm w-[32%] p-md border-r border-dark/20">
+        <div className="flex justify-center">
+          <div className="w-[80%]">
+            <ResumeImage
+              imageUrl={data.basicInfo.photoUrl}
+              name={data.basicInfo.name}
+              styles={{
+                border: true,
+                borderRadius: true,
+                shadow: false,
+                circle: false,
+              }}
+            />
+          </div>
+        </div>
 
-          <BasicInfoSection data={data.basicInfo} />
+        <BasicInfoSection data={data.basicInfo} />
+
+        <div className="border-t border-dark/20 pt-sm">
           <SkillsSection
             styles={{
               border: true,
@@ -39,42 +44,54 @@ const Modern: FC<ResumeProps> = ({ data }) => {
             }}
             skills={data.skills}
           />
+        </div>
+
+        <div className="border-t border-dark/20 pt-sm">
           <LanguagesSection
             styles={{
               rate: true,
-              border: true,
-              borderRadius: true,
+              border: false,
+              borderRadius: false,
               shadow: false,
             }}
             languages={data.languages}
           />
-          {data.basicInfo.links && (
+        </div>
+
+        {data.basicInfo.links && (
+          <div className="border-t border-dark/20 pt-sm">
             <LinksSection links={data.basicInfo.links} />
-          )}
-        </div>
-        <div className="flex flex-col gap-md w-[63%] sm:pt-xl pt-md pb-2xl sm:px-xl px-md ">
-          <ProfileText data={data.basicInfo} />
-          <ExperienceSection
-            experiences={data.experiences}
-            styles={{
-              underline: false,
-              border: true,
-              borderRadius: true,
-              shadow: false,
-            }}
-          />
-          <EducationSection
-            education={data.education}
-            styles={{
-              underline: false,
-              border: true,
-              borderRadius: true,
-              shadow: false,
-            }}
-          />
-        </div>
+          </div>
+        )}
       </div>
-    </>
+
+      {/* Main Content */}
+      <div className="flex flex-col gap-sm w-[68%] p-md bg-light">
+        <div className="border-l-4 border-primary pl-sm">
+          <ProfileText data={data.basicInfo} />
+        </div>
+
+        <ExperienceSection
+          experiences={data.experiences}
+          styles={{
+            underline: true,
+            border: false,
+            borderRadius: false,
+            shadow: false,
+          }}
+        />
+
+        <EducationSection
+          education={data.education}
+          styles={{
+            underline: true,
+            border: false,
+            borderRadius: false,
+            shadow: false,
+          }}
+        />
+      </div>
+    </div>
   );
 };
 
