@@ -1,17 +1,17 @@
 {
     "basicInfo": {
-        "fieldTitle": "Basisinformatie",
+        "fieldTitle": "Basisgegevens",
         "name": "Rakan Douli",
         "location": "Utrecht, Nederland",
         "phone": "+31612222409",
         "whatsApp": "+31636084426",
         "email": "rakandouli@gmail.com",
         "dateOfBirth": "22-04-1987",
-        "drivingLicense": "Beschikbaar",
-        "drivingLicenseType": "Standaard",
+        "drivingLicense": "Aanwezig",
+        "drivingLicenseType": "Rijbewijs B",
         "photoUrl": "./Screenshot 2024-11-07 at 20.11.34.png",
-        "title": "Technisch Projectleider / Business Operations Specialist",
-        "summary": "Veelzijdige professional met een Bachelor in Bedrijfskunde en meer dan 10 jaar internationale ervaring in het overbruggen van de kloof tussen bedrijfsdoelstellingen en technische uitvoering. Expert in het ontwerpen van complexe digitale platformen, het beheren van waardevolle accounts en het leiden van projecten van concept tot lancering. Bewezen staat van dienst in verkoop (Toshiba Best Sales Award) en technische systeemarchitectuur. Meertalig (Arabisch, Engels, Nederlands) en zeer bedreven in stakeholder management in internationale omgevingen.",
+        "title": "Technical Project Lead | Senior Full-Stack Developer",
+        "summary": "Ik ben een Full-Stack Developer met een Bachelor in Bedrijfskunde (BBA) en meer dan 10 jaar ervaring in internationale bedrijfsactiviteiten en softwareontwikkeling. Ik ben gespecialiseerd in het bouwen van complexe React/Next.js platforms (zoals Shambay), waarbij ik ervoor zorg dat technologie daadwerkelijk zakelijke problemen oplost. Met mijn achtergrond in B2B accountmanagement en financiële verslaglegging ben ik op mijn best in het overbruggen van de kloof tussen technische uitvoering en bedrijfsdoelstellingen. Meertalig in Arabisch, Engels en Nederlands.",
         "links": [
             {
                 "label": "GitHub",
@@ -24,193 +24,173 @@
         ]
     },
     "experiences": {
-        "fieldTitle": "Ervaring",
+        "fieldTitle": "Werkervaring",
         "items": [
             {
-                "title": "Technisch Projectleider",
+                "title": "Technical Project Lead / Senior Full-Stack Developer",
                 "organization": "Shambay Marketplace",
                 "location": "Utrecht, Nederland",
                 "duration": {
-                    "start": "Augustus 2025",
-                    "end": "Heden"
+                    "start": "augustus 2025",
+                    "end": "heden"
                 },
                 "details": [
-                    "Architectuur geleid en ontwikkeld van Shambay, een enterprise-grade marktplaatsplatform met 40+ database-entiteiten.",
-                    "Aansturing van 12 custom admin-dashboards met geavanceerde RBAC-permissies en AI-gestuurde moderatietools.",
-                    "Ontwerp en implementatie van complexe bedrijfslogica voor advertentiesystemen en abonnementsfacturering.",
-                    "Coördinatie van multi-omgeving infrastructuurstrategie (Docker, Hetzner, Vercel) voor optimale platformbeschikbaarheid.",
-                    "Beheer van end-to-end technische vereisten, van database-ontwerp tot real-time communicatiesystemen."
+                    "Verantwoordelijk voor de end-to-end technische strategie en het architecturaal ontwerp van Shambay (shambay.com), een enterprise-grade Arabisch marktplaatsplatform.",
+                    "Beheer van de volledige full-stack ontwikkelingscyclus met Next.js, NestJS en GraphQL, inclusief de coördinatie van 40+ database-entiteiten en 155+ migraties.",
+                    "Toezicht gehouden op het ontwerp van 12 admin-dashboards met RBAC-permissies, real-time zoekfunctionaliteit en AI-gestuurde moderatietools.",
+                    "Architectuur ontwikkeld voor geautomatiseerde business logica voor professionele advertentiepakketten en gelaagde abonnements- en facturatiesystemen.",
+                    "Aansturing van multi-environment infrastructuur implementatie via Docker op Hetzner en Vercel, met focus op hoge beschikbaarheid en gegevensbeveiliging."
                 ]
             },
             {
-                "title": "Project Solutions Consultant",
+                "title": "Freelance Full-Stack Developer",
                 "organization": "808 Studio",
                 "location": "Utrecht, Nederland",
                 "duration": {
-                    "start": "December 2020",
-                    "end": "Heden"
+                    "start": "december 2020",
+                    "end": "heden"
                 },
                 "details": [
-                    "Geadviseerd aan diverse cliënten om bedrijfsvereisten te vertalen naar functionele digitale platformen en stemsystemen.",
-                    "Beheer van de volledige projectlevenscyclus, inclusief requirements gathering, prestatie-optimalisatie en digitale strategie.",
-                    "Ontwikkeling van klantgerichte oplossingen met een focus op gebruikersbetrokkenheid en SEO-prestaties."
+                    "Geadviseerd over en mede-ontwikkeld aan full-stack oplossingen, waaronder een stemplatform (Vue/NestJS) en een NFT-generator (React/Flask).",
+                    "Beheer van klantvereisten en projectlevering voor diverse hoogwaardige webapplicaties.",
+                    "Ontwikkeling van aangepaste WordPress-architecturen en optimalisatie van SEO-zichtbaarheid via gestructureerde data en performance tuning."
                 ]
             },
             {
-                "title": "Technisch Specialist",
+                "title": "Full Stack Developer",
                 "organization": "Fiber Nederland",
                 "location": "Almere, Nederland",
                 "duration": {
-                    "start": "Januari 2024",
-                    "end": "August 2024"
+                    "start": "januari 2024",
+                    "end": "augustus 2024"
                 },
                 "details": [
-                    "Optimalisatie van interne managementapplicaties om bedrijfsprocessen te stroomlijnen en datastromen te verbeteren.",
-                    "Beheer van de implementatie van nieuwe functies voor interne tools, gericht op operationele efficiëntie.",
-                    "Oplossen van kritieke systeemfouten en verbeteren van de functionaliteit van gedecoupeerde commerce-componenten."
+                    "Ontwikkeling en onderhoud van interne managementapplicaties met Vue.js and Laravel in een headless setup voor B2B-activiteiten.",
+                    "Oplossen van kritieke bugs en implementeren van nieuwe functionaliteiten voor interne tools om high-trust zakelijke workflows te optimaliseren.",
+                    "Optimalisatie van de frontend van de shop-app via API-gestuurde updates, zorgdragend voor dataconsistentie in ontkoppelde systemen."
                 ]
             },
             {
-                "title": "Systeemontwikkelaar",
+                "title": "Full Stack Developer",
                 "organization": "Mprise",
                 "location": "Veenendaal, Nederland",
                 "duration": {
-                    "start": "Augustus 2022",
-                    "end": "September 2023"
+                    "start": "augustus 2022",
+                    "end": "september 2023"
                 },
                 "details": [
-                    "Ontwikkeling van hoogwaardige databasegateway-oplossingen, wat resulteerde in 30% snellere laadtijden.",
-                    "Leiding gegeven aan prestatie-analyses en loadtests om de efficiëntie van bedrijfsmiddelen te optimaliseren.",
-                    "Samenwerking aan het verbeteren van gedecoupeerde gegevensstromen voor verhoogde schaalbaarheid bij enterprise-klanten."
+                    "Ontwikkeling van functionaliteiten voor headless B2B Agri-tech applicaties met React, Node.js en GraphQL.",
+                    "Uitvoeren van performance- en belastingtests voor database-gateways met JavaScript, identificeren en oplossen van knelpunten in data-intensieve omgevingen.",
+                    "Stroomlijnen van ontkoppelde datastromen, wat resulteerde in een vermindering van 30% in laadtijden voor enterprise-gebruikers."
                 ]
             },
             {
-                "title": "Digital Solutions Specialist",
+                "title": "Full Stack Developer",
                 "organization": "Direct Impact",
                 "location": "Utrecht, Nederland",
                 "duration": {
-                    "start": "Oktober 2021",
-                    "end": "Juni 2022"
+                    "start": "oktober 2021",
+                    "end": "juni 2022"
                 },
                 "details": [
-                    "Beheer van contentintegratie en digitale prestaties voor high-profile klanten zoals Burger King en Vodafone.",
-                    "Leiding gegeven aan A/B-testinitiatieven om klantbetrokkenheid en conversieratio's aanzienlijk te verhogen.",
-                    "Ontwerp en optimalisatie van digitale communicatietemplates voor effectievere klantinteractie."
+                    "Ontwikkeling van herbruikbare React/Next.js componenten in een headless architectuur voor wereldwijde merken zoals Vodafone en Burger King.",
+                    "Beheer van Contentful CMS-integraties en GraphQL datalevering om frontend-prestaties te optimaliseren.",
+                    "Implementatie van A/B-teststrategieën voor e-commerce platforms met veel verkeer, resulterend in meetbare conversiegroei.",
+                    "Ontwerp en implementatie van responsieve HTML-templates voor Vodafone NL ter verbetering van de klantcommunicatie."
                 ]
             },
             {
-                "title": "Verkoopspecialist",
+                "title": "Verkoopmedewerker (Sales Specialist)",
                 "organization": "Zara",
                 "location": "Utrecht, Nederland",
                 "duration": {
-                    "start": "Januari 2017",
-                    "end": "Januari 2018"
+                    "start": "januari 2017",
+                    "end": "januari 2018"
                 },
                 "details": [
-                    "Verkoopdoelstellingen overtroffen door overtuigende communicatie en hoogwaardige klantenservice in een dynamische omgeving."
+                    "Behalen van verkoopdoelstellingen door middel van overtuigende communicatie en hoogwaardige klantenservice in een dynamische retailomgeving in Utrecht."
                 ]
             },
             {
-                "title": "Accountmanager",
+                "title": "Account Manager",
                 "organization": "United Mining Industries",
                 "location": "Jordanië",
                 "duration": {
-                    "start": "Januari 2013",
-                    "end": "Mei 2014"
+                    "start": "januari 2013",
+                    "end": "mei 2014"
                 },
                 "details": [
-                    "Beheer van een portfolio van 50+ accounts, verantwoordelijk voor facturatie, betalingen en relatiebeheer.",
-                    "Voorraadbeheer geoptimaliseerd met SAGE-software, wat de productiviteit met 50% verhoogde.",
-                    "Stelde uitgebreide maandelijkse verkoopanalyses op voor het regionale management."
+                    "Beheer van 50+ belangrijke klantaccounts, toezicht op betalingsverwerking, facturatie en hoogwaardige klantrelaties.",
+                    "Gebruik van SAGE-software om voorraadbeheer en financiële rapportage te optimaliseren, wat de productiviteit van het team met 50% verhoogde."
                 ]
             },
             {
-                "title": "Bedrijfsvertegenwoordiger (Sales)",
+                "title": "Sales Promoter",
                 "organization": "TOSHIBA",
                 "location": "Amman, Jordanië",
                 "duration": {
-                    "start": "Januari 2012",
-                    "end": "December 2012"
+                    "start": "januari 2012",
+                    "end": "december 2012"
                 },
                 "details": [
-                    "Verantwoordelijk voor divisievoorraad en verkoopstrategie, bekroond als 'Beste Verkoop Promotor' van de regio.",
-                    "Geleverd van deskundige productkennis om bedrijfsgroei en klanttevredenheid te stimuleren."
+                    "Verantwoordelijk voor de inventaris en verkoopstrategie van de televisie-afdeling; bekroond als 'Best TV Sales Promoter' voor recordprestaties."
                 ]
             }
         ]
     },
     "education": {
-        "fieldTitle": "Opleiding",
+        "fieldTitle": "Opleidingen",
         "items": [
             {
-                "title": "Cloud & Data Management Training Program – ITMG / ESF",
-                "organization": "ITMG (ESF-funded Program)",
+                "title": "Cloud & Data Management Training Program",
+                "organization": "ITMG / ESF",
                 "location": "Utrecht, Nederland",
                 "duration": {
-                    "start": "Mei 2025",
-                    "end": "Oktober 2025"
+                    "start": "mei 2025",
+                    "end": "oktober 2025"
                 },
-                "type": "Certificaat",
-                "details": []
+                "type": "Certificaat"
             },
             {
-                "title": "Full Stack JS Ontwikkelaar Cursus",
+                "title": "Full Stack JS Developer Course",
                 "organization": "Codaisseur",
                 "location": "Amsterdam, Nederland",
                 "duration": {
-                    "start": "April 2021",
-                    "end": "Augustus 2021"
+                    "start": "april 2021",
+                    "end": "augustus 2021"
                 },
-                "type": "Certificaat",
-                "details": []
+                "type": "Certificaat"
             },
             {
-                "title": "Nederlands Taalcursus",
-                "organization": "Babel Language Academy",
-                "location": "Utrecht, Nederland",
-                "duration": {
-                    "start": "Februari 2020",
-                    "end": "November 2020"
-                },
-                "type": "Certificaat",
-                "details": []
-            },
-            {
-                "title": "Bachelor in Bedrijfskunde (BBA)",
+                "title": "Bachelor of Business Administration (BBA)",
                 "organization": "Arab International University",
                 "location": "Damascus, Syrië",
                 "duration": {
-                    "start": "Januari 2007",
-                    "end": "Januari 2011"
+                    "start": "2007",
+                    "end": "2011"
                 },
-                "type": "Bachelordiploma",
-                "details": [
-                    "Focus op Projectmanagement, Financiën en Organisatiestrategie."
-                ]
+                "type": "Bachelor"
             }
         ]
     },
     "skills": {
         "fieldTitle": "Vaardigheden",
         "technical": [
-            "Projectcoördinatie",
-            "Bedrijfsvoering & Optimalisatie",
-            "Stakeholder Management",
-            "Accountmanagement",
-            "Data-analyse & Rapportage",
-            "Cloud & Data Management",
-            "Digitale Architectuur",
-            "Next.js / NestJS / GraphQL",
-            "PostgreSQL / TypeORM",
-            "CRM & ERP Systemen (SAGE)"
+            "TypeScript / JavaScript (ES6+)",
+            "React / Next.js / Vue.js",
+            "Node.js / NestJS / GraphQL",
+            "PostgreSQL / TypeORM / Supabase",
+            "Docker / Cloud Infrastructuur",
+            "B2B SaaS / Fintech Logica",
+            "A/B Testing & Performance Tuning",
+            "ERP & Boekhoudsystemen (SAGE)"
         ],
         "other": [
-            "Probleemoplossend vermogen",
-            "Multiculturele communicatie",
-            "Aanpassingsvermogen",
-            "Verkoopstrategie",
-            "Leiderschap",
-            "Oog voor detail"
+            "Technisch Projectleiderschap",
+            "Stakeholdermanagement",
+            "Productstrategie",
+            "Optimalisatie van Bedrijfsprocessen",
+            "Multicultural Collaboration"
         ]
     },
     "languages": {
@@ -226,7 +206,7 @@
             },
             {
                 "language": "Nederlands",
-                "level": "Gemiddeld (Intermediate)"
+                "level": "Gemiddeld"
             }
         ]
     }

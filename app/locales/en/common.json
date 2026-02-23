@@ -10,8 +10,8 @@
     "drivingLicense": "Available",
     "drivingLicenseType": "Standard",
     "photoUrl": "./Screenshot 2024-11-07 at 20.11.34.png",
-    "title": "Technical Project Lead / Business Operations Specialist",
-    "summary": "Versatile professional with a Bachelor of Business Administration and over 10 years of international experience bridging the gap between business strategy and technical execution. Expert in architecting complex digital platforms, managing high-value accounts, and leading project workstreams from concept to launch. Proven track record in Sales (Toshiba Best Sales Award) and technical systems design. Multilingual (Arabic, English, Dutch) and highly adept at managing stakeholders in international environments.",
+    "title": "Technical Project Lead | Senior Full-Stack Developer",
+    "summary": "I am a Full-Stack Developer with a Bachelor of Business Administration and over 10 years of experience in international business operations and software development. I specialize in building complex React/Next.js platforms (like Shambay) while ensuring the technology solves real business problems. With a background in B2B account management and financial reporting, I am at my best bridging the gap between technical execution and business goals. Multilingual in Arabic, English, and Dutch.",
     "links": [
       {
         "label": "GitHub",
@@ -27,7 +27,7 @@
     "fieldTitle": "Experience",
     "items": [
       {
-        "title": "Technical Project Lead",
+        "title": "Technical Project Lead / Senior Full-Stack Developer",
         "organization": "Shambay Marketplace",
         "location": "Utrecht, The Netherlands",
         "duration": {
@@ -35,15 +35,15 @@
           "end": "Present"
         },
         "details": [
-          "Architected and led the development of an enterprise-grade Arabic marketplace platform, managing a complex structure of 40+ database entities.",
-          "Directed the creation of 12 custom admin dashboards with advanced RBAC permissions and AI-driven moderation tools.",
-          "Designed and implemented complex business logic for professional advertising systems and subscription billing flows.",
-          "Coordinated multi-environment infrastructure strategy using Docker, Hetzner, and Vercel to ensure 24/7 platform availability.",
-          "Managed end-to-end technical requirements, from initial database design to real-time communication systems."
+          "Led the end-to-end technical strategy and architectural design for Shambay (shambay.com), an enterprise-grade Arabic marketplace platform.",
+          "Managed the full-stack development lifecycle using Next.js, NestJS, and GraphQL, coordinating 40+ database entities and 155+ migrations.",
+          "Oversaw the design of 12 admin dashboards featuring RBAC permissions, real-time search, and AI-driven moderation tools.",
+          "Architected automated business logic for professional advertising packages and tiered subscription billing systems.",
+          "Directed multi-environment infrastructure deployment using Docker on Hetzner and Vercel, ensuring high availability and data security."
         ]
       },
       {
-        "title": "Project Solutions Consultant",
+        "title": "Freelance Full-Stack Developer",
         "organization": "808 Studio",
         "location": "Utrecht, The Netherlands",
         "duration": {
@@ -51,13 +51,13 @@
           "end": "Present"
         },
         "details": [
-          "Consulted with diverse clients to translate business requirements into functional digital platforms and voting systems.",
-          "Managed end-to-end project delivery, including requirements gathering, performance optimization, and digital strategy.",
-          "Developed custom client-facing solutions with a focus on high user engagement and SEO performance."
+          "Consulted on and co-developed full-stack solutions including a voting platform (Vue/NestJS) and an NFT generator (React/Flask).",
+          "Managed client requirements and project delivery for multiple high-performance web applications.",
+          "Engineered custom WordPress architectures and optimized SEO visibility through structured data and performance tuning."
         ]
       },
       {
-        "title": "Technical Specialist",
+        "title": "Full Stack Developer",
         "organization": "Fiber Nederland",
         "location": "Almere, The Netherlands",
         "duration": {
@@ -65,13 +65,13 @@
           "end": "August 2024"
         },
         "details": [
-          "Optimized internal management applications to streamline business operations and improve cross-departmental data flow.",
-          "Managed the implementation of new features for internal tools, enhancing user experience and operational efficiency.",
-          "Resolved critical system bugs and improved the functionality of decoupled commerce components."
+          "Developed and maintained internal management applications using Vue.js and Laravel in a headless setup for B2B operations.",
+          "Resolved critical bugs and implemented features for internal tools to optimize high-trust business workflows.",
+          "Optimized the shop app frontend through API-driven updates, ensuring data consistency across decoupled systems."
         ]
       },
       {
-        "title": "Systems Developer",
+        "title": "Full Stack Developer",
         "organization": "Mprise",
         "location": "Veenendaal, The Netherlands",
         "duration": {
@@ -79,13 +79,13 @@
           "end": "September 2023"
         },
         "details": [
-          "Engineered high-performance data gateway solutions, resulting in a 30% reduction in system load times.",
-          "Led performance analysis and load testing to optimize resource efficiency for multiple web applications.",
-          "Collaborated on improving decoupled data flows to enhance system scalability for enterprise clients."
+          "Built and maintained features for headless B2B Agri-tech applications using React, Node.js, and GraphQL.",
+          "Led performance load testing for database gateways with JavaScript, identifying and resolving bottlenecks in data-heavy environments.",
+          "Streamlined decoupled data flows, resulting in a 30% reduction in load times for enterprise users."
         ]
       },
       {
-        "title": "Digital Solutions Specialist",
+        "title": "Full Stack Developer",
         "organization": "Direct Impact",
         "location": "Utrecht, The Netherlands",
         "duration": {
@@ -93,9 +93,10 @@
           "end": "June 2022"
         },
         "details": [
-          "Managed content integration and digital performance for high-profile clients including Burger King and Vodafone.",
-          "Led A/B testing initiatives to drive significant improvements in customer engagement and conversion rates.",
-          "Designed and optimized digital communication templates to enhance customer communication effectiveness."
+          "Developed reusable React/Next.js components in a headless architecture for global brands like Vodafone and Burger King.",
+          "Managed Contentful CMS integrations and GraphQL data delivery to optimize frontend performance.",
+          "Implemented A/B testing strategies for high-traffic E-commerce platforms, driving measurable conversion growth.",
+          "Designed and deployed responsive HTML templates for Vodafone NL to enhance customer communication."
         ]
       },
       {
@@ -107,32 +108,7 @@
           "end": "January 2018"
         },
         "details": [
-          "Exceeded sales targets through persuasive communication and high-quality customer service in a fast-paced environment."
-        ]
-      },
-      {
-        "title": "Graphic Designer & Translator",
-        "organization": "Gökkuşağı",
-        "location": "Istanbul, Turkey",
-        "duration": {
-          "start": "January 2015",
-          "end": "July 2015"
-        },
-        "details": [
-          "Produced high-impact visual marketing materials and managed international social media presence.",
-          "Provided professional translation services to bridge communication gaps for international clients."
-        ]
-      },
-      {
-        "title": "Logistics Coordinator",
-        "organization": "Target Med Int.",
-        "location": "Jordan",
-        "duration": {
-          "start": "May 2014",
-          "end": "October 2014"
-        },
-        "details": [
-          "Oversaw logistics operations and export management, ensuring timely delivery and supply chain efficiency."
+          "Exceeded sales targets through persuasive communication and high-quality customer service in a fast-paced retail environment in Utrecht."
         ]
       },
       {
@@ -144,13 +120,12 @@
           "end": "May 2014"
         },
         "details": [
-          "Managed a portfolio of 50+ key accounts, resolving invoicing and payment issues while maintaining strong client relations.",
-          "Optimized inventory management using specialized software, increasing departmental productivity by 50%.",
-          "Produced comprehensive monthly sales and analytical reports for regional management."
+          "Managed 50+ key customer accounts, overseeing payment processing, invoicing, and high-level client relations.",
+          "Leveraged SAGE software to optimize inventory and financial reporting, increasing team productivity by 50%."
         ]
       },
       {
-        "title": "Business Representative (Sales)",
+        "title": "Sales Promoter",
         "organization": "TOSHIBA",
         "location": "Amman, Jordan",
         "duration": {
@@ -158,8 +133,7 @@
           "end": "December 2012"
         },
         "details": [
-          "Managed division inventory and sales strategy, leading to recognition as the region's 'Best Sales Promoter'.",
-          "Provided expert product knowledge to drive business growth and customer satisfaction."
+          "Directed the television section's inventory and sales strategy, awarded 'Best TV Sales Promoter' for peak performance."
         ]
       }
     ]
@@ -168,15 +142,14 @@
     "fieldTitle": "Education",
     "items": [
       {
-        "title": "Cloud & Data Management Training Program – ITMG / ESF",
-        "organization": "ITMG (ESF-funded Program)",
+        "title": "Cloud & Data Management Training Program",
+        "organization": "ITMG / ESF",
         "location": "Utrecht, Netherlands",
         "duration": {
           "start": "May 2025",
           "end": "October 2025"
         },
-        "type": "Certificate",
-        "details": []
+        "type": "Certificate"
       },
       {
         "title": "Full Stack JS Developer Course",
@@ -186,67 +159,38 @@
           "start": "April 2021",
           "end": "August 2021"
         },
-        "type": "Certificate",
-        "details": []
+        "type": "Certificate"
       },
       {
-        "title": "Netherlands Language Course",
-        "organization": "Babel Language Academy",
-        "location": "Utrecht, Netherlands",
-        "duration": {
-          "start": "February 2020",
-          "end": "November 2020"
-        },
-        "type": "Certificate",
-        "details": []
-      },
-      {
-        "title": "Bachelor of Business Administration",
+        "title": "Bachelor of Business Administration (BBA)",
         "organization": "Arab International University",
         "location": "Damascus, Syria",
         "duration": {
-          "start": "January 2007",
-          "end": "January 2011"
+          "start": "2007",
+          "end": "2011"
         },
-        "type": "Bachelor's",
-        "details": []
-      },
-      {
-        "title": "Business Administration",
-        "organization": "Syrian Enterprise and Business Center",
-        "location": "Damascus, Syria",
-        "duration": {
-          "start": "January 2007",
-          "end": "January 2008"
-        },
-        "type": "Diploma",
-        "details": []
+        "type": "Bachelor's Degree"
       }
     ]
   },
   "skills": {
     "fieldTitle": "Skills",
     "technical": [
-      "Project Coordination",
-      "Business Operations",
-      "Stakeholder Management",
-      "Account Management",
-      "Data Analysis",
-      "Process Optimization",
-      "Cloud & Data Management",
-      "Digital Architecture",
-      "Next.js / NestJS",
-      "GraphQL",
-      "PostgreSQL",
-      "CRM Systems"
+      "TypeScript / JavaScript (ES6+)",
+      "React / Next.js / Vue.js",
+      "Node.js / NestJS / GraphQL",
+      "PostgreSQL / TypeORM / Supabase",
+      "Docker / Cloud Infrastructure",
+      "B2B SaaS / Fintech Logic",
+      "A/B Testing & Performance Tuning",
+      "ERP & Accounting Systems (SAGE)"
     ],
     "other": [
-      "Problem Solving",
-      "Multicultural Communication",
-      "Adaptability",
-      "Sales Strategy",
-      "Leadership",
-      "Attention to Detail"
+      "Technical Project Leadership",
+      "Stakeholder Communication",
+      "Product Strategy",
+      "Business Process Optimization",
+      "Multicultural Team Collaboration"
     ]
   },
   "languages": {
