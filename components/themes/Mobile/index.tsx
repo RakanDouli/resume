@@ -3,6 +3,7 @@ import { FC } from "react";
 
 import BasicInfoSection from "@/components/BasicInfoSection";
 import ExperienceSection from "@/components/ExperienceSection";
+import PersonalProjectsSection from "@/components/PersonalProjectsSection";
 import SkillsSection from "@/components/SkillsSection";
 import EducationSection from "@/components/EducationSection";
 import LanguagesSection from "@/components/LanguagesSection";
@@ -48,6 +49,17 @@ const Basic: FC<ResumeProps> = ({ data }) => {
             shadow: false,
           }}
         />
+        {data.personalProjects && (
+          <PersonalProjectsSection
+            personalProjects={data.personalProjects}
+            styles={{
+              underline: true,
+              border: false,
+              borderRadius: false,
+              shadow: false,
+            }}
+          />
+        )}
         <SkillsSection
           styles={{
             border: true,

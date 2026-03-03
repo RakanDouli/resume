@@ -27,36 +27,6 @@
     "fieldTitle": "Experience",
     "items": [
       {
-        "title": "Technical Project Lead / Senior Full-Stack Developer",
-        "organization": "Shambay Marketplace",
-        "location": "Utrecht, The Netherlands",
-        "duration": {
-          "start": "August 2025",
-          "end": "Present"
-        },
-        "details": [
-          "Led the end-to-end technical strategy and architectural design for Shambay (shambay.com), an enterprise-grade Arabic marketplace platform.",
-          "Managed the full-stack development lifecycle using Next.js, NestJS, and GraphQL, coordinating 40+ database entities and 155+ migrations.",
-          "Oversaw the design of 12 admin dashboards featuring RBAC permissions, real-time search, and AI-driven moderation tools.",
-          "Architected automated business logic for professional advertising packages and tiered subscription billing systems.",
-          "Directed multi-environment infrastructure deployment using Docker on Hetzner and Vercel, ensuring high availability and data security."
-        ]
-      },
-      {
-        "title": "Freelance Full-Stack Developer",
-        "organization": "808 Studio",
-        "location": "Utrecht, The Netherlands",
-        "duration": {
-          "start": "December 2020",
-          "end": "Present"
-        },
-        "details": [
-          "Consulted on and co-developed full-stack solutions including a voting platform (Vue/NestJS) and an NFT generator (React/Flask).",
-          "Managed client requirements and project delivery for multiple high-performance web applications.",
-          "Engineered custom WordPress architectures and optimized SEO visibility through structured data and performance tuning."
-        ]
-      },
-      {
         "title": "Full Stack Developer",
         "organization": "Fiber Nederland",
         "location": "Almere, The Netherlands",
@@ -134,6 +104,41 @@
         },
         "details": [
           "Directed the television section's inventory and sales strategy, awarded 'Best TV Sales Promoter' for peak performance."
+        ]
+      }
+    ]
+  },
+  "personalProjects": {
+    "fieldTitle": "Personal Projects",
+    "items": [
+      {
+        "title": "Technical Project Lead / Full-Stack Developer",
+        "organization": "Shambay Marketplace",
+        "location": "Utrecht, The Netherlands",
+        "duration": {
+          "start": "August 2023",
+          "end": "August 2025"
+        },
+        "details": [
+          "Led the end-to-end technical strategy and architectural design for Shambay (shambay.com), an enterprise-grade Arabic marketplace platform.",
+          "Managed the full-stack development lifecycle using Next.js, NestJS, and GraphQL, coordinating 40+ database entities and 155+ migrations.",
+          "Oversaw the design of 12 admin dashboards featuring RBAC permissions, real-time search, and AI-driven moderation tools.",
+          "Architected automated business logic for professional advertising packages and tiered subscription billing systems.",
+          "Directed multi-environment infrastructure deployment using Docker on Hetzner and Vercel, ensuring high availability and data security."
+        ]
+      },
+      {
+        "title": "Full-Stack Developer",
+        "organization": "808 Studio",
+        "location": "Utrecht, The Netherlands",
+        "duration": {
+          "start": "December 2020",
+          "end": "December 2023"
+        },
+        "details": [
+          "Consulted on and co-developed full-stack solutions including a voting platform (Vue/NestJS) and an NFT generator (React/Flask).",
+          "Managed client requirements and project delivery for multiple high-performance web applications.",
+          "Engineered custom WordPress architectures and optimized SEO visibility through structured data and performance tuning."
         ]
       }
     ]

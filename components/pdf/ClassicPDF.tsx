@@ -344,6 +344,42 @@ const ClassicPDF = ({ data }: ClassicPDFProps) => {
             </View>
           ))}
 
+          {/* Personal Projects */}
+          {data.personalProjects && data.personalProjects.items.length > 0 && (
+            <>
+              <Text style={styles.sectionTitle}>{data.personalProjects.fieldTitle}</Text>
+              {data.personalProjects.items.map((project, idx) => (
+                <View key={idx} style={styles.experienceItem}>
+                  <View style={styles.experienceHeader}>
+                    <Text style={styles.experienceTitle}>
+                      {project.title}
+                      {project.organization ? ` - ${project.organization}` : ""}
+                    </Text>
+                    <Text style={styles.experienceDate}>
+                      {project.duration.start} - {project.duration.end}
+                    </Text>
+                  </View>
+                  {project.location && (
+                    <Text style={styles.experienceLocation}>{project.location}</Text>
+                  )}
+                  {project.details && (
+                    <View style={styles.bulletList}>
+                      {project.details.map((detail, dIdx) => (
+                        <View key={dIdx} style={styles.bulletItem}>
+                          <View style={styles.bullet} />
+                          <Text style={styles.bulletText}>{detail}</Text>
+                        </View>
+                      ))}
+                    </View>
+                  )}
+                  {idx < data.personalProjects!.items.length - 1 && (
+                    <View style={styles.divider} />
+                  )}
+                </View>
+              ))}
+            </>
+          )}
+
           {/* Education */}
           <Text style={styles.sectionTitle}>Education</Text>
           {data.education.items.map((edu, idx) => (

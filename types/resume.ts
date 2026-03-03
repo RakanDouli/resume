@@ -46,6 +46,12 @@ export interface Education {
   items: SectionItem[]; // `items` is now an array of SectionItem
 }
 
+// Personal Projects interface - similar structure to Experience
+export interface PersonalProjects {
+  fieldTitle: string;
+  items: SectionItem[];
+}
+
 export interface Skills {
   fieldTitle: string;
   technical: string[];
@@ -71,6 +77,7 @@ export interface ResumeData {
   basicInfo: BasicInfo;
   ResumeImage?: ResumeImage;
   experiences: Experience; // `experience` is now an object with a `fieldTitle` and `items` array
+  personalProjects?: PersonalProjects; // Optional personal projects section
   education: Education; // Similar to experience
   skills: Skills;
   languages: Languages;

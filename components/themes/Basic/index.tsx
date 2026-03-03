@@ -3,6 +3,7 @@ import { FC } from "react";
 
 import BasicInfoSection from "@/components/BasicInfoSection";
 import ExperienceSection from "@/components/ExperienceSection";
+import PersonalProjectsSection from "@/components/PersonalProjectsSection";
 import SkillsSection from "@/components/SkillsSection";
 import EducationSection from "@/components/EducationSection";
 import LanguagesSection from "@/components/LanguagesSection";
@@ -49,6 +50,19 @@ const Basic: FC<ResumeProps> = ({ data }) => {
             shadow: false,
           }}
         />
+
+        {/* Personal Projects Section */}
+        {data.personalProjects && (
+          <PersonalProjectsSection
+            personalProjects={data.personalProjects}
+            styles={{
+              underline: true,
+              border: false,
+              borderRadius: false,
+              shadow: false,
+            }}
+          />
+        )}
 
         {/* Two Column Layout for Skills & Education */}
         <div className="flex gap-md">

@@ -27,36 +27,6 @@
         "fieldTitle": "Werkervaring",
         "items": [
             {
-                "title": "Technical Project Lead / Senior Full-Stack Developer",
-                "organization": "Shambay Marketplace",
-                "location": "Utrecht, Nederland",
-                "duration": {
-                    "start": "augustus 2025",
-                    "end": "heden"
-                },
-                "details": [
-                    "Verantwoordelijk voor de end-to-end technische strategie en het architecturaal ontwerp van Shambay (shambay.com), een enterprise-grade Arabisch marktplaatsplatform.",
-                    "Beheer van de volledige full-stack ontwikkelingscyclus met Next.js, NestJS en GraphQL, inclusief de coördinatie van 40+ database-entiteiten en 155+ migraties.",
-                    "Toezicht gehouden op het ontwerp van 12 admin-dashboards met RBAC-permissies, real-time zoekfunctionaliteit en AI-gestuurde moderatietools.",
-                    "Architectuur ontwikkeld voor geautomatiseerde business logica voor professionele advertentiepakketten en gelaagde abonnements- en facturatiesystemen.",
-                    "Aansturing van multi-environment infrastructuur implementatie via Docker op Hetzner en Vercel, met focus op hoge beschikbaarheid en gegevensbeveiliging."
-                ]
-            },
-            {
-                "title": "Freelance Full-Stack Developer",
-                "organization": "808 Studio",
-                "location": "Utrecht, Nederland",
-                "duration": {
-                    "start": "december 2020",
-                    "end": "heden"
-                },
-                "details": [
-                    "Geadviseerd over en mede-ontwikkeld aan full-stack oplossingen, waaronder een stemplatform (Vue/NestJS) en een NFT-generator (React/Flask).",
-                    "Beheer van klantvereisten en projectlevering voor diverse hoogwaardige webapplicaties.",
-                    "Ontwikkeling van aangepaste WordPress-architecturen en optimalisatie van SEO-zichtbaarheid via gestructureerde data en performance tuning."
-                ]
-            },
-            {
                 "title": "Full Stack Developer",
                 "organization": "Fiber Nederland",
                 "location": "Almere, Nederland",
@@ -134,6 +104,41 @@
                 },
                 "details": [
                     "Verantwoordelijk voor de inventaris en verkoopstrategie van de televisie-afdeling; bekroond als 'Best TV Sales Promoter' voor recordprestaties."
+                ]
+            }
+        ]
+    },
+    "personalProjects": {
+        "fieldTitle": "Persoonlijke Projecten",
+        "items": [
+            {
+                "title": "Technical Project Lead / Full-Stack Developer",
+                "organization": "Shambay Marketplace",
+                "location": "Utrecht, Nederland",
+                "duration": {
+                    "start": "augustus 2023",
+                    "end": "augustus 2025"
+                },
+                "details": [
+                    "Verantwoordelijk voor de end-to-end technische strategie en het architecturaal ontwerp van Shambay (shambay.com), een enterprise-grade Arabisch marktplaatsplatform.",
+                    "Beheer van de volledige full-stack ontwikkelingscyclus met Next.js, NestJS en GraphQL, inclusief de coördinatie van 40+ database-entiteiten en 155+ migraties.",
+                    "Toezicht gehouden op het ontwerp van 12 admin-dashboards met RBAC-permissies, real-time zoekfunctionaliteit en AI-gestuurde moderatietools.",
+                    "Architectuur ontwikkeld voor geautomatiseerde business logica voor professionele advertentiepakketten en gelaagde abonnements- en facturatiesystemen.",
+                    "Aansturing van multi-environment infrastructuur implementatie via Docker op Hetzner en Vercel, met focus op hoge beschikbaarheid en gegevensbeveiliging."
+                ]
+            },
+            {
+                "title": "Full-Stack Developer",
+                "organization": "808 Studio",
+                "location": "Utrecht, Nederland",
+                "duration": {
+                    "start": "december 2020",
+                    "end": "december 2023"
+                },
+                "details": [
+                    "Geadviseerd over en mede-ontwikkeld aan full-stack oplossingen, waaronder een stemplatform (Vue/NestJS) en een NFT-generator (React/Flask).",
+                    "Beheer van klantvereisten en projectlevering voor diverse hoogwaardige webapplicaties.",
+                    "Ontwikkeling van aangepaste WordPress-architecturen en optimalisatie van SEO-zichtbaarheid via gestructureerde data en performance tuning."
                 ]
             }
         ]
