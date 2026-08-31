@@ -62,10 +62,10 @@ const Modern: FC<ThemeProps> = ({ data, language = "en" }) => {
   const hasSkills = data.skills?.length > 0;
 
   return (
-    <div className="max-w-[1000px] mx-auto">
+    <div className="max-w-[1000px] mx-auto print:max-w-none">
       {/* Gradient banner */}
       <header
-        className="relative text-light rounded-t-md px-lg pt-lg pb-2xl sm:px-xl sm:pt-xl sm:pb-2xl flex flex-col gap-md"
+        className="text-light rounded-t-md px-md pt-lg pb-[5rem] sm:px-md sm:pt-xl flex flex-col gap-md"
         style={{ background: `linear-gradient(to right, ${ACCENT}, ${GRADIENT_END})` }}
       >
         {/* Modern puts the photo IN the gradient banner, beside the name — a
@@ -140,41 +140,60 @@ const Modern: FC<ThemeProps> = ({ data, language = "en" }) => {
           })}
         </ul>
 
-        {/* No "Profile" heading — the reference design doesn't have one for
-            this box, it doesn't need one: the tinted card is already enough
-            to read as a distinct, callout-style block.
-            ANCHORED BY `top`, NOT `bottom` — this is the actual fix for the
-            bug in the screenshots (summary text colliding with the contact
-            row above it): `bottom: -40px` makes how far the box pokes UP
-            into the header depend on the box's own height (a short bio and a
-            long one poke up by different amounts, and a long enough one
-            reaches the contact row — exactly what happened). `top:
-            calc(100%-28px)` instead fixes the box's TOP edge at a constant
-            28px above the header's bottom edge NO MATTER HOW TALL THE TEXT
-            IS — the box only ever grows downward into the white body card
-            from that fixed point, never upward into the header's own
-            content. 28px comfortably clears the header's own `pb-2xl`
-            bottom padding, so it can't reach the contact row at any
-            breakpoint. The `<header>` needs `position: relative` (added
-            above) for this to anchor correctly; `z-20` and the opaque
-            `tintOnWhite` background (not a translucent accent tint, which is
-            invisible over a solid accent-colored gradient) make it actually
-            visible against the purple. The body card's `pt-[120px]` gives its
-            own content clearance below the box's downward overhang. */}
-        {data.summary && (
+      </header>
+
+      {/* DEDICATED OVERLAP CONTAINER — a sibling BETWEEN the header and the
+          body card, not a child of either. This is the actual fix (three
+          earlier attempts all estimated a fixed pixel amount against the
+          HEADER's height/padding, which changes with viewport width as the
+          contact row wraps onto more lines — the box either landed short of
+          the seam or, anchored too aggressively, poked up far enough to
+          collide with the contact row itself, both visible in the screenshots
+          that prompted this):
+
+          - `flex flex-col` on this container is load-bearing, not
+            decorative: it stops the child's negative margin from collapsing
+            through and moving THIS CONTAINER's own position (a real CSS
+            behaviour — a block container with no padding/border and a
+            negative-margin first child normally shifts the PARENT up too;
+            flex containers never collapse margins with their children, so
+            the negative margin moves only the `<p>`, and — unlike
+            `overflow: hidden`, the other way to stop collapse — nothing
+            clips the resulting overlap, which needs to stay visible).
+          - The box's `-mt-16` (64px) overlap is now measured against THIS
+            EMPTY CONTAINER, not the header — so it's exactly 64px into the
+            gradient every time, regardless of whether the header's contact
+            row wrapped to one line or three.
+          - This container's own `pb-xl` is the clearance before whatever
+            comes next (the body card). Also constant, also independent of
+            both the header's height and the summary text's length — a
+            three-line bio and a one-line bio both leave exactly `pb-xl` of
+            white space before "Experience" starts, because the container's
+            rendered height is simply "however tall the box is, minus the
+            64px it moved up, plus this fixed padding" — the padding term
+            never changes.
+          - No `position`/`z-index` anywhere in this fix: a later sibling in
+            plain DOM order already paints over an earlier one with no
+            special stacking rules needed, once neither one is positioned
+            in a way that pulls it into a different paint phase (the old
+            `position: relative` on the header existed ONLY to let the box
+            anchor to it as an absolute child, and is gone now that the box
+            isn't a child of the header any more). */}
+      {data.summary && (
+        <div className="flex flex-col px-lg  sm:px-xl ">
           <p
-            className="absolute inset-x-lg sm:inset-x-xl top-[calc(100%-28px)] z-20 text-clamp-sm text-gray-700 leading-relaxed rounded-md p-md shadow-md"
+            className="-mt-16 text-clamp-sm text-gray-700 leading-relaxed rounded-md p-md shadow-md"
             style={{ backgroundColor: tintOnWhite(ACCENT) }}
           >
             {data.summary}
           </p>
-        )}
-      </header>
+        </div>
+      )}
 
-      {/* Body card. `pt-[120px]` (not `py-lg`'s usual top value) — see the
-          summary box's own comment above for why this needs extra top
-          clearance now. */}
-      <div className="bg-light rounded-b-md shadow-sm px-lg pt-[120px] pb-lg sm:px-xl sm:pt-[120px] sm:pb-xl flex flex-col gap-lg">
+      {/* Body card — back to its original `py-lg`/`py-xl`, no more guessed
+          extra top padding to clear the summary box: the dedicated overlap
+          container above already provides that clearance itself. */}
+      <div className="bg-light rounded-b-md shadow-sm px-lg py-lg sm:px-xl sm:py-xl flex flex-col gap-lg">
         {data.experience?.length > 0 && (
           <section>
             <SectionHeading color={ACCENT} rule={RULE}>
@@ -190,7 +209,10 @@ const Modern: FC<ThemeProps> = ({ data, language = "en" }) => {
                 style={{ backgroundColor: `${GRADIENT_END}30` }}
               />
               {data.experience.map((e, i) => (
-                <div key={i} className="relative pl-md mb-md last:mb-0">
+                <div
+                  key={i}
+                  className="relative pl-md mb-md last:mb-0 print:break-inside-avoid"
+                >
                   <span
                     aria-hidden="true"
                     className="absolute left-0 top-[6px] w-[8px] h-[8px] rounded-full"
@@ -246,7 +268,7 @@ const Modern: FC<ThemeProps> = ({ data, language = "en" }) => {
                 </SectionHeading>
                 <ul className="flex flex-col gap-md list-none">
                   {data.education.map((e, i) => (
-                    <li key={i}>
+                    <li key={i} className="print:break-inside-avoid">
                       <div className="font-bold text-dark text-clamp-sm">
                         {e.title}
                       </div>

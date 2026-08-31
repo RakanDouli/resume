@@ -25,7 +25,9 @@ export interface SectionHeadingProps {
 export function SectionHeading({ children, color, rule }: SectionHeadingProps) {
   return (
     <h2
-      className="text-clamp-lg font-bold uppercase tracking-wide mb-sm pb-xs"
+      // `print:break-after-avoid` stops a heading from ever being the last
+      // line on a page with its own section's content pushed to the next.
+      className="text-clamp-lg font-bold uppercase tracking-wide mb-sm pb-xs print:break-after-avoid"
       style={{ color, borderBottom: rule }}
     >
       {children}

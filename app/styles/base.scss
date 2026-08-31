@@ -256,21 +256,24 @@ a{
   }
 }
 
-// Print media query for browser print.
-// `body` still applies (it is a real element), but `.Resume-template` and
-// `.theme-switcher` are dead selectors — no component emits either class.
+// Print / "Save as PDF". This is the ONLY PDF export mechanism now — printing
+// the live page itself, not a second react-pdf reimplementation of each theme
+// (that duplication is what "pixel perfect" was actually fighting against
+// before: two renderers of the same design, kept in sync by hand). Component-
+// level print concerns (hiding chrome, page-break hints) live as Tailwind
+// `print:` utilities on the components themselves, right next to the classes
+// they interact with — this file only holds the two things that genuinely
+// can't be a utility class: page setup, and the browser-wide default of
+// stripping background colors/images before printing (to save ink), which
+// would otherwise erase Modern's gradient and Classic's navy sidebar.
 @media print {
-  body {
-    background-color: vars.$light !important;
+  @page {
+    size: A4;
+    margin: 12mm;
   }
 
-  .Resume-template {
-    box-shadow: none !important;
-    border-radius: 0 !important;
-  }
-
-  .theme-switcher,
-  .hidden.lg\\:flex {
-    display: none !important;
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 }

@@ -19,7 +19,7 @@ const Basic: FC<ThemeProps> = ({ data, language = "en" }) => {
   const RULE = `2px solid ${ACCENT}20`;
 
   return (
-    <div className="bg-light rounded-md p-lg sm:p-xl flex flex-col gap-lg max-w-[1000px] mx-auto">
+    <div className="bg-light rounded-md p-lg sm:p-xl flex flex-col gap-lg max-w-[1000px] mx-auto print:max-w-none">
       {/* Header */}
       <div className="text-center flex flex-col gap-xs pb-md border-b border-gray-300">
         {/* Basic is a centred, symmetrical sheet — the photo sits on the axis,
@@ -114,7 +114,10 @@ const Basic: FC<ThemeProps> = ({ data, language = "en" }) => {
             {t.education}
           </SectionHeading>
           {data.education.map((e, i) => (
-            <div key={i} className="flex justify-between mb-xs flex-wrap gap-xs">
+            <div
+              key={i}
+              className="flex justify-between mb-xs flex-wrap gap-xs print:break-inside-avoid"
+            >
               <div>
                 <div className="font-bold text-dark text-clamp-sm">
                   {e.title}

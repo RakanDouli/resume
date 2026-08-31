@@ -27,7 +27,7 @@ function SidebarHeading({
 }) {
   return (
     <h2
-      className="text-clamp-xs font-bold uppercase tracking-widest mb-xs"
+      className="text-clamp-xs font-bold uppercase tracking-widest mb-xs print:break-after-avoid"
       style={{ color: accent }}
     >
       {children}
@@ -45,7 +45,7 @@ const Classic: FC<ThemeProps> = ({ data, language = "en" }) => {
     data.themeColors?.Classic?.accent ?? DEFAULT_THEME_COLORS.Classic.accent;
 
   return (
-    <div className="bg-light rounded-md overflow-hidden flex flex-col md:flex-row max-w-[1000px] mx-auto shadow-sm">
+    <div className="bg-light rounded-md overflow-hidden flex flex-col md:flex-row max-w-[1000px] mx-auto shadow-sm print:max-w-none">
       {/* Sidebar */}
       <div
         className="w-full md:w-[34%] p-lg flex flex-col gap-lg text-light"
@@ -142,7 +142,7 @@ const Classic: FC<ThemeProps> = ({ data, language = "en" }) => {
             <SidebarHeading accent={ACCENT}>{t.education}</SidebarHeading>
             <div className="flex flex-col gap-sm">
               {data.education.map((e, i) => (
-                <div key={i}>
+                <div key={i} className="print:break-inside-avoid">
                   <div className="text-clamp-xs font-semibold">{e.title}</div>
                   <div className="text-clamp-xs text-gray-400">
                     {e.organization}

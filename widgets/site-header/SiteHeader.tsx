@@ -155,7 +155,7 @@ export function SiteHeader({
   const initials = initialsOf(name);
 
   return (
-    <header className="pointer-events-none fixed inset-x-0 top-0 z-40 px-xs pt-sm sm:px-md sm:pt-md">
+    <header className="pointer-events-none fixed inset-x-0 top-0 z-40 px-xs pt-sm sm:px-md sm:pt-md print:hidden">
       <div
         className={[
           "pointer-events-auto mx-auto flex w-full max-w-[1000px] items-center gap-xs",

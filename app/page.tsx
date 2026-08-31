@@ -1,6 +1,7 @@
 "use client";
 
 import { useContext, useState } from "react";
+import { FiPrinter } from "react-icons/fi";
 import { ThemeLayout } from "@/widgets/resume-view";
 import { Button } from "@/shared/ui";
 import { LanguageSwitch, ThemeSwitch } from "@/entities/resume";
@@ -48,14 +49,17 @@ export default function Home() {
 
   return (
     <main
-      className={`container mx-auto flex flex-col gap-md px-xs sm:px-sm pb-2xl ${HEADER_OFFSET}`}
+      className={`container mx-auto flex flex-col gap-md px-xs sm:px-sm pb-2xl print:p-0 print:max-w-none ${HEADER_OFFSET} print:pt-0`}
     >
       {/* Only the owner ever sees this — a visitor has no saved copy to
-          load and nothing here means anything to them. */}
+          load and nothing here means anything to them. `print:hidden`
+          because these are transient status messages, not part of the
+          resume — they should never end up ON a printed page even if a
+          print happens to fire while one is showing. */}
       {auth.authed && doc.loading && (
         <p
           role="status"
-          className="rounded-lg border border-lightgray bg-light shadow-sm px-md py-sm text-clamp-xs text-gray-600"
+          className="print:hidden rounded-lg border border-lightgray bg-light shadow-sm px-md py-sm text-clamp-xs text-gray-600"
         >
           Loading your saved copy… the published version is showing until it
           arrives.
@@ -65,7 +69,7 @@ export default function Home() {
       {auth.authed && doc.loadError && (
         <div
           role="alert"
-          className="flex flex-wrap items-center justify-between gap-sm rounded-lg bg-errorBg px-md py-sm text-clamp-sm text-errorText"
+          className="print:hidden flex flex-wrap items-center justify-between gap-sm rounded-lg bg-errorBg px-md py-sm text-clamp-sm text-errorText"
         >
           <span>
             Could not load your saved copy ({doc.loadError}). You are looking
@@ -77,12 +81,19 @@ export default function Home() {
         </div>
       )}
 
-      {/* Language + theme, together, under the nav. `/edit` splits these two
-          apart instead of showing this same combined row — see that page for
-          why. */}
-      <div className="flex flex-wrap items-center gap-sm">
-        <LanguageSwitch language={language} onChange={setLanguage} />
-        <ThemeSwitch theme={theme} onChange={setTheme} />
+      {/* Language + theme, together, under the nav, plus Print — all
+          `print:hidden` as one row, since none of the three mean anything on
+          a printed page: PDF export IS printing this exact page (see
+          window.print() below), not a separate feature to expose there. */}
+      <div className="print:hidden flex flex-wrap items-center justify-between gap-sm">
+        <div className="flex flex-wrap items-center gap-sm">
+          <LanguageSwitch language={language} onChange={setLanguage} />
+          <ThemeSwitch theme={theme} onChange={setTheme} />
+        </div>
+        <Button onClick={() => window.print()}>
+          <FiPrinter aria-hidden="true" className="h-4 w-4" />
+          Print / Save as PDF
+        </Button>
       </div>
 
       <ThemeLayout data={doc.data} language={language} theme={theme} />

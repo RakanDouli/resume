@@ -60,8 +60,17 @@ const ThemeLayout: FC<ThemeLayoutProps> = ({ data, language = "en", theme }) => 
         `shadow-md`, not `shadow-lg` — the card is a sheet of paper lying on the
         page, not a modal hovering over it, and `lg` reads as the latter.
         Do NOT restore separation by tinting either surface.
+
+        PRINT: `print:rounded-none print:border-0 print:shadow-none` — on an
+        actual printed page this stops being a floating card ON a page (the
+        screen metaphor) and IS the page itself; a shadow/border/rounded
+        corner there reads as a printing defect, not a design choice.
+        `print:overflow-visible` so a gradient banner's rounded top corner
+        (still rounded — themes keep their own `rounded-t-md` regardless)
+        never gets a hard top-edge cut, and so nothing inside is clipped if a
+        theme's content runs slightly past this box during pagination.
       */}
-      <div className="overflow-hidden rounded-md border border-lightgray bg-light shadow-md">
+      <div className="overflow-hidden rounded-md border border-lightgray bg-light shadow-md print:overflow-visible print:rounded-none print:border-0 print:shadow-none">
         <ActiveTheme data={data} language={language} />
       </div>
     </section>

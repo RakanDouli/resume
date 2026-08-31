@@ -27,7 +27,10 @@ export function EntryBlock({
   const { title, organization, location, start, end, bullets } = entry;
 
   return (
-    <div className="mb-md">
+    // `print:break-inside-avoid` — without it, a long entry can split
+    // across two printed pages with its bullets orphaned on the next page,
+    // separated from its own title/org line.
+    <div className="mb-md print:break-inside-avoid">
       <div className="flex justify-between items-baseline flex-wrap gap-xs">
         <span className="font-bold text-dark text-clamp-md">{title}</span>
         <span className="text-gray-400 text-clamp-xs whitespace-nowrap">

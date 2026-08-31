@@ -15,7 +15,7 @@ export interface TimelineItemProps {
  */
 export function TimelineItem({ accent, children }: TimelineItemProps) {
   return (
-    <div className="relative pl-md">
+    <div className="relative pl-md print:break-inside-avoid">
       <span
         aria-hidden="true"
         className="absolute left-0 top-[6px] w-[8px] h-[8px] rounded-full"
