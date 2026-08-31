@@ -94,15 +94,23 @@ a{
   text-decoration: underline;
 }
 
+// DEAD CODE(fe-theme): the three blocks below are keyed on `.modern_theme`,
+// `.classic_theme` and `.pdf-mode`. None of those three class names is emitted
+// by ANY component — grep across app|widgets|entities|shared returns zero hits.
+// `.pdf-mode` in particular was driven by the PDF export that a previous agent
+// removed. They are recoloured here so they are not left holding the old brand
+// blue, but they are NOT deleted: removing dead rules is a cleanup decision,
+// not a theme decision. Flagged for the cleanup pass.
+
 // Modern theme - dark sidebar text colors
 .modern_theme {
   .bg-dark {
     h1, h2, h3, h4, h5, h6, p, span, li {
-      color: #ffffff !important;
+      color: vars.$light !important;
     }
 
     svg {
-      color: #ffffff !important;
+      color: vars.$light !important;
       fill: currentColor;
     }
 
@@ -115,7 +123,7 @@ a{
 // Classic theme - subtle sidebar background
 .classic_theme {
   .bg-primary\/5 {
-    background-color: rgba(99, 159, 187, 0.05) !important;
+    background-color: rgba(vars.$primary, 0.05) !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
@@ -203,25 +211,25 @@ a{
 
   // Ensure backgrounds render properly
   .bg-lightgray {
-    background-color: rgb(238, 237, 232) !important;
+    background-color: vars.$light-gray !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
 
   .bg-light {
-    background-color: #ffffff !important;
+    background-color: vars.$light !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
 
   .bg-dark {
-    background-color: #1a1a1a !important;
+    background-color: vars.$dark !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
 
   .bg-primary\/5 {
-    background-color: rgba(99, 159, 187, 0.08) !important;
+    background-color: rgba(vars.$primary, 0.08) !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
@@ -244,14 +252,16 @@ a{
   }
 
   .border-primary {
-    border-color: #639FBB !important;
+    border-color: vars.$primary !important;
   }
 }
 
-// Print media query for browser print
+// Print media query for browser print.
+// `body` still applies (it is a real element), but `.Resume-template` and
+// `.theme-switcher` are dead selectors — no component emits either class.
 @media print {
   body {
-    background-color: #fff !important;
+    background-color: vars.$light !important;
   }
 
   .Resume-template {

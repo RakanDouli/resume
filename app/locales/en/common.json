@@ -1,218 +1,255 @@
 {
-  "basicInfo": {
-    "fieldTitle": "Basic Info",
-    "name": "Rakan Douli",
-    "location": "Utrecht, Netherlands",
-    "phone": "+31612222409",
-    "whatsApp": "+31636084426",
-    "email": "rakandouli@gmail.com",
-    "dateOfBirth": "22-04-1987",
-    "drivingLicense": "Available",
-    "drivingLicenseType": "Standard",
-    "photoUrl": "./Screenshot 2024-11-07 at 20.11.34.png",
-    "title": "Technical Project Lead | Full-Stack Developer",
-    "summary": "I am a Full-Stack Developer with a Bachelor of Business Administration and over 10 years of experience in international business operations and software development. I specialize in building complex React/Next.js platforms (like Shambay) while ensuring the technology solves real business problems. With a background in B2B account management and financial reporting, I am at my best bridging the gap between technical execution and business goals. Multilingual in Arabic, English, and Dutch.",
-    "links": [
-      {
-        "label": "GitHub",
-        "url": "https://github.com/rakandouli/"
-      },
-      {
-        "label": "LinkedIn",
-        "url": "https://www.linkedin.com/in/rakandouli/"
-      }
-    ]
-  },
-  "experiences": {
-    "fieldTitle": "Experience",
-    "items": [
-      {
-        "title": "Full Stack Developer",
-        "organization": "Fiber Nederland",
-        "location": "Almere, The Netherlands",
-        "duration": {
-          "start": "January 2024",
-          "end": "August 2024"
-        },
-        "details": [
-          "Developed and maintained internal management applications using Vue.js and Laravel in a headless setup for B2B operations.",
-          "Resolved critical bugs and implemented features for internal tools to optimize high-trust business workflows.",
-          "Optimized the shop app frontend through API-driven updates, ensuring data consistency across decoupled systems."
-        ]
-      },
-      {
-        "title": "Full Stack Developer",
-        "organization": "Mprise",
-        "location": "Veenendaal, The Netherlands",
-        "duration": {
-          "start": "August 2022",
-          "end": "September 2023"
-        },
-        "details": [
-          "Built and maintained features for headless B2B Agri-tech applications using React, Node.js, and GraphQL.",
-          "Led performance load testing for database gateways with JavaScript, identifying and resolving bottlenecks in data-heavy environments.",
-          "Streamlined decoupled data flows, resulting in a 30% reduction in load times for enterprise users."
-        ]
-      },
-      {
-        "title": "Full Stack Developer",
-        "organization": "Direct Impact",
-        "location": "Utrecht, The Netherlands",
-        "duration": {
-          "start": "October 2021",
-          "end": "June 2022"
-        },
-        "details": [
-          "Developed reusable React/Next.js components in a headless architecture for global brands like Vodafone and Burger King.",
-          "Managed Contentful CMS integrations and GraphQL data delivery to optimize frontend performance.",
-          "Implemented A/B testing strategies for high-traffic E-commerce platforms, driving measurable conversion growth.",
-          "Designed and deployed responsive HTML templates for Vodafone NL to enhance customer communication."
-        ]
-      },
-      {
-        "title": "Sales Specialist",
-        "organization": "Zara",
-        "location": "Utrecht, The Netherlands",
-        "duration": {
-          "start": "January 2017",
-          "end": "January 2018"
-        },
-        "details": [
-          "Exceeded sales targets through persuasive communication and high-quality customer service in a fast-paced retail environment in Utrecht."
-        ]
-      },
-      {
-        "title": "Account Manager",
-        "organization": "United Mining Industries",
-        "location": "Jordan",
-        "duration": {
-          "start": "January 2013",
-          "end": "May 2014"
-        },
-        "details": [
-          "Managed 50+ key customer accounts, overseeing payment processing, invoicing, and high-level client relations.",
-          "Leveraged SAGE software to optimize inventory and financial reporting, increasing team productivity by 50%."
-        ]
-      },
-      {
-        "title": "Sales Promoter",
-        "organization": "TOSHIBA",
-        "location": "Amman, Jordan",
-        "duration": {
-          "start": "January 2012",
-          "end": "December 2012"
-        },
-        "details": [
-          "Directed the television section's inventory and sales strategy, awarded 'Best TV Sales Promoter' for peak performance."
-        ]
-      }
-    ]
-  },
-  "personalProjects": {
-    "fieldTitle": "Personal Projects",
-    "items": [
-      {
-        "title": "Technical Project Lead / Full-Stack Developer",
-        "organization": "Shambay Marketplace",
-        "location": "Utrecht, The Netherlands",
-        "duration": {
-          "start": "August 2023",
-          "end": "August 2025"
-        },
-        "details": [
-          "Led the end-to-end technical strategy and architectural design for Shambay (shambay.com), an enterprise-grade Arabic marketplace platform.",
-          "Managed the full-stack development lifecycle using Next.js, NestJS, and GraphQL, coordinating 40+ database entities and 155+ migrations.",
-          "Oversaw the design of 12 admin dashboards featuring RBAC permissions, real-time search, and AI-driven moderation tools.",
-          "Architected automated business logic for professional advertising packages and tiered subscription billing systems.",
-          "Directed multi-environment infrastructure deployment using Docker on Hetzner and Vercel, ensuring high availability and data security."
-        ]
-      },
-      {
-        "title": "Full-Stack Developer",
-        "organization": "808 Studio",
-        "location": "Utrecht, The Netherlands",
-        "duration": {
-          "start": "December 2020",
-          "end": "December 2023"
-        },
-        "details": [
-          "Consulted on and co-developed full-stack solutions including a voting platform (Vue/NestJS) and an NFT generator (React/Flask).",
-          "Managed client requirements and project delivery for multiple high-performance web applications.",
-          "Engineered custom WordPress architectures and optimized SEO visibility through structured data and performance tuning."
-        ]
-      }
-    ]
-  },
-  "education": {
-    "fieldTitle": "Education",
-    "items": [
-      {
-        "title": "Cloud & Data Management Training Program",
-        "organization": "ITMG / ESF",
-        "location": "Utrecht, Netherlands",
-        "duration": {
-          "start": "May 2025",
-          "end": "October 2025"
-        },
-        "type": "Certificate"
-      },
-      {
-        "title": "Full Stack JS Developer Course",
-        "organization": "Codaisseur",
-        "location": "Amsterdam, Netherlands",
-        "duration": {
-          "start": "April 2021",
-          "end": "August 2021"
-        },
-        "type": "Certificate"
-      },
-      {
-        "title": "Bachelor of Business Administration (BBA)",
-        "organization": "Arab International University",
-        "location": "Damascus, Syria",
-        "duration": {
-          "start": "2007",
-          "end": "2011"
-        },
-        "type": "Bachelor's Degree"
-      }
-    ]
-  },
-  "skills": {
-    "fieldTitle": "Skills",
-    "technical": [
-      "TypeScript / JavaScript (ES6+)",
-      "React / Next.js / Vue.js",
-      "Node.js / NestJS / GraphQL",
-      "PostgreSQL / TypeORM / Supabase",
-      "Docker / Cloud Infrastructure",
-      "B2B SaaS / Fintech Logic",
-      "A/B Testing & Performance Tuning",
-      "ERP & Accounting Systems (SAGE)"
-    ],
-    "other": [
-      "Technical Project Leadership",
-      "Stakeholder Communication",
-      "Product Strategy",
-      "Business Process Optimization",
-      "Multicultural Team Collaboration"
-    ]
-  },
-  "languages": {
-    "fieldTitle": "Languages",
-    "list": [
-      {
-        "language": "Arabic",
-        "level": "Native"
-      },
-      {
-        "language": "English",
-        "level": "Advanced"
-      },
-      {
-        "language": "Dutch",
-        "level": "Intermediate"
-      }
-    ]
+  "name": "Rakan Douli",
+  "jobTitle": "Technical Project Lead | Full-Stack Developer",
+  "location": "Utrecht, Netherlands",
+  "phone": "+31612222409",
+  "whatsApp": "+31636084426",
+  "email": "rakandouli@gmail.com",
+  "photoUrl": "/profile-pic.png",
+  "dateOfBirth": "22-04-1987",
+  "drivingLicense": "Available",
+  "drivingLicenseType": "Standard",
+  "summary": "I am a Full-Stack Developer with a Bachelor of Business Administration and over 10 years of experience in international business operations and software development. I specialize in building complex React/Next.js platforms (like Shambay) while ensuring the technology solves real business problems. With a background in B2B account management and financial reporting, I am at my best bridging the gap between technical execution and business goals. Multilingual in Arabic, English, and Dutch.",
+  "links": [
+    {
+      "label": "github.com/rakandouli",
+      "url": "https://github.com/rakandouli/"
+    },
+    {
+      "label": "linkedin.com/in/rakandouli",
+      "url": "https://www.linkedin.com/in/rakandouli/"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Cargo Documentation Officer",
+      "organization": "dnata (Emirates Group)",
+      "location": "Amsterdam Schiphol, The Netherlands",
+      "start": "January 2026",
+      "end": "Present",
+      "bullets": [
+        "Handle import/export cargo documentation and coordinate with drivers for cargo pickup and delivery, part-time (32 hrs/week)."
+      ]
+    },
+    {
+      "title": "Independent Full-Stack Developer",
+      "organization": "AWB Toolkit",
+      "location": "Utrecht, The Netherlands",
+      "start": "August 2026",
+      "end": "Present",
+      "bullets": [
+        "Built and shipped a free web platform (awbtoolkit.com) for air cargo professionals — no signup, no data stored.",
+        "Implemented AWB/FWB/FHL format conversion, Cargo-IMP message validation, and IATA-standard chargeable weight calculation.",
+        "Designed the full toolset independently, including a road feeder manifest builder and airline prefix lookup."
+      ]
+    },
+    {
+      "title": "Independent AI Tooling Developer",
+      "organization": "Claude Dev Agents (Open Source)",
+      "location": "Utrecht, The Netherlands",
+      "start": "August 2026",
+      "end": "Present",
+      "bullets": [
+        "Designed and open-sourced a suite of 20 specialized AI coding agents for Claude Code, covering code review, testing, security, accessibility, performance, TypeScript, and WordPress development.",
+        "Built a stack-detection and orchestration system so agents identify the project type before acting, with checkpointing for interrupted runs and structured agent-to-agent handoffs.",
+        "Published as dependency-free markdown configuration — no infrastructure required to run."
+      ]
+    },
+    {
+      "title": "Independent AI Tooling Developer",
+      "organization": "Claude Biz Council (Open Source)",
+      "location": "Utrecht, The Netherlands",
+      "start": "August 2026",
+      "end": "Present",
+      "bullets": [
+        "Designed an AI deliberation tool that evaluates business ideas through a four-perspective council — market fit, financial feasibility, customer validation, and risk analysis.",
+        "Grounded the tool's output in real web research and founder-equity market data rather than default AI optimism, including an opt-in partner/deal-terms check.",
+        "Researched and applied established frameworks (Lean Canvas, Y Combinator's idea-evaluation model) to structure the evaluation methodology."
+      ]
+    },
+    {
+      "title": "Founder & Lead Developer",
+      "organization": "Shambay Marketplace",
+      "location": "Utrecht, The Netherlands",
+      "start": "January 2025",
+      "end": "December 2025",
+      "bullets": [
+        "Architected and built Shambay (shambay.com), an enterprise-grade Arabic marketplace platform, from the ground up — now fully owned and independently operated.",
+        "Managed the full-stack development lifecycle using Next.js, NestJS, and GraphQL, coordinating 40+ database entities and 155+ migrations.",
+        "Designed 12 admin dashboards featuring RBAC permissions, real-time search, and AI-driven moderation tools (OpenAI + Cloudflare Workers AI).",
+        "Architected automated business logic for professional advertising packages and tiered subscription billing systems.",
+        "Directed multi-environment infrastructure deployment using Docker on Hetzner and Vercel, ensuring high availability and data security."
+      ]
+    },
+    {
+      "title": "Full Stack Developer",
+      "organization": "Fiber Nederland",
+      "location": "Almere, The Netherlands",
+      "start": "January 2024",
+      "end": "August 2024",
+      "bullets": [
+        "Developed and maintained internal management applications using Vue.js and Laravel in a headless setup for B2B operations.",
+        "Resolved critical bugs and implemented features for internal tools to optimize high-trust business workflows.",
+        "Optimized the shop app frontend through API-driven updates, ensuring data consistency across decoupled systems."
+      ]
+    },
+    {
+      "title": "Full Stack Developer",
+      "organization": "Mprise",
+      "location": "Veenendaal, The Netherlands",
+      "start": "August 2022",
+      "end": "September 2023",
+      "bullets": [
+        "Built and maintained features for headless B2B Agri-tech applications using React, Node.js, and GraphQL.",
+        "Led performance load testing for database gateways with JavaScript, identifying and resolving bottlenecks in data-heavy environments.",
+        "Streamlined decoupled data flows, resulting in a 30% reduction in load times for enterprise users."
+      ]
+    },
+    {
+      "title": "Full Stack Developer",
+      "organization": "Direct Impact",
+      "location": "Utrecht, The Netherlands",
+      "start": "October 2021",
+      "end": "June 2022",
+      "bullets": [
+        "Developed reusable React/Next.js components in a headless architecture for global brands like Vodafone and Burger King.",
+        "Managed Contentful CMS integrations and GraphQL data delivery to optimize frontend performance.",
+        "Implemented A/B testing strategies for high-traffic E-commerce platforms, driving measurable conversion growth.",
+        "Designed and deployed responsive HTML templates for Vodafone NL to enhance customer communication."
+      ]
+    },
+    {
+      "title": "Sales Specialist",
+      "organization": "Zara",
+      "location": "Utrecht, The Netherlands",
+      "start": "January 2017",
+      "end": "January 2018",
+      "bullets": [
+        "Exceeded sales targets through persuasive communication and high-quality customer service in a fast-paced retail environment in Utrecht."
+      ]
+    },
+    {
+      "title": "Account Manager",
+      "organization": "United Mining Industries",
+      "location": "Jordan",
+      "start": "January 2013",
+      "end": "May 2014",
+      "bullets": [
+        "Managed 50+ key customer accounts, overseeing payment processing, invoicing, and high-level client relations.",
+        "Leveraged SAGE software to optimize inventory and financial reporting, increasing team productivity by 50%."
+      ]
+    },
+    {
+      "title": "Sales Promoter",
+      "organization": "TOSHIBA",
+      "location": "Amman, Jordan",
+      "start": "January 2012",
+      "end": "December 2012",
+      "bullets": [
+        "Directed the television section's inventory and sales strategy, awarded 'Best TV Sales Promoter' for peak performance."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Full-Stack Developer",
+      "organization": "808 Studio",
+      "location": "Utrecht, The Netherlands",
+      "start": "December 2020",
+      "end": "December 2023",
+      "bullets": [
+        "Consulted on and co-developed full-stack solutions including a voting platform (Vue/NestJS) and an NFT generator (React/Flask).",
+        "Managed client requirements and project delivery for multiple high-performance web applications.",
+        "Engineered custom WordPress architectures and optimized SEO visibility through structured data and performance tuning."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "Cloud & Data Management Training Program",
+      "organization": "ITMG / ESF",
+      "location": "Utrecht, Netherlands",
+      "start": "May 2025",
+      "end": "October 2025",
+      "bullets": [],
+      "type": "Certificate"
+    },
+    {
+      "title": "Full Stack JS Developer Course",
+      "organization": "Codaisseur",
+      "location": "Amsterdam, Netherlands",
+      "start": "April 2021",
+      "end": "August 2021",
+      "bullets": [],
+      "type": "Certificate"
+    },
+    {
+      "title": "Bachelor of Business Administration (BBA)",
+      "organization": "Arab International University",
+      "location": "Damascus, Syria",
+      "start": "2007",
+      "end": "2011",
+      "bullets": [],
+      "type": "Bachelor's Degree"
+    }
+  ],
+  "skills": [
+    "AI Agents / Prompt Engineering (Claude Code)",
+    "TypeScript / JavaScript (ES6+)",
+    "React / Next.js / Vue.js",
+    "Node.js / NestJS / GraphQL",
+    "PostgreSQL / TypeORM / Supabase",
+    "Docker / Cloud Infrastructure",
+    "B2B SaaS / Fintech Logic",
+    "A/B Testing & Performance Tuning",
+    "ERP & Accounting Systems (SAGE)",
+    "Technical Project Leadership",
+    "Stakeholder Communication",
+    "Product Strategy",
+    "Business Process Optimization",
+    "Multicultural Team Collaboration"
+  ],
+  "languages": [
+    {
+      "language": "Arabic",
+      "level": "Native",
+      "rating": 5
+    },
+    {
+      "language": "English",
+      "level": "Advanced",
+      "rating": 4
+    },
+    {
+      "language": "Dutch",
+      "level": "Intermediate",
+      "rating": 3
+    }
+  ],
+  "photoStyle": {
+    "Basic": {
+      "shape": "round",
+      "backgroundColor": "",
+      "innerBorderColor": "#ffffff",
+      "innerBorderWidth": 4,
+      "outerBorderColor": "#0d9488",
+      "outerBorderWidth": 3
+    },
+    "Classic": {
+      "shape": "square",
+      "backgroundColor": "#fefbfb",
+      "innerBorderColor": "#0e172a",
+      "innerBorderWidth": 4,
+      "outerBorderColor": "#34d399",
+      "outerBorderWidth": 2
+    },
+    "Modern": {
+      "shape": "square",
+      "backgroundColor": "#ffffff",
+      "innerBorderColor": "#7c3aec",
+      "innerBorderWidth": 4,
+      "outerBorderColor": "#ffffff",
+      "outerBorderWidth": 0
+    }
   }
 }

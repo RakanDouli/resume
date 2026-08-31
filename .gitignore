@@ -38,3 +38,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Agent system bookkeeping (see claude-dev-agents README) — local working
+# state, not part of the app.
+.agent-checkpoints/
+.agent-runs.md
+PROJECT_NOTES.md

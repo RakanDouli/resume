@@ -1,0 +1,273 @@
+{
+  "basicInfo": {
+    "fieldTitle": "Basisgegevens",
+    "name": "Rakan Douli",
+    "location": "Utrecht, Nederland",
+    "phone": "+31612222409",
+    "whatsApp": "+31636084426",
+    "email": "rakandouli@gmail.com",
+    "dateOfBirth": "22-04-1987",
+    "drivingLicense": "Aanwezig",
+    "drivingLicenseType": "Rijbewijs B",
+    "photoUrl": "./Screenshot 2024-11-07 at 20.11.34.png",
+    "title": "Technical Project Lead | Full-Stack Developer",
+    "summary": "Ik ben een Full-Stack Developer met een Bachelor in Bedrijfskunde (BBA) en meer dan 10 jaar ervaring in internationale bedrijfsactiviteiten en softwareontwikkeling. Ik ben gespecialiseerd in het bouwen van complexe React/Next.js platforms (zoals Shambay), waarbij ik ervoor zorg dat technologie daadwerkelijk zakelijke problemen oplost. Met mijn achtergrond in B2B accountmanagement en financiële verslaglegging ben ik op mijn best in het overbruggen van de kloof tussen technische uitvoering en bedrijfsdoelstellingen. Meertalig in Arabisch, Engels en Nederlands.",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/rakandouli/"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/rakandouli/"
+      }
+    ]
+  },
+  "experiences": {
+    "fieldTitle": "Werkervaring",
+    "items": [
+      {
+        "title": "Cargo Documentatiemedewerker",
+        "organization": "dnata (Emirates Group)",
+        "location": "Amsterdam Schiphol, Nederland",
+        "duration": {
+          "start": "januari 2026",
+          "end": "heden"
+        },
+        "details": [
+          "Verwerking van import-/exportdocumentatie voor luchtvracht en coördinatie met chauffeurs voor het ophalen en afleveren van vracht, parttime (32 uur/week)."
+        ]
+      },
+      {
+        "title": "Zelfstandig Full-Stack Developer",
+        "organization": "AWB Toolkit",
+        "location": "Utrecht, Nederland",
+        "duration": {
+          "start": "augustus 2026",
+          "end": "heden"
+        },
+        "details": [
+          "Gratis webplatform (awbtoolkit.com) ontwikkeld en gelanceerd voor luchtvrachtprofessionals — geen registratie, geen dataopslag.",
+          "AWB/FWB/FHL-formaatconversie, Cargo-IMP berichtvalidatie en IATA-standaard berekening van het te factureren gewicht geïmplementeerd.",
+          "Volledige toolset zelfstandig ontworpen, inclusief een road feeder manifest-generator en airline prefix lookup."
+        ]
+      },
+      {
+        "title": "Zelfstandig AI Tooling Developer",
+        "organization": "Claude Dev Agents (Open Source)",
+        "location": "Utrecht, Nederland",
+        "duration": {
+          "start": "augustus 2026",
+          "end": "heden"
+        },
+        "details": [
+          "Suite van 20 gespecialiseerde AI-codeeragents voor Claude Code ontworpen en open source gepubliceerd, met dekking van code review, testen, security, toegankelijkheid, performance, TypeScript en WordPress-ontwikkeling.",
+          "Stack-detectie- en orchestratiesysteem gebouwd waarmee agents het projecttype herkennen voordat ze actie ondernemen, met checkpointing voor onderbroken runs en gestructureerde overdracht tussen agents.",
+          "Gepubliceerd als dependency-vrije markdown-configuratie — geen infrastructuur nodig om te draaien."
+        ]
+      },
+      {
+        "title": "Zelfstandig AI Tooling Developer",
+        "organization": "Claude Biz Council (Open Source)",
+        "location": "Utrecht, Nederland",
+        "duration": {
+          "start": "augustus 2026",
+          "end": "heden"
+        },
+        "details": [
+          "AI-overlegtool ontworpen die businessideeën evalueert via een raad van vier perspectieven — marktfit, financiële haalbaarheid, klantvalidatie en risicoanalyse.",
+          "Output van de tool gebaseerd op echt webonderzoek en marktdata over founder-equity in plaats van standaard AI-optimisme, inclusief een optionele controle van partner-/dealvoorwaarden.",
+          "Bestaande frameworks onderzocht en toegepast (Lean Canvas, het ideeënevaluatiemodel van Y Combinator) om de evaluatiemethodologie te structureren."
+        ]
+      },
+      {
+        "title": "Oprichter & Lead Developer",
+        "organization": "Shambay Marketplace",
+        "location": "Utrecht, Nederland",
+        "duration": {
+          "start": "januari 2025",
+          "end": "december 2025"
+        },
+        "details": [
+          "Shambay (shambay.com), een Arabisch marktplaatsplatform op enterprise-niveau, volledig zelfstandig ontworpen en gebouwd — nu volledig in eigen bezit en zelfstandig beheerd.",
+          "Beheer van de volledige full-stack ontwikkelingscyclus met Next.js, NestJS en GraphQL, inclusief de coördinatie van 40+ database-entiteiten en 155+ migraties.",
+          "Ontwerp van 12 admin-dashboards met RBAC-permissies, real-time zoekfunctionaliteit en AI-gestuurde moderatietools (OpenAI + Cloudflare Workers AI).",
+          "Architectuur ontwikkeld voor geautomatiseerde business logica voor professionele advertentiepakketten en gelaagde abonnements- en facturatiesystemen.",
+          "Aansturing van multi-environment infrastructuur implementatie via Docker op Hetzner en Vercel, met focus op hoge beschikbaarheid en gegevensbeveiliging."
+        ]
+      },
+      {
+        "title": "Full Stack Developer",
+        "organization": "Fiber Nederland",
+        "location": "Almere, Nederland",
+        "duration": {
+          "start": "januari 2024",
+          "end": "augustus 2024"
+        },
+        "details": [
+          "Ontwikkeling en onderhoud van interne managementapplicaties met Vue.js and Laravel in een headless setup voor B2B-activiteiten.",
+          "Oplossen van kritieke bugs en implementeren van nieuwe functionaliteiten voor interne tools om high-trust zakelijke workflows te optimaliseren.",
+          "Optimalisatie van de frontend van de shop-app via API-gestuurde updates, zorgdragend voor dataconsistentie in ontkoppelde systemen."
+        ]
+      },
+      {
+        "title": "Full Stack Developer",
+        "organization": "Mprise",
+        "location": "Veenendaal, Nederland",
+        "duration": {
+          "start": "augustus 2022",
+          "end": "september 2023"
+        },
+        "details": [
+          "Ontwikkeling van functionaliteiten voor headless B2B Agri-tech applicaties met React, Node.js en GraphQL.",
+          "Uitvoeren van performance- en belastingtests voor database-gateways met JavaScript, identificeren en oplossen van knelpunten in data-intensieve omgevingen.",
+          "Stroomlijnen van ontkoppelde datastromen, wat resulteerde in een vermindering van 30% in laadtijden voor enterprise-gebruikers."
+        ]
+      },
+      {
+        "title": "Full Stack Developer",
+        "organization": "Direct Impact",
+        "location": "Utrecht, Nederland",
+        "duration": {
+          "start": "oktober 2021",
+          "end": "juni 2022"
+        },
+        "details": [
+          "Ontwikkeling van herbruikbare React/Next.js componenten in een headless architectuur voor wereldwijde merken zoals Vodafone en Burger King.",
+          "Beheer van Contentful CMS-integraties en GraphQL datalevering om frontend-prestaties te optimaliseren.",
+          "Implementatie van A/B-teststrategieën voor e-commerce platforms met veel verkeer, resulterend in meetbare conversiegroei.",
+          "Ontwerp en implementatie van responsieve HTML-templates voor Vodafone NL ter verbetering van de klantcommunicatie."
+        ]
+      },
+      {
+        "title": "Verkoopmedewerker (Sales Specialist)",
+        "organization": "Zara",
+        "location": "Utrecht, Nederland",
+        "duration": {
+          "start": "januari 2017",
+          "end": "januari 2018"
+        },
+        "details": [
+          "Behalen van verkoopdoelstellingen door middel van overtuigende communicatie en hoogwaardige klantenservice in een dynamische retailomgeving in Utrecht."
+        ]
+      },
+      {
+        "title": "Account Manager",
+        "organization": "United Mining Industries",
+        "location": "Jordanië",
+        "duration": {
+          "start": "januari 2013",
+          "end": "mei 2014"
+        },
+        "details": [
+          "Beheer van 50+ belangrijke klantaccounts, toezicht op betalingsverwerking, facturatie en hoogwaardige klantrelaties.",
+          "Gebruik van SAGE-software om voorraadbeheer en financiële rapportage te optimaliseren, wat de productiviteit van het team met 50% verhoogde."
+        ]
+      },
+      {
+        "title": "Sales Promoter",
+        "organization": "TOSHIBA",
+        "location": "Amman, Jordanië",
+        "duration": {
+          "start": "januari 2012",
+          "end": "december 2012"
+        },
+        "details": [
+          "Verantwoordelijk voor de inventaris en verkoopstrategie van de televisie-afdeling; bekroond als 'Best TV Sales Promoter' voor recordprestaties."
+        ]
+      }
+    ]
+  },
+  "personalProjects": {
+    "fieldTitle": "Persoonlijke Projecten",
+    "items": [
+      {
+        "title": "Full-Stack Developer",
+        "organization": "808 Studio",
+        "location": "Utrecht, Nederland",
+        "duration": {
+          "start": "december 2020",
+          "end": "december 2023"
+        },
+        "details": [
+          "Geadviseerd over en mede-ontwikkeld aan full-stack oplossingen, waaronder een stemplatform (Vue/NestJS) en een NFT-generator (React/Flask).",
+          "Beheer van klantvereisten en projectlevering voor diverse hoogwaardige webapplicaties.",
+          "Ontwikkeling van aangepaste WordPress-architecturen en optimalisatie van SEO-zichtbaarheid via gestructureerde data en performance tuning."
+        ]
+      }
+    ]
+  },
+  "education": {
+    "fieldTitle": "Opleidingen",
+    "items": [
+      {
+        "title": "Cloud & Data Management Training Program",
+        "organization": "ITMG / ESF",
+        "location": "Utrecht, Nederland",
+        "duration": {
+          "start": "mei 2025",
+          "end": "oktober 2025"
+        },
+        "type": "Certificaat"
+      },
+      {
+        "title": "Full Stack JS Developer Course",
+        "organization": "Codaisseur",
+        "location": "Amsterdam, Nederland",
+        "duration": {
+          "start": "april 2021",
+          "end": "augustus 2021"
+        },
+        "type": "Certificaat"
+      },
+      {
+        "title": "Bachelor of Business Administration (BBA)",
+        "organization": "Arab International University",
+        "location": "Damascus, Syrië",
+        "duration": {
+          "start": "2007",
+          "end": "2011"
+        },
+        "type": "Bachelor"
+      }
+    ]
+  },
+  "skills": {
+    "fieldTitle": "Vaardigheden",
+    "technical": [
+      "AI Agents / Prompt Engineering (Claude Code)",
+      "TypeScript / JavaScript (ES6+)",
+      "React / Next.js / Vue.js",
+      "Node.js / NestJS / GraphQL",
+      "PostgreSQL / TypeORM / Supabase",
+      "Docker / Cloud Infrastructuur",
+      "B2B SaaS / Fintech Logica",
+      "A/B Testing & Performance Tuning",
+      "ERP & Boekhoudsystemen (SAGE)"
+    ],
+    "other": [
+      "Technisch Projectleiderschap",
+      "Stakeholdermanagement",
+      "Productstrategie",
+      "Optimalisatie van Bedrijfsprocessen",
+      "Multicultural Collaboration"
+    ]
+  },
+  "languages": {
+    "fieldTitle": "Talen",
+    "list": [
+      {
+        "language": "Arabisch",
+        "level": "Moedertaal"
+      },
+      {
+        "language": "Engels",
+        "level": "Vloeiend"
+      },
+      {
+        "language": "Nederlands",
+        "level": "Gemiddeld"
+      }
+    ]
+  }
+}

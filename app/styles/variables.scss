@@ -1,13 +1,29 @@
+// SINGLE SOURCE OF TRUTH — MIRROR OF tailwind.config.ts `theme.colors`.
+//
+// Every value below has an exact twin in tailwind.config.ts. They are two
+// spellings of ONE palette and they must be edited together. Before this pass
+// four pairs had silently drifted apart:
+//   --primary #639FBB      vs tailwind rgb(28, 111, 193)
+//   --light-gray 238,237,232 vs $light-gray 235,237,238
+//   --third 219,209,158    vs $third rgb(52, 30, 66)
+//   --dark #1a1a1a         vs $dark #000
+// All four are unified here. If you change a colour, change it in BOTH files.
 
 // tailwind variables
 :root {
-    --primary: #639FBB;
+    // BRAND: indigo-600, the far end of the Modern theme's banner gradient.
+    // == tailwind `primary.DEFAULT: rgb(79, 70, 229)`.
+    --primary: #4F46E5;
+    // UNUSED — warm leftovers from the pre-violet brand. Flagged for deletion.
     --secondary: rgb(226, 155, 114);
-    --third:rgb(219, 209, 158);
+    --third: rgb(219, 209, 158);
     --dark: #1a1a1a;
     --light: #ffffff;
-    --light-gray:  rgb(238, 237, 232);
-    --body-bg:#F7F6F2;
+    // == tailwind `lightgray`. Cool, faintly violet-tinted divider surface.
+    --light-gray: rgb(228, 226, 240);
+    // == tailwind `bodyBg`. PURE WHITE (correction 1), was #F8F7FC.
+    // Identical to --light on purpose: surfaces separate by border + shadow.
+    --body-bg: #FFFFFF;
     --transparent: #00000000;
     --modal-bg: rgba(0, 0, 0, 0.4);
     --top-nav-h: 90px;
@@ -32,14 +48,15 @@
     // nav height
     --nav-height:90px
 }
-// // sccs variable 
-$primary: #639FBB;
+// scss variables — same palette again, for the SCSS in base.scss.
+// Keep every value byte-identical to the custom property above it.
+$primary: #4F46E5;
 $secondary: rgb(226, 155, 114);
-$third: rgb(52, 30, 66);
-$dark: #000;
-$light: #fff;
-$body-bg:#F7F6F2;
-$light-gray: rgba(235, 237, 238, 1);
+$third: rgb(219, 209, 158);
+$dark: #1a1a1a;
+$light: #ffffff;
+$body-bg: #FFFFFF;
+$light-gray: rgb(228, 226, 240);
 $transparent: #00000000;
 $modal-bg: rgba(0, 0, 0, 0.4);
 $top-nav-h: 90px;
